@@ -98,6 +98,8 @@ gulp.task('copy', function() {
    .pipe(gulp.dest('site/css/fonts/'));
    gulp.src('src/video/*.*')
    .pipe(gulp.dest('site/video/'));
+   gulp.src('src/css/*.*')
+   .pipe(gulp.dest('site/css/'));
 });
 
 gulp.task('delete', function (cb) {
