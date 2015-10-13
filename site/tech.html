@@ -19,7 +19,7 @@
 	</head>
 	<body>
 		
-		<div id="content" class="container">
+		<div id="content" class="container" style="padding-bottom: 50px;">
 			
 			<h1>Заголовок H1 (FiraSans, 45px, #000000) </h2>
 			
@@ -109,7 +109,7 @@
 				<strong>Спасибо!</strong> Ваше сообщение успешно отправлено.
 			</div>
 			
-			<h2>Форма</h2>
+			<div class="title">Форма</div>
 			<form class="form" role="form" action="">
 				<div class="row">
 					<div class="col-md-6">
@@ -176,10 +176,15 @@
 							<label class="control-label" for="field-err">Поле с ошибкой ввода:</label>
 							<input type="text" class="form-control" id="field-err"/>
 						</div>
-					</div>
-					<div class="col-md-6">
-						
-						<h3>Чекбоксы</h3>
+						<div class="title">Поля с дополнением</div>
+						<div class="form-group">
+							<label for="field-011">Email:</label>
+							<div class="input-group">
+								<span class="input-group-addon">@</span>
+								<input class="form-control" id="field-011" type="email" placeholder="Email"/>
+							</div>
+						</div>
+						<div class="title">Чекбоксы</div>
 						<h4>С новой строки</h4>
 						<div class="form-group">
 							<div class="checkbox">
@@ -210,16 +215,6 @@
 								<input type="checkbox" value="idtn" disabled/> не знаю
 							</label>
 						</div>
-						<h4>В виде дополнения</h4>
-						<div class="form-group">
-							<div class="input-group">
-								<span class="input-group-addon">
-									<input type="checkbox"/>
-								</span>
-								<input class="form-control" type="text"/>
-							</div>
-						</div>
-						
 						<h3>Radiobutton'ы</h3>
 						<h4>С новой строки</h4>
 						<div class="form-group">
@@ -251,24 +246,14 @@
 								<input type="radio" name="radio-2" value="option3" disabled/> вариант 3
 							</label>
 						</div>
-						<h4>В виде дополнения</h4>
-						<div class="form-group">
-							<div class="input-group">
-								<span class="input-group-addon">
-									<input type="radio"/>
-								</span>
-								<input class="form-control" type="text"/>
-							</div>
-						</div>
-						
-						<h3>Капча</h3>
+						<div class="title">Капча</div>
 						<div class="form-group">
 							<label class="required" for="field-captcha">
 								Введите символы с картинки:
 							</label>
 							<div class="row">
 								<div class="col-md-4 col-xs-6">
-									<img src="images/captcha.jpg" />
+									<img src="img/captcha.jpg" height="38" />
 								</div>
 								<div class="col-md-8 col-xs-6">
 									<input class="form-control" id="field-captcha" type="text" required="" value=""/>
@@ -280,22 +265,23 @@
 				</div>
 			</form>
 			
-			<h3>Всякого рода кнопки</h3>
-			<p>
-				<button class="btn btn-lg btn-default" type="button">По умолчанию</button>
-			</p>
-			<p>
-				<button class="btn btn-default" type="button">По умолчанию</button>
-			</p>
-			<p>
-				<button class="btn btn-sm btn-default" type="button">По умолчанию</button>
-			</p>
-			<p>
-				<button class="btn btn-xs btn-default" type="button">По умолчанию</button>
-			</p>
+			<div class="title">Всякого рода кнопки</div>
+			<div class="row">
+				<div class="col-md-6">
+					<p>
+						<button class="btn btn-lg btn-red" type="button">По умолчанию</button>
+					</p>
+					<p>
+						<button class="btn" type="button">По умолчанию</button>
+					</p>
+					<p>
+						<button class="btn btn-sm" type="button">По умолчанию</button>
+					</p>
+				</div>
+			</div>
 			
-			<h2>Таблицы:</h2>
-			<h4>Таблица. Ряды полосами</h4>
+			
+			<div class="title">Таблицы:</div>
 			<table class="table table-striped">
 				<thead>
 					<tr>
@@ -333,11 +319,6 @@
 				<li><a href="#">5</a></li>
 				<li><a href="#">&raquo;</a></li>
 			</ul>
-			<!-- Различные размеры: 
-				<ul class="pagination pagination-lg">...</ul> // большая
-				<ul class="pagination">...</ul> // средняя
-				<ul class="pagination pagination-sm">...</ul> // маленькая
-			 -->
 			
 			<h2>Значки</h2>
 			<a href="#">Входящие <span class="badge">42</span></a>
@@ -345,12 +326,12 @@
 			<h2>Панели навигации</h2>
 			<h3>Вкладки</h3>
 			<ul class="nav nav-tabs">
-				<li class="active"><a href="#">Home</a></li>
-				<li><a href="#">Profile</a></li>
+				<li><a href="#">Home</a></li>
+				<li class="active"><a href="#">Profile</a></li>
 				<li><a href="#">Messages</a></li>
 			</ul>
 			
-			<h3>Pill-элементы (горизонтальные)</h3>
+			<!-- <h3>Pill-элементы (горизонтальные)</h3>
 			<ul class="nav nav-pills">
 				<li class="active"><a href="#">Home</a></li>
 				<li><a href="#">Profile</a></li>
@@ -362,7 +343,7 @@
 				<li class="active"><a href="#">Home</a></li>
 				<li><a href="#">Profile</a></li>
 				<li><a href="#">Messages</a></li>
-			</ul>
+			</ul> -->
 		</div>
 
 		<footer id="footer" class="container">

@@ -1,9 +1,16 @@
-body
-	font: 14px/20px 'Fira Sans', sans-serif
-	color: #000 
-
 =fira
 	font-family: 'Fira Sans', sans-serif
+	-webkit-font-smoothing: antialiased
+	-moz-osx-font-smoothing: grayscale
+
+body
+	+fira
+	font-size: 14px
+	line-height: 20px
+	color: #000 
+	
+
+
 
 // common blocks
 h1, h2, h3, h4, h5, h6
@@ -45,6 +52,7 @@ dt
 	font-weight: normal	
 ol
 	position: relative
+	padding: 0 0 0 25px 
 	ol
 		list-style-type: none 		  
 
@@ -71,6 +79,7 @@ label
 		span
 			color: #ff0000 
 .form-control
+	height: 38px
 	border-radius: 0
 .widget-upload-field
 	&:after
@@ -85,6 +94,8 @@ textarea
 		height: 88px
 select.form-control
 	-webkit-appearance: inherit
+	-moz-appearance: inherit
+	appearance: inherit
 .form-group-select
 	position: relative	
 	&:after
@@ -94,7 +105,54 @@ select.form-control
 		right: 10px
 		margin-top: -3px 
 		+arr(6, 6, #000, b)
+.input-group .form-control
+	border-radius: 0 4px 4px 0
+	
+// btns
+.btn
+	padding: 8px 42px 
+	border-radius: 0
+	border: none
+	background: #0063a7
+	color: #fff 
+	font-size: 18px
+	font-weight: 500 
+	transition: background 200ms
+	&:hover
+		background: #1a83cd
+		color: #fff			
+.btn-lg, .btn-group-lg>.btn
+	width: 100% 
+	padding: 10px 
+	text-transform: uppercase
+.btn-red
+	background: #c84410
+	&:hover
+		background: #e84f13
+.btn-sm, .btn-group-sm>.btn
+	padding: 2px 20px
+	font-size: 15px
+	background: transparent
+	color: #0063a7
+	&:hover
+		background: #1a83cd
+		color: #fff  			
+// tables
+.table>tbody>tr:first-child> td
+	border-width: 2px
 
+// nav
+.nav-tabs
+	border-bottom: none
+.nav-tabs>li>a
+	border-radius: 0 	
+.nav-tabs>li.active>a, 
+.nav-tabs>li.active>a:hover, 
+.nav-tabs>li.active>a:focus
+	color: #fff
+	border: none
+	background: #747c89  
+		
 
 
 
