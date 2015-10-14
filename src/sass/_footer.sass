@@ -1,1 +1,37 @@
 // footer
+.footer
+	padding: 30px 0 0
+	background: #333 
+	&__title
+		color: #FFF
+		font-size: 15px
+	&__copyright
+		color: #999
+		font-size: 10px 
+		line-height: 1.2
+	&__socials
+		padding: 15px 0 0
+		font-size: 0
+		a
+			display: inline-block
+			vertical-align: middle
+	&__banner
+		margin-bottom: 25px
+	&__search
+		+clr
+		.footer__title
+			float: left
+			height: 33px
+			margin-right: 10px
+			p
+				margin: 7px 0 0
+		.form-group
+			overflow: hidden
+			&.right
+				float: right
+				overflow: auto
+			.btn, 
+				height: 33px
+				padding: 5px 49px
+			.form-control
+				height: 33px
