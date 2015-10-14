@@ -14,11 +14,6 @@
 
 .icon-skrill:before { content: ""; }
 
-.l { *zoom: 1; }
-.l:after { content: " "; display: table; clear: both; }
-.l .l-col1 { float: left; width: 20%; }
-.l .l-col2 { float: right; width: 70%; }
-
 body { font-family: "Fira Sans", sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-size: 14px; line-height: 20px; color: #000; }
 
 input[type="radio"], input[type="checkbox"] { outline: none !important; }
