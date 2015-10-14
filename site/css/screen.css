@@ -86,6 +86,21 @@ select.form-control { -webkit-appearance: inherit; -moz-appearance: inherit; app
 
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus { color: #fff; border: none; background: #747c89; }
 
+.footer { padding: 30px 0 0; background: #333; }
+.footer__title { color: #FFF; font-size: 15px; }
+.footer__copyright { color: #999; font-size: 10px; line-height: 1.2; }
+.footer__socials { padding: 15px 0 0; font-size: 0; }
+.footer__socials a { display: inline-block; vertical-align: middle; }
+.footer__banner { margin-bottom: 25px; }
+.footer__search { *zoom: 1; }
+.footer__search:after { content: " "; display: table; clear: both; }
+.footer__search .footer__title { float: left; height: 33px; margin-right: 10px; }
+.footer__search .footer__title p { margin: 7px 0 0; }
+.footer__search .form-group { overflow: hidden; }
+.footer__search .form-group.right { float: right; overflow: auto; }
+.footer__search .form-group .btn { height: 33px; padding: 5px 49px; }
+.footer__search .form-group .form-control { height: 33px; }
+
 
 
 /*# sourceMappingURL=screen.css.map */
