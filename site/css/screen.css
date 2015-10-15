@@ -26,6 +26,8 @@
 
 body { font-family: "Fira Sans", sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-size: 14px; line-height: 1.4; color: #000; }
 
+@media (min-width: 1600px) { .container { width: 1600px; } }
+
 input[type="radio"], input[type="checkbox"] { outline: none !important; }
 
 h1, h2, h3, h4, h5, h6 { font-weight: bold; color: #000; }
@@ -125,7 +127,8 @@ select.form-control { -webkit-appearance: inherit; -moz-appearance: inherit; app
   .footer .footer__mobile a.footer__menu span:before { top: -7px; }
   .footer .footer__mobile a.footer__menu span:after { top: 7px; } }
 
-.header { position: relative; background: #0063a7; box-shadow: 0 5px 5px rgba(0, 0, 0, 0.24); }
+.header { position: relative; }
+.header .header__content { background: #0063a7; box-shadow: 0 5px 5px rgba(0, 0, 0, 0.24); }
 .header .header__logo { float: left; width: 180px; margin-right: 18px; }
 .header .header__in { overflow: hidden; padding-top: 30px; }
 .header .header__topper { *zoom: 1; }
@@ -168,6 +171,18 @@ select.form-control { -webkit-appearance: inherit; -moz-appearance: inherit; app
 
 .search { margin-right: 14px; }
 .search a { display: inline-block; background-image: url("../img/icons.png"); width: 16px; height: 16px; background-position: -86px -67px; background-size: 105px 105px; }
+
+.nav { padding-top: 25px; }
+
+.menu { text-align: justify; line-height: 0; font-size: 0; text-justify: newspaper; zoom: 1; -moz-text-align-last: justify; text-align-last: justify; }
+.menu:after { content: ""; display: inline-block; width: 100%; height: 0px; visibility: hidden; overflow: hidden; }
+.menu .menu__item { display: inline-block; vertical-align: top; line-height: 1; font-size: 23px; color: #fff; text-transform: uppercase; border-bottom: 5px solid transparent; transition: border-color 200ms; }
+.menu .menu__item:hover { text-decoration: none; }
+.menu .menu__item.is-active, .menu .menu__item:hover { border-color: #fff; }
+
+.sub-menu { background: #e8eced; padding: 35px 0; }
+.sub-menu .submenu__nav a { display: block; margin-bottom: 15px; font-size: 18px; font-weight: 500; color: #333; text-decoration: none; }
+.sub-menu .submenu__nav a:hover { text-decoration: underline; }
 
 
 

@@ -1,8 +1,9 @@
 // header
 .header
 	position: relative
-	background: #0063a7
-	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.24)
+	.header__content
+		background: #0063a7
+		box-shadow: 0 5px 5px rgba(0, 0, 0, 0.24)
 	.header__logo
 		float: left
 		width: 180px
@@ -131,6 +132,41 @@
 	a
 		display: inline-block
 		+sr(search)
+.nav
+	padding-top: 25px
+.menu
+	+justify
+	.menu__item
+		display: inline-block
+		vertical-align: top
+		line-height: 1
+		font-size: 23px
+		color: #fff
+		text-transform: uppercase
+		border-bottom: 5px solid transparent
+		transition: border-color 200ms
+		&:hover
+			text-decoration: none
+		&.is-active, &:hover
+			border-color: #fff
+.sub-menu
+	background: #e8eced 
+	padding: 35px 0 			
+	.submenu__nav
+		a
+			display: block
+			margin-bottom: 15px
+			font-size: 18px
+			font-weight: 500
+			color: #333  
+			text-decoration: none
+			&:hover
+				text-decoration: underline
+
+
+
+
+
 
 
 
