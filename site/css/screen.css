@@ -109,7 +109,7 @@ select.form-control { -webkit-appearance: inherit; -moz-appearance: inherit; app
 .footer__banner { margin-bottom: 25px; }
 .footer__search { *zoom: 1; }
 .footer__search:after { content: " "; display: table; clear: both; }
-.footer__search .footer__title { float: left; height: 33px; margin-right: 10px; }
+.footer__search .footer__title { float: left; padding-top: 0; height: 33px; margin-right: 10px; }
 .footer__search .footer__title p { margin: 7px 0 0; }
 .footer__search .form-group { overflow: hidden; }
 .footer__search .form-group.right { float: right; overflow: auto; }
