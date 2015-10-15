@@ -1,8 +1,12 @@
 $icons: (0:0)
-$icons: map-merge($icons,(codedby: (X: -24px, Y:-77px, W: 47px, H: 5px, TW: 105px, TH: 89px, IMG: '../img/icons.png')))
-$icons: map-merge($icons,(coderiver: (X: -24px, Y:-68px, W: 49px, H: 5px, TW: 105px, TH: 89px, IMG: '../img/icons.png')))
-$icons: map-merge($icons,(file: (X: 0px, Y:-68px, W: 20px, H: 21px, TW: 105px, TH: 89px, IMG: '../img/icons.png')))
-$icons: map-merge($icons,(logo: (X: 0px, Y:0px, W: 105px, H: 64px, TW: 105px, TH: 89px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,(book: (X: -138px, Y:-134px, W: 30px, H: 36px, TW: 210px, TH: 210px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,(exit: (X: 0px, Y:-180px, W: 30px, H: 30px, TW: 210px, TH: 210px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,(fb: (X: 0px, Y:-134px, W: 42px, H: 42px, TW: 210px, TH: 210px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,(file: (X: -34px, Y:-180px, W: 20px, H: 22px, TW: 210px, TH: 210px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,(logo: (X: 0px, Y:0px, W: 210px, H: 130px, TW: 210px, TH: 210px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,(search: (X: -172px, Y:-134px, W: 32px, H: 32px, TW: 210px, TH: 210px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,(tw: (X: -46px, Y:-134px, W: 42px, H: 42px, TW: 210px, TH: 210px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,(vk: (X: -92px, Y:-134px, W: 42px, H: 42px, TW: 210px, TH: 210px, IMG: '../img/icons.png')))
 
 
 // Gets an attribute from the sass map
@@ -36,34 +40,62 @@ $icons: map-merge($icons,(logo: (X: 0px, Y:0px, W: 105px, H: 64px, TW: 105px, TH
 @mixin sr($i)
 	+sprite-retina($i)	
 
-.i-codedby
+.i-book
 	display: inline-block
-	width: ceil(47px / 2)
-	height: ceil(5px /2)
+	width: ceil(30px / 2)
+	height: ceil(36px /2)
 	background-image: url('../img/icons.png')
-	background-position: ceil(-24px /2) ceil(-77px / 2)
-	background-size: ceil(105px / 2) ceil(89px / 2)
-.i-coderiver
+	background-position: ceil(-138px /2) ceil(-134px / 2)
+	background-size: ceil(210px / 2) ceil(210px / 2)
+.i-exit
 	display: inline-block
-	width: ceil(49px / 2)
-	height: ceil(5px /2)
+	width: ceil(30px / 2)
+	height: ceil(30px /2)
 	background-image: url('../img/icons.png')
-	background-position: ceil(-24px /2) ceil(-68px / 2)
-	background-size: ceil(105px / 2) ceil(89px / 2)
+	background-position: ceil(0px /2) ceil(-180px / 2)
+	background-size: ceil(210px / 2) ceil(210px / 2)
+.i-fb
+	display: inline-block
+	width: ceil(42px / 2)
+	height: ceil(42px /2)
+	background-image: url('../img/icons.png')
+	background-position: ceil(0px /2) ceil(-134px / 2)
+	background-size: ceil(210px / 2) ceil(210px / 2)
 .i-file
 	display: inline-block
 	width: ceil(20px / 2)
-	height: ceil(21px /2)
+	height: ceil(22px /2)
 	background-image: url('../img/icons.png')
-	background-position: ceil(0px /2) ceil(-68px / 2)
-	background-size: ceil(105px / 2) ceil(89px / 2)
+	background-position: ceil(-34px /2) ceil(-180px / 2)
+	background-size: ceil(210px / 2) ceil(210px / 2)
 .i-logo
 	display: inline-block
-	width: ceil(105px / 2)
-	height: ceil(64px /2)
+	width: ceil(210px / 2)
+	height: ceil(130px /2)
 	background-image: url('../img/icons.png')
 	background-position: ceil(0px /2) ceil(0px / 2)
-	background-size: ceil(105px / 2) ceil(89px / 2)
+	background-size: ceil(210px / 2) ceil(210px / 2)
+.i-search
+	display: inline-block
+	width: ceil(32px / 2)
+	height: ceil(32px /2)
+	background-image: url('../img/icons.png')
+	background-position: ceil(-172px /2) ceil(-134px / 2)
+	background-size: ceil(210px / 2) ceil(210px / 2)
+.i-tw
+	display: inline-block
+	width: ceil(42px / 2)
+	height: ceil(42px /2)
+	background-image: url('../img/icons.png')
+	background-position: ceil(-46px /2) ceil(-134px / 2)
+	background-size: ceil(210px / 2) ceil(210px / 2)
+.i-vk
+	display: inline-block
+	width: ceil(42px / 2)
+	height: ceil(42px /2)
+	background-image: url('../img/icons.png')
+	background-position: ceil(-92px /2) ceil(-134px / 2)
+	background-size: ceil(210px / 2) ceil(210px / 2)
 
 
 
