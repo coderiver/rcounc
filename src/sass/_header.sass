@@ -22,7 +22,7 @@
 		text-decoration: none
 	& > i
 		display: inline-block
-		+s(logo)
+		+sr(logo)
 	& > p
 		font-weight: bold
 		font-size: 11px
@@ -77,15 +77,60 @@
 		text-decoration: none
 		color: #fff
 
-.test
-	+s(logo)
-.test-retina
-	+sr(logo)	
-
-
-
-
-
+.m-reader
+	position: relative
+	display: inline-block
+	vertical-align: middle
+	margin-right: 14px 
+	font-size: 15px
+	font-weight: 300
+	color: #fff
+	text-decoration: none
+	i, span
+		display: inline-block
+		vertical-align: middle
+	span
+		border-bottom: 1px dotted
+	&:hover
+		text-decoration: none
+		color: #fff
+.logout
+	display: inline-block
+	vertical-align: middle
+.header__tools
+	overflow: hidden
+	text-align: center	
+.lang, .search, .socials
+	display: inline-block
+	vertical-align: middle
+.lang
+	font-size: 0
+	margin-right: 20px
+	a	
+		position: relative
+		display: inline-block
+		vertical-align: middle
+		margin: 0 2px 
+		font-size: 15px
+		color: #fff
+		font-weight: 300
+		text-decoration: none
+		&:before
+			content: "|"
+			display: inline-block
+			margin-right: 2px
+		&:first-child
+			&:before
+				content: ""	
+		&:hover
+			text-decoration: none
+		&.is-active
+			font-weight: 500 	 
+.search
+	margin-right: 14px
+	a
+		display: inline-block
+		+sr(search)
 
 
 
