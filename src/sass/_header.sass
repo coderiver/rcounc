@@ -1,9 +1,10 @@
 // header
 .header
 	position: relative
+	margin-bottom: 20px
 	.header__content
+		position: relative
 		background: #0063a7
-		box-shadow: 0 5px 5px rgba(0, 0, 0, 0.24)
 	.header__logo
 		float: left
 		width: 180px
@@ -142,6 +143,7 @@
 		line-height: 1
 		font-size: 23px
 		color: #fff
+		text-decoration: none
 		text-transform: uppercase
 		border-bottom: 5px solid transparent
 		transition: border-color 200ms
@@ -151,7 +153,8 @@
 			border-color: #fff
 .sub-menu
 	background: #e8eced 
-	padding: 35px 0 			
+	padding: 35px 0 	
+	box-shadow: inset 0 5px 5px rgba(0, 0, 0, 0.24)		
 	.submenu__nav
 		a
 			display: block
@@ -163,10 +166,72 @@
 			&:hover
 				text-decoration: underline
 
-
-
-
-
+.img-link
+	position: relative 
+	display: block  
+	height: 380px 
+	+cover
+	margin-bottom: 20px
+	padding: 10px 
+	&:first-child
+		margin-top: 0
+	&.img-link_small
+		width: 192px
+		height: 192px
+	.img-link__link
+		position: absolute
+		bottom: 10px
+		left: 10px
+		right: 10px
+		color: #fff
+		font-size: 15px
+		font-weight: 500  	
+.news-link
+	margin-top: 25px
+	color: #333 
+	&:first-child
+		margin-top: 0
+	.news-link__link
+		display: block
+		margin-bottom: 5px 
+		font-size: 17px
+		color: #333
+		font-weight: 700
+	.date
+		&:after
+			content: "|"
+			display: inline-block
+			vertical-align: middle
+			margin: 0 2px 
+.date
+	position: relative
+	display: inline-block
+	vertical-align: middle
+	font-size: 15px 
+.person
+	position: relative
+	margin-top: 25px
+	&:first-child
+		margin-top: 0
+	.person__img
+		display: table-cell
+		vertical-align: middle
+		width: 100px
+		height: 100px
+		border-radius: 50%
+		overflow: hidden
+		img
+			display: block
+			width: 100% 	
+			border-radius: 50%
+	.person__content
+		display: table-cell
+		padding: 0 10px 
+		vertical-align: middle
+	.person__name
+		display: block
+		margin-bottom: 5px
+					
 
 
 

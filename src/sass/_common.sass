@@ -3,14 +3,17 @@
 	-webkit-font-smoothing: antialiased
 	-moz-osx-font-smoothing: grayscale
 
+html, body
+	height: 100% 
 body
 	+fira
-	font-size: 14px
-	line-height: 1.4
+	font-size: 15px
+	line-height: 1.2
 	color: #000
 	
-
-
+.out
+	min-height: 100%
+	height: auto 
 
 // common blocks
 
@@ -22,6 +25,7 @@ input[type="radio"], input[type="checkbox"]
 	outline: none!important // remove native outline css-styles
 
 h1, h2, h3, h4, h5, h6
+	margin-top: 0
 	font-weight: bold
 	color: #000
 h1
