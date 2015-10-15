@@ -20,15 +20,39 @@ $icons: map-merge($icons,({{name}}: (X: {{px.offset_x}}, Y:{{px.offset_y}}, W: {
 	width: icon-attr($iconName, W)
 	height: icon-attr($iconName, H)
 	background-position: icon-attr($iconName, X) icon-attr($iconName, Y)
+
+@mixin sprite-retina($iconName)
+	background-image: url(icon-attr($iconName, IMG))
+	$width: icon-attr($iconName, W)
+	$height: icon-attr($iconName, H)
+	width: $width/2
+	height: $height/2
+	$x: icon-attr($iconName, X)
+	$y: icon-attr($iconName, Y)
+	background-position: $x/2 $y/2
+	$tw: icon-attr($iconName, TW) 	
+	$th: icon-attr($iconName, TH)
+	background-size: $tw/2 $th/2  	
+
 {{/options.functions}}
 
 @mixin s($i)
 	+sprite($i)
 
+@mixin sr($i)
+	+sprite-retina($i)	
+
 {{#items}}
-.icon-{{name}}
-	width: {{px.width}}
-	height: {{px.height}}
+.i-{{name}}
+	display: inline-block
+	width: ceil({{px.width}} / 2)
+	height: ceil({{px.height}} /2)
 	background-image: url('{{{escaped_image}}}')
-	background-position: {{px.offset_x}} {{px.offset_y}}
+	background-position: ceil({{px.offset_x}} /2) ceil({{px.offset_y}} / 2)
+	background-size: ceil({{px.total_width}} / 2) ceil({{px.total_height}} / 2)
 {{/items}}
+
+
+
+
+

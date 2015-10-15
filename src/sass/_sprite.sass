@@ -1,7 +1,8 @@
 $icons: (0:0)
-$icons: map-merge($icons,(codedby: (X: -24px, Y:-9px, W: 47px, H: 5px, TW: 73px, TH: 21px, IMG: '../img/icons.png')))
-$icons: map-merge($icons,(coderiver: (X: -24px, Y:0px, W: 49px, H: 5px, TW: 73px, TH: 21px, IMG: '../img/icons.png')))
-$icons: map-merge($icons,(file: (X: 0px, Y:0px, W: 20px, H: 21px, TW: 73px, TH: 21px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,(codedby: (X: -24px, Y:-77px, W: 47px, H: 5px, TW: 105px, TH: 89px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,(coderiver: (X: -24px, Y:-68px, W: 49px, H: 5px, TW: 105px, TH: 89px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,(file: (X: 0px, Y:-68px, W: 20px, H: 21px, TW: 105px, TH: 89px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,(logo: (X: 0px, Y:0px, W: 105px, H: 64px, TW: 105px, TH: 89px, IMG: '../img/icons.png')))
 
 
 // Gets an attribute from the sass map
@@ -15,21 +16,56 @@ $icons: map-merge($icons,(file: (X: 0px, Y:0px, W: 20px, H: 21px, TW: 73px, TH: 
 	height: icon-attr($iconName, H)
 	background-position: icon-attr($iconName, X) icon-attr($iconName, Y)
 
+@mixin sprite-retina($iconName)
+	background-image: url(icon-attr($iconName, IMG))
+	$width: icon-attr($iconName, W)
+	$height: icon-attr($iconName, H)
+	width: $width/2
+	height: $height/2
+	$x: icon-attr($iconName, X)
+	$y: icon-attr($iconName, Y)
+	background-position: $x/2 $y/2
+	$tw: icon-attr($iconName, TW) 	
+	$th: icon-attr($iconName, TH)
+	background-size: $tw/2 $th/2  	
+
+
 @mixin s($i)
 	+sprite($i)
 
-.icon-codedby
-	width: 47px
-	height: 5px
+@mixin sr($i)
+	+sprite-retina($i)	
+
+.i-codedby
+	display: inline-block
+	width: ceil(47px / 2)
+	height: ceil(5px /2)
 	background-image: url('../img/icons.png')
-	background-position: -24px -9px
-.icon-coderiver
-	width: 49px
-	height: 5px
+	background-position: ceil(-24px /2) ceil(-77px / 2)
+	background-size: ceil(105px / 2) ceil(89px / 2)
+.i-coderiver
+	display: inline-block
+	width: ceil(49px / 2)
+	height: ceil(5px /2)
 	background-image: url('../img/icons.png')
-	background-position: -24px 0px
-.icon-file
-	width: 20px
-	height: 21px
+	background-position: ceil(-24px /2) ceil(-68px / 2)
+	background-size: ceil(105px / 2) ceil(89px / 2)
+.i-file
+	display: inline-block
+	width: ceil(20px / 2)
+	height: ceil(21px /2)
 	background-image: url('../img/icons.png')
-	background-position: 0px 0px
+	background-position: ceil(0px /2) ceil(-68px / 2)
+	background-size: ceil(105px / 2) ceil(89px / 2)
+.i-logo
+	display: inline-block
+	width: ceil(105px / 2)
+	height: ceil(64px /2)
+	background-image: url('../img/icons.png')
+	background-position: ceil(0px /2) ceil(0px / 2)
+	background-size: ceil(105px / 2) ceil(89px / 2)
+
+
+
+
+
