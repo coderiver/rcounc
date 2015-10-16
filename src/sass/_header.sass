@@ -259,26 +259,64 @@
 			&:hover
 				text-decoration: underline
 
+.tag
+	display: inline-block
+	padding: 5px 8px 4px
+	background: #0063a7  
+	font-size: 13px
+	color: #fff
+	text-transform: uppercase
+	&:hover
+		color: #fff
+		text-decoration: none 
 .img-link
 	position: relative 
 	display: block  
 	height: 380px 
 	+cover
 	margin-bottom: 20px
-	padding: 10px 
+	padding: 10px
+	&:before
+		content: ""
+		position: absolute
+		top: 0
+		bottom: 0
+		right: 0
+		left: 0 
+		background: rgba(#082438, 0.8)
+		opacity: 0
+		transition: opacity 200ms 
+		z-index: 0  
+	.img-link__bottom
+		position: absolute
+		bottom: 0
+		left: 0
+		right: 0
+		padding: 18px
+		+g(rgba(#000, 0), rgba(#000, 1))
+	.img-link__link
+		display: inline-block
+		margin: 5px 0 
+		color: #fff
+		font-size: 25px
+		font-weight: 500
+		&:hover
+			text-decoration: none
+	.img-link__author
+		color: #fff 
 	&:first-child
-		margin-top: 0
+		margin-top: 0	
+	&:hover
+		&:before
+			opacity: 1 	 			
 	&.img-link_small
 		width: 192px
 		height: 192px
-	.img-link__link
-		position: absolute
-		bottom: 10px
-		left: 10px
-		right: 10px
-		color: #fff
-		font-size: 15px
-		font-weight: 500  	
+		.img-link__link
+			font-size: 15px
+	&.img-link_wide
+		.img-link__link
+			font-size: 35px 	 	
 .news-link
 	margin-top: 25px
 	color: #333 
