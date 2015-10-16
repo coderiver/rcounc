@@ -21,64 +21,61 @@
 <!-- BEGIN  out-->
 <div class="out">
 	<!-- header -->
-	<header class="header">
+	<section class="poll hidden-xs">
 		<div class="container">
-			<!-- logo -->
-			<div class="header__logo">
-				<a href="#" class="logo">
-					<i></i>
-					<p>РОССИЙСКИЙ СОВЕТ ПО МЕЖДУНАРОДНЫМ ДЕЛАМ</p>
-				</a>
+			<div class="row">
+				<div class="col-md-12">
+					<h2>опрос</h2>
+				</div>
 			</div>
-			<!-- header content -->
-			<div class="header__in">
-				<div class="header__topper">
-					<!-- topper nav -->
-					<div class="top-nav">
-						<a href="#">О совете</a>
-						<a href="#">Новости</a>
-						<a href="#">Пресс-центр</a>
-						<a href="#">Контакты</a>
+			<div class="row">
+				<div class="col-lg-2 col-md-3">
+					<div class="poll__text">
+						<p>В январе 2015 года начал функционировать Евразийский экономический союз (ЕАЭС). Однако до сих пор остается открытым вопрос о том, что следует понимать под Евразией, когда речь идет о развитии евразийской интеграции.</p>
 					</div>
-					<!-- user info -->
-					<div class="header__profile">
-						<a href="#" class="m-user">
-							<div class="m-user__img">
-								<img src="img/user.png" alt="">
+				</div>
+				<div class="col-lg-10 col-md-9">
+					<form action="">
+						<div class="col-md-9 col-sm-12">
+							<div class="form-group">
+								<div class="col-lg-4 col-md-6 col-sm-12">
+									<label class="radio poll__item">
+										<input type="radio" name="radio-1" value="option1"/> 
+										<p>Евразийское пространство — это экономический проект, направленный на гармоничное развитие стран-партнеров</p>
+									</label>
+								</div>
+								<div class="col-lg-4 col-md-6 col-sm-12">
+									<label class="radio poll__item">
+										<input type="radio" name="radio-1" value="option2"/>
+										<p>Евразия — это культурно-цивилизационная общность народов Евразийского континента</p>
+									</label>
+								</div>
+								<div class="col-lg-4 col-md-6 col-sm-12">
+									<label class="radio poll__item">
+										<input type="radio" name="radio-1" value="option3"/>
+										<p>Евразия — это совокупность государств, которые сформировались в границах распавшегося СССР</p>
+									</label>
+								</div>
 							</div>
-							<span>Максим Михайловский</span>
-						</a>
-						<a href="#" class="m-reader">
-							<i class="i-book"></i>
-							<span>Ридер (3)</span>
-						</a>
-						<a href="#" class="logout">
-							<i class="i-exit"></i>
-						</a>
-					</div>
-					<!-- header tools -->
-					<div class="header__tools">
-						<div class="lang">
-							<a href="#" class="is-active">Рус</a>
-							<a href="#">Eng</a>
 						</div>
-						<div class="search">
-							<a href="#"></a>
+						<div class="col-md-3 col-sm-12">
+							<div class="poll__btns">
+								<div class="form-group">
+									<button class="btn" type="button">Ответить на опрос</button>
+									<button class="btn btn-sm" type="button">Результаты опроса</button>
+									<button class="btn btn-sm" type="button">Архив опросов</button>
+								</div>
+							</div>
 						</div>
-						<div class="socials">
-							<a href="#"><i class="i-vk"></i></a>
-							<a href="#"><i class="i-fb"></i></a>
-							<a href="#"><i class="i-tw"></i></a>
-						</div>
-					</div>
+					</form>
 				</div>
 			</div>
 		</div>
-	</header>
+	</section>
 	<section class="follow">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-12">
+				<div class="col-md-12">
 					<div class="follow__wrap">
 						<h4>ПОДПИШИТЕСЬ НА ОБНОВЛЕНИЯ</h4>
 						<div class="form-group">
@@ -86,6 +83,9 @@
 						</div>
 						<div class="form-group">
 							<button class="btn" type="button">Подписаться</button>
+						</div>
+						<div class="form-group">
+							<button class="btn btn-sm" type="button">Изменить подписку</button>
 						</div>
 					</div>
 				</div>
@@ -118,7 +118,7 @@
 			<div class="row">
 				<div class="col-lg-3 col-md-4 col-sm-12">
 					<div class="analytics__title">
-						<h2>Полезные материалы</h2>
+						<a href="#"><h2>Полезные материалы</h2></a>
 					</div>
 					<div class="block-link">
 						<div class="block-link__img">
@@ -141,7 +141,7 @@
 				</div>
 				<div class="col-lg-6 col-md-4 col-sm-12">
 					<div class="analytics__title">
-						<h2>Библиотека</h2>
+						<a href="#"><h2>Библиотека</h2></a>
 					</div>
 					<div class="row">
 						<div class="col-lg-6 col-md-12">
@@ -198,9 +198,9 @@
 			</div>
 		</div>
 	</section>
-	<section class="links">
+	<section class="links hidden-xs">
 		<div class="container">
-			<div class="row hidden-xs">
+			<div class="row">
 				<div class="col-lg-3 col-md-4 col-sm-6">
 					<div class="col-sm-6">
 						<a href="">Учащимся</a>
