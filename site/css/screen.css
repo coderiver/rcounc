@@ -126,12 +126,13 @@ select.form-control { -webkit-appearance: inherit; -moz-appearance: inherit; app
   .footer .footer__search { display: none; }
   .footer .footer__mobile { display: block; *zoom: 1; }
   .footer .footer__mobile:after { content: " "; display: table; clear: both; }
-  .footer .footer__mobile a { float: left; text-decoration: underline; color: #FFF; font-size: 15px; }
-  .footer .footer__mobile a.footer__menu { float: right; display: block; padding: 8px 0; }
-  .footer .footer__mobile a.footer__menu span { position: relative; display: block; width: 20px; height: 4px; background: #FFF; }
-  .footer .footer__mobile a.footer__menu span:before, .footer .footer__mobile a.footer__menu span:after { content: ""; position: absolute; left: 0; width: 20px; height: 4px; background: #FFF; }
-  .footer .footer__mobile a.footer__menu span:before { top: -7px; }
-  .footer .footer__mobile a.footer__menu span:after { top: 7px; } }
+  .footer .footer__mobile a { float: left; text-decoration: underline; color: #FFF; font-size: 15px; } }
+
+.hamb { float: right; display: block; padding: 8px 0; }
+.hamb span { position: relative; display: block; width: 20px; height: 4px; background: #FFF; }
+.hamb span:before, .hamb span:after { content: ""; position: absolute; left: 0; width: 20px; height: 4px; background: #FFF; }
+.hamb span:before { top: -7px; }
+.hamb span:after { top: 7px; }
 
 .header { position: relative; margin-bottom: 20px; }
 .header .header__content { position: relative; background: #0063a7; }
@@ -228,6 +229,14 @@ select.form-control { -webkit-appearance: inherit; -moz-appearance: inherit; app
 
 .links { padding: 30px 0; }
 .links a { display: block; margin-bottom: 5px; text-transform: uppercase; color: #1C1B1E; font-size: 15px; font-weight: 700; }
+
+.banners { margin: 50px 0; }
+
+.follow__wrap { padding: 20px; background: #F7F7F7; text-align: center; }
+.follow__wrap h4 { display: inline-block; vertical-align: middle; margin-bottom: 0; }
+.follow__wrap .form-group { display: inline-block; vertical-align: middle; margin-bottom: 0; }
+.follow__wrap .form-group .form-control { width: 380px; height: 40px; margin: 0 20px; }
+.follow__wrap .form-group .btn { height: 40px; }
 
 
 
