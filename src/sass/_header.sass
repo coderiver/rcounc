@@ -34,6 +34,8 @@
 .top-nav
 	float: left
 	font-size: 0
+	+r(992)
+		display: none
 	a
 		display: inline-block
 		vertical-align: middle
@@ -78,6 +80,11 @@
 	&:hover
 		text-decoration: none
 		color: #fff
+	+r(992)
+		padding-left: 0 
+		+sr(user)
+		.m-user__img, span
+			display: none
 
 .m-reader
 	position: relative
@@ -96,18 +103,26 @@
 	&:hover
 		text-decoration: none
 		color: #fff
+	+r(992)
+		span
+			display: none	
 .logout
 	display: inline-block
 	vertical-align: middle
 .header__tools
 	overflow: hidden
-	text-align: center	
+	text-align: center
+	.socials
+		+r(1200)
+			display: none
 .lang, .search, .socials
 	display: inline-block
 	vertical-align: middle
 .lang
 	font-size: 0
 	margin-right: 20px
+	+r(992)
+		display: none
 	a	
 		position: relative
 		display: inline-block
@@ -151,6 +166,9 @@
 			text-decoration: none
 		&.is-active, &:hover
 			border-color: #fff
+		+r(1200)
+			font-size: 18px
+			border-bottom-width: 3px 	
 .sub-menu
 	background: #e8eced 
 	padding: 35px 0 	
