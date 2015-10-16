@@ -13,7 +13,7 @@
 			<div class="container">
 				<!-- logo -->
 				<div class="header__logo">
-					<a href="#" class="logo">
+					<a href="index.html" class="logo">
 						<i></i>
 						<p>РОССИЙСКИЙ СОВЕТ ПО МЕЖДУНАРОДНЫМ ДЕЛАМ</p>
 					</a>
@@ -43,6 +43,7 @@
 							<a href="#" class="logout">
 								<i class="i-exit"></i>
 							</a>
+							<button type="button" class="hamb visible-xs js-hamb"><span></span></button>
 						</div>
 						<!-- header tools -->
 						<div class="header__tools">
@@ -60,26 +61,27 @@
 							</div>
 						</div>
 					</div>
-					<div class="header__bottom">
+					<div class="header__bottom js-mobnav">
 						<nav class="nav">
 							<div class="menu">
-								<a href="#" class="menu__item js-dropdown" data-link="themes">ТЕМЫ</a>
-								<a href="#" class="menu__item">РЕГИОНЫ</a>
-								<a href="#" class="menu__item">ПРОЕКТЫ</a>
-								<a href="#" class="menu__item">ЭКСПЕРТЫ</a>
-								<a href="#" class="menu__item">ПУБЛИКАЦИИ</a>
-								<a href="#" class="menu__item">БИБЛИОТЕКА</a>
-								<a href="#" class="menu__item">СООБЩЕСТВО</a>
+								<a href="themes" class="menu__item js-dropdown">ТЕМЫ</a>
+								<a href="regions" class="menu__item js-dropdown">РЕГИОНЫ</a>
+								<a href="projects" class="menu__item js-dropdown">ПРОЕКТЫ</a>
+								<a href="experts" class="menu__item js-dropdown">ЭКСПЕРТЫ</a>
+								<a href="publicatons" class="menu__item js-dropdown">ПУБЛИКАЦИИ</a>
+								<a href="library" class="menu__item js-dropdown">БИБЛИОТЕКА</a>
+								<a href="community" class="menu__item js-dropdown">СООБЩЕСТВО</a>
 							</div>
 						</nav>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div id="themes" class="sub-menu" style="display: none;">
+		<!-- dropdown blocks -->
+		<div id="themes" class="sub-menu js-submenu" style="display: none;">
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-2">
+					<div class="col-md-2">
 						<div class="submenu__nav">
 							<a href="#">Украинский кризис</a>
 							<a href="#">Безопасность</a>
@@ -92,7 +94,7 @@
 							<a href="#">Общество и культура</a>
 						</div>
 					</div>
-					<div class="col-lg-4">
+					<div class="col-md-4">
 						<div class="row">
 							<div class="col-md-6">
 								<div href="#" class="img-link img-link_small" style="background-image: url(img/img1.jpg);">
@@ -112,7 +114,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-2">
+					<div class="col-md-2">
 						<div class="news-link">
 							<a href="#" class="news-link__link">Новый глобальный консенсус ответственных сил</a>
 							<div class="news-link__details">
@@ -135,7 +137,781 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-4">
+					<div class="col-md-4">
+						<div class="row">
+							<div class="col-xs-12">
+								<h4>НОВЫЕ КОММЕНТАРИИ</h4>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-6">
+								<div class="person">
+									<div class="person__img">
+										<img src="img/img2.jpg" alt="">
+									</div>
+									<div class="person__content">
+										<a href="#" class="person__name">Иван Тимофеев</a>
+										<p>Шесть вопросов к минским договоренностям</p>
+									</div>
+								</div>
+								<div class="person">
+									<div class="person__img">
+										<img src="img/img2.jpg" alt="">
+									</div>
+									<div class="person__content">
+										<a href="#" class="person__name">Иван Тимофеев</a>
+										<p>Шесть вопросов к минским договоренностям</p>
+									</div>
+								</div>
+								<div class="person">
+									<div class="person__img">
+										<img src="img/img2.jpg" alt="">
+									</div>
+									<div class="person__content">
+										<a href="#" class="person__name">Иван Тимофеев</a>
+										<p>Шесть вопросов к минским договоренностям</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-6">
+								<div class="person">
+									<div class="person__img">
+										<img src="img/img2.jpg" alt="">
+									</div>
+									<div class="person__content">
+										<a href="#" class="person__name">Иван Тимофеев</a>
+										<p>Шесть вопросов к минским договоренностям</p>
+									</div>
+								</div>
+								<div class="person">
+									<div class="person__img">
+										<img src="img/img2.jpg" alt="">
+									</div>
+									<div class="person__content">
+										<a href="#" class="person__name">Иван Тимофеев</a>
+										<p>Шесть вопросов к минским договоренностям</p>
+									</div>
+								</div>
+								<div class="person">
+									<div class="person__img">
+										<img src="img/img2.jpg" alt="">
+									</div>
+									<div class="person__content">
+										<a href="#" class="person__name">Иван Тимофеев</a>
+										<p>Шесть вопросов к минским договоренностям</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="regions" class="sub-menu js-submenu" style="display: none;">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-2">
+						<div class="submenu__nav">
+							<a href="#">Украинский кризис</a>
+							<a href="#">Безопасность</a>
+							<a href="#">Образование и наука</a>
+							<a href="#">Технологии</a>
+							<a href="#">Экология</a>
+							<a href="#">Экономика</a>
+							<a href="#">Энергетика</a>
+							<a href="#">Европа</a>
+							<a href="#">Общество и культура</a>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="row">
+							<div class="col-md-6">
+								<div href="#" class="img-link img-link_small" style="background-image: url(img/img1.jpg);">
+									<a href="#" class="img-link__link">На нервной почве вопросы безопасности не решаются</a>
+								</div>
+								<div href="#" class="img-link img-link_small" style="background-image: url(img/img1.jpg);">
+									<a href="#" class="img-link__link">На нервной почве вопросы безопасности не решаются</a>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div href="#" class="img-link img-link_small" style="background-image: url(img/img1.jpg);">
+									<a href="#" class="img-link__link">На нервной почве вопросы безопасности не решаются</a>
+								</div>
+								<div href="#" class="img-link img-link_small" style="background-image: url(img/img1.jpg);">
+									<a href="#" class="img-link__link">На нервной почве вопросы безопасности не решаются</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-2">
+						<div class="news-link">
+							<a href="#" class="news-link__link">Новый глобальный консенсус ответственных сил</a>
+							<div class="news-link__details">
+								<div class="date">05 февраля 2015</div>
+								<a href="#" class="author">Александр Аксененок</a>
+							</div>
+						</div>
+						<div class="news-link">
+							<a href="#" class="news-link__link">Украина: перманентный Майдан</a>
+							<div class="news-link__details">
+								<div class="date">05 февраля 2015</div>
+								<a href="#" class="author">Ростислав Ищенко</a>
+							</div>
+						</div>
+						<div class="news-link">
+							<a href="#" class="news-link__link">Парламентские выборы в Латвийской республике: мифология в условиях и одна историческая аналогия</a>
+							<div class="news-link__details">
+								<div class="date">05 февраля 2015</div>
+								<a href="#" class="author">Ростислав Ищенко</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="row">
+							<div class="col-xs-12">
+								<h4>НОВЫЕ КОММЕНТАРИИ</h4>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-6">
+								<div class="person">
+									<div class="person__img">
+										<img src="img/img2.jpg" alt="">
+									</div>
+									<div class="person__content">
+										<a href="#" class="person__name">Иван Тимофеев</a>
+										<p>Шесть вопросов к минским договоренностям</p>
+									</div>
+								</div>
+								<div class="person">
+									<div class="person__img">
+										<img src="img/img2.jpg" alt="">
+									</div>
+									<div class="person__content">
+										<a href="#" class="person__name">Иван Тимофеев</a>
+										<p>Шесть вопросов к минским договоренностям</p>
+									</div>
+								</div>
+								<div class="person">
+									<div class="person__img">
+										<img src="img/img2.jpg" alt="">
+									</div>
+									<div class="person__content">
+										<a href="#" class="person__name">Иван Тимофеев</a>
+										<p>Шесть вопросов к минским договоренностям</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-6">
+								<div class="person">
+									<div class="person__img">
+										<img src="img/img2.jpg" alt="">
+									</div>
+									<div class="person__content">
+										<a href="#" class="person__name">Иван Тимофеев</a>
+										<p>Шесть вопросов к минским договоренностям</p>
+									</div>
+								</div>
+								<div class="person">
+									<div class="person__img">
+										<img src="img/img2.jpg" alt="">
+									</div>
+									<div class="person__content">
+										<a href="#" class="person__name">Иван Тимофеев</a>
+										<p>Шесть вопросов к минским договоренностям</p>
+									</div>
+								</div>
+								<div class="person">
+									<div class="person__img">
+										<img src="img/img2.jpg" alt="">
+									</div>
+									<div class="person__content">
+										<a href="#" class="person__name">Иван Тимофеев</a>
+										<p>Шесть вопросов к минским договоренностям</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="projects" class="sub-menu js-submenu" style="display: none;">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-2">
+						<div class="submenu__nav">
+							<a href="#">Украинский кризис</a>
+							<a href="#">Безопасность</a>
+							<a href="#">Образование и наука</a>
+							<a href="#">Технологии</a>
+							<a href="#">Экология</a>
+							<a href="#">Экономика</a>
+							<a href="#">Энергетика</a>
+							<a href="#">Европа</a>
+							<a href="#">Общество и культура</a>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="row">
+							<div class="col-md-6">
+								<div href="#" class="img-link img-link_small" style="background-image: url(img/img1.jpg);">
+									<a href="#" class="img-link__link">На нервной почве вопросы безопасности не решаются</a>
+								</div>
+								<div href="#" class="img-link img-link_small" style="background-image: url(img/img1.jpg);">
+									<a href="#" class="img-link__link">На нервной почве вопросы безопасности не решаются</a>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div href="#" class="img-link img-link_small" style="background-image: url(img/img1.jpg);">
+									<a href="#" class="img-link__link">На нервной почве вопросы безопасности не решаются</a>
+								</div>
+								<div href="#" class="img-link img-link_small" style="background-image: url(img/img1.jpg);">
+									<a href="#" class="img-link__link">На нервной почве вопросы безопасности не решаются</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-2">
+						<div class="news-link">
+							<a href="#" class="news-link__link">Новый глобальный консенсус ответственных сил</a>
+							<div class="news-link__details">
+								<div class="date">05 февраля 2015</div>
+								<a href="#" class="author">Александр Аксененок</a>
+							</div>
+						</div>
+						<div class="news-link">
+							<a href="#" class="news-link__link">Украина: перманентный Майдан</a>
+							<div class="news-link__details">
+								<div class="date">05 февраля 2015</div>
+								<a href="#" class="author">Ростислав Ищенко</a>
+							</div>
+						</div>
+						<div class="news-link">
+							<a href="#" class="news-link__link">Парламентские выборы в Латвийской республике: мифология в условиях и одна историческая аналогия</a>
+							<div class="news-link__details">
+								<div class="date">05 февраля 2015</div>
+								<a href="#" class="author">Ростислав Ищенко</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="row">
+							<div class="col-xs-12">
+								<h4>НОВЫЕ КОММЕНТАРИИ</h4>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-6">
+								<div class="person">
+									<div class="person__img">
+										<img src="img/img2.jpg" alt="">
+									</div>
+									<div class="person__content">
+										<a href="#" class="person__name">Иван Тимофеев</a>
+										<p>Шесть вопросов к минским договоренностям</p>
+									</div>
+								</div>
+								<div class="person">
+									<div class="person__img">
+										<img src="img/img2.jpg" alt="">
+									</div>
+									<div class="person__content">
+										<a href="#" class="person__name">Иван Тимофеев</a>
+										<p>Шесть вопросов к минским договоренностям</p>
+									</div>
+								</div>
+								<div class="person">
+									<div class="person__img">
+										<img src="img/img2.jpg" alt="">
+									</div>
+									<div class="person__content">
+										<a href="#" class="person__name">Иван Тимофеев</a>
+										<p>Шесть вопросов к минским договоренностям</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-6">
+								<div class="person">
+									<div class="person__img">
+										<img src="img/img2.jpg" alt="">
+									</div>
+									<div class="person__content">
+										<a href="#" class="person__name">Иван Тимофеев</a>
+										<p>Шесть вопросов к минским договоренностям</p>
+									</div>
+								</div>
+								<div class="person">
+									<div class="person__img">
+										<img src="img/img2.jpg" alt="">
+									</div>
+									<div class="person__content">
+										<a href="#" class="person__name">Иван Тимофеев</a>
+										<p>Шесть вопросов к минским договоренностям</p>
+									</div>
+								</div>
+								<div class="person">
+									<div class="person__img">
+										<img src="img/img2.jpg" alt="">
+									</div>
+									<div class="person__content">
+										<a href="#" class="person__name">Иван Тимофеев</a>
+										<p>Шесть вопросов к минским договоренностям</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="experts" class="sub-menu js-submenu" style="display: none;">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-2">
+						<div class="submenu__nav">
+							<a href="#">Украинский кризис</a>
+							<a href="#">Безопасность</a>
+							<a href="#">Образование и наука</a>
+							<a href="#">Технологии</a>
+							<a href="#">Экология</a>
+							<a href="#">Экономика</a>
+							<a href="#">Энергетика</a>
+							<a href="#">Европа</a>
+							<a href="#">Общество и культура</a>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="row">
+							<div class="col-md-6">
+								<div href="#" class="img-link img-link_small" style="background-image: url(img/img1.jpg);">
+									<a href="#" class="img-link__link">На нервной почве вопросы безопасности не решаются</a>
+								</div>
+								<div href="#" class="img-link img-link_small" style="background-image: url(img/img1.jpg);">
+									<a href="#" class="img-link__link">На нервной почве вопросы безопасности не решаются</a>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div href="#" class="img-link img-link_small" style="background-image: url(img/img1.jpg);">
+									<a href="#" class="img-link__link">На нервной почве вопросы безопасности не решаются</a>
+								</div>
+								<div href="#" class="img-link img-link_small" style="background-image: url(img/img1.jpg);">
+									<a href="#" class="img-link__link">На нервной почве вопросы безопасности не решаются</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-2">
+						<div class="news-link">
+							<a href="#" class="news-link__link">Новый глобальный консенсус ответственных сил</a>
+							<div class="news-link__details">
+								<div class="date">05 февраля 2015</div>
+								<a href="#" class="author">Александр Аксененок</a>
+							</div>
+						</div>
+						<div class="news-link">
+							<a href="#" class="news-link__link">Украина: перманентный Майдан</a>
+							<div class="news-link__details">
+								<div class="date">05 февраля 2015</div>
+								<a href="#" class="author">Ростислав Ищенко</a>
+							</div>
+						</div>
+						<div class="news-link">
+							<a href="#" class="news-link__link">Парламентские выборы в Латвийской республике: мифология в условиях и одна историческая аналогия</a>
+							<div class="news-link__details">
+								<div class="date">05 февраля 2015</div>
+								<a href="#" class="author">Ростислав Ищенко</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="row">
+							<div class="col-xs-12">
+								<h4>НОВЫЕ КОММЕНТАРИИ</h4>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-6">
+								<div class="person">
+									<div class="person__img">
+										<img src="img/img2.jpg" alt="">
+									</div>
+									<div class="person__content">
+										<a href="#" class="person__name">Иван Тимофеев</a>
+										<p>Шесть вопросов к минским договоренностям</p>
+									</div>
+								</div>
+								<div class="person">
+									<div class="person__img">
+										<img src="img/img2.jpg" alt="">
+									</div>
+									<div class="person__content">
+										<a href="#" class="person__name">Иван Тимофеев</a>
+										<p>Шесть вопросов к минским договоренностям</p>
+									</div>
+								</div>
+								<div class="person">
+									<div class="person__img">
+										<img src="img/img2.jpg" alt="">
+									</div>
+									<div class="person__content">
+										<a href="#" class="person__name">Иван Тимофеев</a>
+										<p>Шесть вопросов к минским договоренностям</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-6">
+								<div class="person">
+									<div class="person__img">
+										<img src="img/img2.jpg" alt="">
+									</div>
+									<div class="person__content">
+										<a href="#" class="person__name">Иван Тимофеев</a>
+										<p>Шесть вопросов к минским договоренностям</p>
+									</div>
+								</div>
+								<div class="person">
+									<div class="person__img">
+										<img src="img/img2.jpg" alt="">
+									</div>
+									<div class="person__content">
+										<a href="#" class="person__name">Иван Тимофеев</a>
+										<p>Шесть вопросов к минским договоренностям</p>
+									</div>
+								</div>
+								<div class="person">
+									<div class="person__img">
+										<img src="img/img2.jpg" alt="">
+									</div>
+									<div class="person__content">
+										<a href="#" class="person__name">Иван Тимофеев</a>
+										<p>Шесть вопросов к минским договоренностям</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="publicatons" class="sub-menu js-submenu" style="display: none;">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-2">
+						<div class="submenu__nav">
+							<a href="#">Украинский кризис</a>
+							<a href="#">Безопасность</a>
+							<a href="#">Образование и наука</a>
+							<a href="#">Технологии</a>
+							<a href="#">Экология</a>
+							<a href="#">Экономика</a>
+							<a href="#">Энергетика</a>
+							<a href="#">Европа</a>
+							<a href="#">Общество и культура</a>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="row">
+							<div class="col-md-6">
+								<div href="#" class="img-link img-link_small" style="background-image: url(img/img1.jpg);">
+									<a href="#" class="img-link__link">На нервной почве вопросы безопасности не решаются</a>
+								</div>
+								<div href="#" class="img-link img-link_small" style="background-image: url(img/img1.jpg);">
+									<a href="#" class="img-link__link">На нервной почве вопросы безопасности не решаются</a>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div href="#" class="img-link img-link_small" style="background-image: url(img/img1.jpg);">
+									<a href="#" class="img-link__link">На нервной почве вопросы безопасности не решаются</a>
+								</div>
+								<div href="#" class="img-link img-link_small" style="background-image: url(img/img1.jpg);">
+									<a href="#" class="img-link__link">На нервной почве вопросы безопасности не решаются</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-2">
+						<div class="news-link">
+							<a href="#" class="news-link__link">Новый глобальный консенсус ответственных сил</a>
+							<div class="news-link__details">
+								<div class="date">05 февраля 2015</div>
+								<a href="#" class="author">Александр Аксененок</a>
+							</div>
+						</div>
+						<div class="news-link">
+							<a href="#" class="news-link__link">Украина: перманентный Майдан</a>
+							<div class="news-link__details">
+								<div class="date">05 февраля 2015</div>
+								<a href="#" class="author">Ростислав Ищенко</a>
+							</div>
+						</div>
+						<div class="news-link">
+							<a href="#" class="news-link__link">Парламентские выборы в Латвийской республике: мифология в условиях и одна историческая аналогия</a>
+							<div class="news-link__details">
+								<div class="date">05 февраля 2015</div>
+								<a href="#" class="author">Ростислав Ищенко</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="row">
+							<div class="col-xs-12">
+								<h4>НОВЫЕ КОММЕНТАРИИ</h4>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-6">
+								<div class="person">
+									<div class="person__img">
+										<img src="img/img2.jpg" alt="">
+									</div>
+									<div class="person__content">
+										<a href="#" class="person__name">Иван Тимофеев</a>
+										<p>Шесть вопросов к минским договоренностям</p>
+									</div>
+								</div>
+								<div class="person">
+									<div class="person__img">
+										<img src="img/img2.jpg" alt="">
+									</div>
+									<div class="person__content">
+										<a href="#" class="person__name">Иван Тимофеев</a>
+										<p>Шесть вопросов к минским договоренностям</p>
+									</div>
+								</div>
+								<div class="person">
+									<div class="person__img">
+										<img src="img/img2.jpg" alt="">
+									</div>
+									<div class="person__content">
+										<a href="#" class="person__name">Иван Тимофеев</a>
+										<p>Шесть вопросов к минским договоренностям</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-6">
+								<div class="person">
+									<div class="person__img">
+										<img src="img/img2.jpg" alt="">
+									</div>
+									<div class="person__content">
+										<a href="#" class="person__name">Иван Тимофеев</a>
+										<p>Шесть вопросов к минским договоренностям</p>
+									</div>
+								</div>
+								<div class="person">
+									<div class="person__img">
+										<img src="img/img2.jpg" alt="">
+									</div>
+									<div class="person__content">
+										<a href="#" class="person__name">Иван Тимофеев</a>
+										<p>Шесть вопросов к минским договоренностям</p>
+									</div>
+								</div>
+								<div class="person">
+									<div class="person__img">
+										<img src="img/img2.jpg" alt="">
+									</div>
+									<div class="person__content">
+										<a href="#" class="person__name">Иван Тимофеев</a>
+										<p>Шесть вопросов к минским договоренностям</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="library" class="sub-menu js-submenu" style="display: none;">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-2">
+						<div class="submenu__nav">
+							<a href="#">Украинский кризис</a>
+							<a href="#">Безопасность</a>
+							<a href="#">Образование и наука</a>
+							<a href="#">Технологии</a>
+							<a href="#">Экология</a>
+							<a href="#">Экономика</a>
+							<a href="#">Энергетика</a>
+							<a href="#">Европа</a>
+							<a href="#">Общество и культура</a>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="row">
+							<div class="col-md-6">
+								<div href="#" class="img-link img-link_small" style="background-image: url(img/img1.jpg);">
+									<a href="#" class="img-link__link">На нервной почве вопросы безопасности не решаются</a>
+								</div>
+								<div href="#" class="img-link img-link_small" style="background-image: url(img/img1.jpg);">
+									<a href="#" class="img-link__link">На нервной почве вопросы безопасности не решаются</a>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div href="#" class="img-link img-link_small" style="background-image: url(img/img1.jpg);">
+									<a href="#" class="img-link__link">На нервной почве вопросы безопасности не решаются</a>
+								</div>
+								<div href="#" class="img-link img-link_small" style="background-image: url(img/img1.jpg);">
+									<a href="#" class="img-link__link">На нервной почве вопросы безопасности не решаются</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-2">
+						<div class="news-link">
+							<a href="#" class="news-link__link">Новый глобальный консенсус ответственных сил</a>
+							<div class="news-link__details">
+								<div class="date">05 февраля 2015</div>
+								<a href="#" class="author">Александр Аксененок</a>
+							</div>
+						</div>
+						<div class="news-link">
+							<a href="#" class="news-link__link">Украина: перманентный Майдан</a>
+							<div class="news-link__details">
+								<div class="date">05 февраля 2015</div>
+								<a href="#" class="author">Ростислав Ищенко</a>
+							</div>
+						</div>
+						<div class="news-link">
+							<a href="#" class="news-link__link">Парламентские выборы в Латвийской республике: мифология в условиях и одна историческая аналогия</a>
+							<div class="news-link__details">
+								<div class="date">05 февраля 2015</div>
+								<a href="#" class="author">Ростислав Ищенко</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="row">
+							<div class="col-xs-12">
+								<h4>НОВЫЕ КОММЕНТАРИИ</h4>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-6">
+								<div class="person">
+									<div class="person__img">
+										<img src="img/img2.jpg" alt="">
+									</div>
+									<div class="person__content">
+										<a href="#" class="person__name">Иван Тимофеев</a>
+										<p>Шесть вопросов к минским договоренностям</p>
+									</div>
+								</div>
+								<div class="person">
+									<div class="person__img">
+										<img src="img/img2.jpg" alt="">
+									</div>
+									<div class="person__content">
+										<a href="#" class="person__name">Иван Тимофеев</a>
+										<p>Шесть вопросов к минским договоренностям</p>
+									</div>
+								</div>
+								<div class="person">
+									<div class="person__img">
+										<img src="img/img2.jpg" alt="">
+									</div>
+									<div class="person__content">
+										<a href="#" class="person__name">Иван Тимофеев</a>
+										<p>Шесть вопросов к минским договоренностям</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-6">
+								<div class="person">
+									<div class="person__img">
+										<img src="img/img2.jpg" alt="">
+									</div>
+									<div class="person__content">
+										<a href="#" class="person__name">Иван Тимофеев</a>
+										<p>Шесть вопросов к минским договоренностям</p>
+									</div>
+								</div>
+								<div class="person">
+									<div class="person__img">
+										<img src="img/img2.jpg" alt="">
+									</div>
+									<div class="person__content">
+										<a href="#" class="person__name">Иван Тимофеев</a>
+										<p>Шесть вопросов к минским договоренностям</p>
+									</div>
+								</div>
+								<div class="person">
+									<div class="person__img">
+										<img src="img/img2.jpg" alt="">
+									</div>
+									<div class="person__content">
+										<a href="#" class="person__name">Иван Тимофеев</a>
+										<p>Шесть вопросов к минским договоренностям</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="community" class="sub-menu js-submenu" style="display: none;">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-2">
+						<div class="submenu__nav">
+							<a href="#">Украинский кризис</a>
+							<a href="#">Безопасность</a>
+							<a href="#">Образование и наука</a>
+							<a href="#">Технологии</a>
+							<a href="#">Экология</a>
+							<a href="#">Экономика</a>
+							<a href="#">Энергетика</a>
+							<a href="#">Европа</a>
+							<a href="#">Общество и культура</a>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="row">
+							<div class="col-md-6">
+								<div href="#" class="img-link img-link_small" style="background-image: url(img/img1.jpg);">
+									<a href="#" class="img-link__link">На нервной почве вопросы безопасности не решаются</a>
+								</div>
+								<div href="#" class="img-link img-link_small" style="background-image: url(img/img1.jpg);">
+									<a href="#" class="img-link__link">На нервной почве вопросы безопасности не решаются</a>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div href="#" class="img-link img-link_small" style="background-image: url(img/img1.jpg);">
+									<a href="#" class="img-link__link">На нервной почве вопросы безопасности не решаются</a>
+								</div>
+								<div href="#" class="img-link img-link_small" style="background-image: url(img/img1.jpg);">
+									<a href="#" class="img-link__link">На нервной почве вопросы безопасности не решаются</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-2">
+						<div class="news-link">
+							<a href="#" class="news-link__link">Новый глобальный консенсус ответственных сил</a>
+							<div class="news-link__details">
+								<div class="date">05 февраля 2015</div>
+								<a href="#" class="author">Александр Аксененок</a>
+							</div>
+						</div>
+						<div class="news-link">
+							<a href="#" class="news-link__link">Украина: перманентный Майдан</a>
+							<div class="news-link__details">
+								<div class="date">05 февраля 2015</div>
+								<a href="#" class="author">Ростислав Ищенко</a>
+							</div>
+						</div>
+						<div class="news-link">
+							<a href="#" class="news-link__link">Парламентские выборы в Латвийской республике: мифология в условиях и одна историческая аналогия</a>
+							<div class="news-link__details">
+								<div class="date">05 февраля 2015</div>
+								<a href="#" class="author">Ростислав Ищенко</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
 						<div class="row">
 							<div class="col-xs-12">
 								<h4>НОВЫЕ КОММЕНТАРИИ</h4>

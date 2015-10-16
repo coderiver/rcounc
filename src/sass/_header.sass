@@ -9,13 +9,43 @@
 		float: left
 		width: 180px
 		margin-right: 18px
+		+r(991)
+			float: none
+			width: 100%
+			margin-right: 0
+		+r(767)
+			margin-bottom: 10px	 
 	.header__in
+		position: relative
 		overflow: hidden
 		padding-top: 30px
+		+r(991)
+			overflow: visible
+			padding-top: 0
 	.header__topper
 		+clr
-
+		+r(991)
+			position: absolute
+			top: -30px
+			right: 0
+		+r(767)
+			position: relative
+			top: auto
+			right: auto	
+			padding-bottom: 15px
+	.header__bottom
+		+r-min(768)
+			display: block!important
+		+r(767)
+			display: none
+			position: absolute
+			top: 36px
+			left: -10px
+			right: -10px
+			background: #e8eced
+			z-index: 99 
 .logo
+	position: relative
 	display: block
 	padding: 10px 
 	background: #fff  
@@ -23,6 +53,7 @@
 	&:hover
 		text-decoration: none
 	& > i
+		position: relative
 		display: inline-block
 		+sr(logo)
 	& > p
@@ -30,11 +61,35 @@
 		font-size: 11px
 		color: #000
 		line-height: 1
-		text-transform: uppercase 	
+		text-transform: uppercase
+	+r(991)
+		display: inline-block
+		background: none 
+		padding: 5px
+		&:before
+			content: ""
+			position: absolute
+			top: 0
+			left: 0
+			width: 60px
+			height: 40px
+			background: #FFF 
+			z-index: 0
+		& > i
+			+sr(logo-small)	
+		& > p
+			display: inline-block
+			vertical-align: top
+			max-width: 200px
+			padding-top: 4px 
+			padding-left: 20px 
+			color: #fff 	
+			font-size: 13px
+			font-weight: 500  	
 .top-nav
 	float: left
 	font-size: 0
-	+r(992)
+	+r(991)
 		display: none
 	a
 		display: inline-block
@@ -48,6 +103,8 @@
 .header__profile
 	float: right
 	font-size: 0
+	.hamb
+		margin-left: 45px
 .m-user
 	position: relative
 	display: inline-block
@@ -80,8 +137,9 @@
 	&:hover
 		text-decoration: none
 		color: #fff
-	+r(992)
+	+r(991)
 		padding-left: 0 
+		margin-left: 45px
 		+sr(user)
 		.m-user__img, span
 			display: none
@@ -103,17 +161,24 @@
 	&:hover
 		text-decoration: none
 		color: #fff
-	+r(992)
+	+r(991)
+		margin-right: 0
+		margin-left: 45px
 		span
 			display: none	
 .logout
 	display: inline-block
 	vertical-align: middle
+	+r(991)
+		display: none
 .header__tools
 	overflow: hidden
 	text-align: center
+	+r(767)
+		overflow: visible
+		float: right
 	.socials
-		+r(1200)
+		+r(1199)
 			display: none
 .lang, .search, .socials
 	display: inline-block
@@ -121,7 +186,7 @@
 .lang
 	font-size: 0
 	margin-right: 20px
-	+r(992)
+	+r(991)
 		display: none
 	a	
 		position: relative
@@ -150,6 +215,9 @@
 		+sr(search)
 .nav
 	padding-top: 25px
+	+r(991)
+		padding-top: 10px
+		padding-bottom: 5px
 .menu
 	+justify
 	.menu__item
@@ -166,9 +234,16 @@
 			text-decoration: none
 		&.is-active, &:hover
 			border-color: #fff
-		+r(1200)
+	+r(1199)
+		.menu__item
 			font-size: 18px
-			border-bottom-width: 3px 	
+			border-bottom-width: 3px
+	+r(767)
+		.menu__item
+			display: block
+			text-align: center
+			margin-bottom: 15px
+			color: #333 			
 .sub-menu
 	background: #e8eced 
 	padding: 35px 0 	

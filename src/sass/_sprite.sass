@@ -1,13 +1,14 @@
 $icons: (0:0)
-$icons: map-merge($icons,(book: (X: -138px, Y:-134px, W: 30px, H: 36px, TW: 246px, TH: 176px, IMG: '../img/icons.png')))
-$icons: map-merge($icons,(exit: (X: -214px, Y:-36px, W: 30px, H: 30px, TW: 246px, TH: 176px, IMG: '../img/icons.png')))
-$icons: map-merge($icons,(fb: (X: 0px, Y:-134px, W: 42px, H: 42px, TW: 246px, TH: 176px, IMG: '../img/icons.png')))
-$icons: map-merge($icons,(file: (X: -214px, Y:-70px, W: 20px, H: 22px, TW: 246px, TH: 176px, IMG: '../img/icons.png')))
-$icons: map-merge($icons,(logo: (X: 0px, Y:0px, W: 210px, H: 130px, TW: 246px, TH: 176px, IMG: '../img/icons.png')))
-$icons: map-merge($icons,(search: (X: -172px, Y:-134px, W: 32px, H: 32px, TW: 246px, TH: 176px, IMG: '../img/icons.png')))
-$icons: map-merge($icons,(tw: (X: -46px, Y:-134px, W: 42px, H: 42px, TW: 246px, TH: 176px, IMG: '../img/icons.png')))
-$icons: map-merge($icons,(user: (X: -214px, Y:0px, W: 32px, H: 32px, TW: 246px, TH: 176px, IMG: '../img/icons.png')))
-$icons: map-merge($icons,(vk: (X: -92px, Y:-134px, W: 42px, H: 42px, TW: 246px, TH: 176px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,(book: (X: -214px, Y:-46px, W: 30px, H: 36px, TW: 256px, TH: 190px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,(exit: (X: -214px, Y:-158px, W: 30px, H: 30px, TW: 256px, TH: 190px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,(fb: (X: -96px, Y:-134px, W: 42px, H: 42px, TW: 256px, TH: 190px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,(file: (X: -188px, Y:-134px, W: 20px, H: 22px, TW: 256px, TH: 190px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,(logo-small: (X: 0px, Y:-134px, W: 92px, H: 56px, TW: 256px, TH: 190px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,(logo: (X: 0px, Y:0px, W: 210px, H: 130px, TW: 256px, TH: 190px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,(search: (X: -214px, Y:-86px, W: 32px, H: 32px, TW: 256px, TH: 190px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,(tw: (X: -142px, Y:-134px, W: 42px, H: 42px, TW: 256px, TH: 190px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,(user: (X: -214px, Y:-122px, W: 32px, H: 32px, TW: 256px, TH: 190px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,(vk: (X: -214px, Y:0px, W: 42px, H: 42px, TW: 256px, TH: 190px, IMG: '../img/icons.png')))
 
 
 // Gets an attribute from the sass map
@@ -46,64 +47,71 @@ $icons: map-merge($icons,(vk: (X: -92px, Y:-134px, W: 42px, H: 42px, TW: 246px, 
 	width: ceil(30px / 2)
 	height: ceil(36px /2)
 	background-image: url('../img/icons.png')
-	background-position: ceil(-138px /2) ceil(-134px / 2)
-	background-size: ceil(246px / 2) ceil(176px / 2)
+	background-position: ceil(-214px /2) ceil(-46px / 2)
+	background-size: ceil(256px / 2) ceil(190px / 2)
 .i-exit
 	display: inline-block
 	width: ceil(30px / 2)
 	height: ceil(30px /2)
 	background-image: url('../img/icons.png')
-	background-position: ceil(-214px /2) ceil(-36px / 2)
-	background-size: ceil(246px / 2) ceil(176px / 2)
+	background-position: ceil(-214px /2) ceil(-158px / 2)
+	background-size: ceil(256px / 2) ceil(190px / 2)
 .i-fb
 	display: inline-block
 	width: ceil(42px / 2)
 	height: ceil(42px /2)
 	background-image: url('../img/icons.png')
-	background-position: ceil(0px /2) ceil(-134px / 2)
-	background-size: ceil(246px / 2) ceil(176px / 2)
+	background-position: ceil(-96px /2) ceil(-134px / 2)
+	background-size: ceil(256px / 2) ceil(190px / 2)
 .i-file
 	display: inline-block
 	width: ceil(20px / 2)
 	height: ceil(22px /2)
 	background-image: url('../img/icons.png')
-	background-position: ceil(-214px /2) ceil(-70px / 2)
-	background-size: ceil(246px / 2) ceil(176px / 2)
+	background-position: ceil(-188px /2) ceil(-134px / 2)
+	background-size: ceil(256px / 2) ceil(190px / 2)
+.i-logo-small
+	display: inline-block
+	width: ceil(92px / 2)
+	height: ceil(56px /2)
+	background-image: url('../img/icons.png')
+	background-position: ceil(0px /2) ceil(-134px / 2)
+	background-size: ceil(256px / 2) ceil(190px / 2)
 .i-logo
 	display: inline-block
 	width: ceil(210px / 2)
 	height: ceil(130px /2)
 	background-image: url('../img/icons.png')
 	background-position: ceil(0px /2) ceil(0px / 2)
-	background-size: ceil(246px / 2) ceil(176px / 2)
+	background-size: ceil(256px / 2) ceil(190px / 2)
 .i-search
 	display: inline-block
 	width: ceil(32px / 2)
 	height: ceil(32px /2)
 	background-image: url('../img/icons.png')
-	background-position: ceil(-172px /2) ceil(-134px / 2)
-	background-size: ceil(246px / 2) ceil(176px / 2)
+	background-position: ceil(-214px /2) ceil(-86px / 2)
+	background-size: ceil(256px / 2) ceil(190px / 2)
 .i-tw
 	display: inline-block
 	width: ceil(42px / 2)
 	height: ceil(42px /2)
 	background-image: url('../img/icons.png')
-	background-position: ceil(-46px /2) ceil(-134px / 2)
-	background-size: ceil(246px / 2) ceil(176px / 2)
+	background-position: ceil(-142px /2) ceil(-134px / 2)
+	background-size: ceil(256px / 2) ceil(190px / 2)
 .i-user
 	display: inline-block
 	width: ceil(32px / 2)
 	height: ceil(32px /2)
 	background-image: url('../img/icons.png')
-	background-position: ceil(-214px /2) ceil(0px / 2)
-	background-size: ceil(246px / 2) ceil(176px / 2)
+	background-position: ceil(-214px /2) ceil(-122px / 2)
+	background-size: ceil(256px / 2) ceil(190px / 2)
 .i-vk
 	display: inline-block
 	width: ceil(42px / 2)
 	height: ceil(42px /2)
 	background-image: url('../img/icons.png')
-	background-position: ceil(-92px /2) ceil(-134px / 2)
-	background-size: ceil(246px / 2) ceil(176px / 2)
+	background-position: ceil(-214px /2) ceil(0px / 2)
+	background-size: ceil(256px / 2) ceil(190px / 2)
 
 
 
