@@ -314,15 +314,23 @@
 		margin-top: 0	
 	&:hover
 		&:before, .img-link__top
-			opacity: 1 	 			
+			opacity: 1 	
+	&.slick-slide
+		margin-bottom: 0		 			
 	&.img-link_small
 		width: 192px
 		height: 192px
 		.img-link__link
 			font-size: 15px
+		&:hover
+			&:before, .img-link__top
+				opacity: 0	
 	&.img-link_wide
 		.img-link__link
 			font-size: 35px
+		&:hover
+			&:before, .img-link__top
+				opacity: 0	
 .stats
 	margin-bottom: 20px
 	.stats__comments

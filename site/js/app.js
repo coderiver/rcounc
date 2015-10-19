@@ -128,5 +128,19 @@ $(document).ready(function() {
 		$('.js-mobnav').slideToggle();
 	});
 
+	// slider init
+
+	$('.js-slider').slick({
+		arrows: false,
+		dots: true
+	});	
+
+
+
+
+
+
+
+
 
 });
