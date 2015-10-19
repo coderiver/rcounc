@@ -107,28 +107,28 @@
 	text-align: center
 	position: absolute
 	margin: 0
-	bottom: 0
-	left: 0
-	right: 0
+	bottom: 19px
+	right: 19px
 	li
 		position: relative
 		display: inline-block
 		padding: 0 3px
 		&.slick-active
 			button
-				opacity: 0.3
+				opacity: 1
 				box-shadow: none
 		&:before
 			display: none
 
 	button
 		display: block
-		width: 6px
-		height: 6px
+		width: 14px
+		height: 14px
 		background: #fff
-		+box-shadow(0 1px 5px rgba(0,0,0,.25))
 		cursor: pointer
 		+hide-text
 		border-radius: 50%
+		opacity: 0.5 
+		transition: opacity 200ms
 		&:hover
 			box-shadow: none
