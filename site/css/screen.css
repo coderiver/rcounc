@@ -261,6 +261,8 @@ select.form-control { -webkit-appearance: inherit; -moz-appearance: inherit; app
 .sub-menu .submenu__nav a { display: block; margin-bottom: 15px; font-size: 18px; font-weight: 500; color: #333; text-decoration: none; }
 .sub-menu .submenu__nav a:hover { text-decoration: underline; }
 
+.top-news { margin-bottom: 20px; }
+
 .tag { display: inline-block; padding: 5px 8px 4px; background: #0063a7; font-size: 13px; color: #fff; text-transform: uppercase; }
 .tag:hover { color: #fff; text-decoration: none; }
 
@@ -286,7 +288,8 @@ select.form-control { -webkit-appearance: inherit; -moz-appearance: inherit; app
 .stats .date { float: right; padding-right: 20px; }
 
 .preview > p { margin-bottom: 20px; }
-.preview .preview__btn { background: #fff; height: 30px; padding: 0 9px; font-size: 15px; color: #0063a7; }
+.preview .preview__btn { display: inline-block; background: #fff; height: 30px; line-height: 30px; padding: 0 9px; font-size: 15px; color: #0063a7; }
+.preview .preview__btn:hover { text-decoration: none; }
 
 .news-link { margin-top: 25px; color: #333; }
 .news-link:first-child { margin-top: 0; }
