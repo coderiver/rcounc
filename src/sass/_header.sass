@@ -301,13 +301,19 @@
 		font-size: 25px
 		font-weight: 500
 		&:hover
-			text-decoration: none
+			text-decoration: none	
 	.img-link__author
 		color: #fff 
+	.img-link__top	
+		position: relative
+		color: #fff
+		z-index: 9
+		opacity: 0
+		transition: opacity 300ms  	
 	&:first-child
 		margin-top: 0	
 	&:hover
-		&:before
+		&:before, .img-link__top
 			opacity: 1 	 			
 	&.img-link_small
 		width: 192px
@@ -316,7 +322,26 @@
 			font-size: 15px
 	&.img-link_wide
 		.img-link__link
-			font-size: 35px 	 	
+			font-size: 35px
+.stats
+	margin-bottom: 20px
+	.stats__comments
+		float: left
+		margin-right: 14px
+	.stats__views
+		float: left
+	.date
+		float: right
+		padding-right: 20px	
+.preview
+	& > p
+		margin-bottom: 20px 
+	.preview__btn
+		background: #fff
+		height: 30px 
+		padding: 0 9px
+		font-size: 15px
+		color: #0063a7   			 			 	 	
 .news-link
 	margin-top: 25px
 	color: #333 
