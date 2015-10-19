@@ -291,6 +291,13 @@ select.form-control { -webkit-appearance: inherit; -moz-appearance: inherit; app
 .poll .poll__text p { font-weight: 700; }
 .poll .poll__item input[type="radio"] { margin-top: 0; }
 
+.box { height: 380px; background: #F5F5F5; padding: 20px; }
+
+.img-link_short { height: 180px; }
+.img-link_short .img-link__link { font-size: 21px; }
+
+.cat-link h2 { color: #0063A7; }
+
 
 
 /*# sourceMappingURL=screen.css.map */
