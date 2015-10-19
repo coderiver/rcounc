@@ -110,7 +110,34 @@
 		
 .cat-link
 	h2
-		color: #0063A7 
+		color: #0063A7
+		
+.tabs
+	overflow: hidden  
+	+justify
+.tabs__item
+	float: left 
+	background: #FFF 
+	border-bottom: 1px solid #4A4A4A 
+	cursor: pointer
+	margin-bottom: -1px
+	&.is-active
+		border: 1px solid #4A4A4A 
+		border-bottom: none
+		.tabs__link
+			font-weight: 700 
+        
+.tabs__link
+	display: block  
+	padding: 20px 25px
+	text-transform: uppercase
+	color: #4A4A4A   
+	font-size: 15px
+	cursor: pointer
+.tabs-content
+	display: none
+	padding: 20px
+	border: 1px solid #4A4A4A 
 
 
 
