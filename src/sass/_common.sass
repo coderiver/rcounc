@@ -20,6 +20,52 @@ body
 
 // common blocks
 
+// additional grid-class for 1600+ screen width
+.col-w-1, .col-w-2, .col-w-3, .col-w-4, .col-w-5, .col-w-6,
+.col-w-7, .col-w-8, .col-w-9, .col-w-10, .col-w-11, .col-w-12
+	position: relative
+	min-height: 1px
+	padding: 0 10px 
+.col-w-1
+	@media (min-width: 1620px)
+		width: 8.33333333%	
+.col-w-2
+	@media (min-width: 1620px)
+		width: 16.6666667%	
+.col-w-3
+	@media (min-width: 1620px)
+		width: 25% 	
+.col-w-4
+	@media (min-width: 1620px)
+		width: 33.3333333% 
+.col-w-5
+	@media (min-width: 1620px)
+		width: 41.6666667% 		
+.col-w-6
+	@media (min-width: 1620px)
+		width: 50%
+.col-w-7
+	@media (min-width: 1620px)
+		width: 58.3333333%				
+.col-w-8
+	@media (min-width: 1620px)
+		width: 66.6666667%
+.col-w-9
+	@media (min-width: 1620px)
+		width: 75%
+.col-w-10
+	@media (min-width: 1620px)
+		width: 83.3333333%
+.col-w-11
+	@media (min-width: 1620px)
+		width: 91.6666667%	
+.col-w-12
+	@media (min-width: 1620px)
+		width: 100%										
+.visible-w
+	display: none
+	@media (min-width: 1620px)
+		display: block
 .container
 	@media (min-width: 1620px)
 		width: 1600px
@@ -171,9 +217,7 @@ select.form-control
 .nav-tabs>li.active>a:focus
 	color: #fff
 	border: none
-	background: #747c89  
-		
-
+	background: #747c89
 
 
 

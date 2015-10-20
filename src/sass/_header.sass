@@ -329,9 +329,10 @@
 	&.img-link_wide
 		.img-link__link
 			font-size: 35px
-		&:hover
-			&:before, .img-link__top
-				opacity: 0	
+	&.img-link_high
+		height: 380px 
+		+r-min(1620)
+			height: 520px 				
 .stats
 	margin-bottom: 20px
 	.stats__comments
@@ -342,6 +343,18 @@
 	.date
 		float: right
 		padding-right: 20px	
+.i-view
+	position: relative
+	top: -2px
+	display: inline-block
+	vertical-align: middle
+	margin-right: 6px 
+	+sr(view)
+.i-comment
+	display: inline-block
+	vertical-align: middle
+	margin-right: 6px 
+	+sr(comment)			
 .preview
 	& > p
 		margin-bottom: 20px 
@@ -377,6 +390,18 @@
 	display: inline-block
 	vertical-align: middle
 	font-size: 15px 
+.person-wrap
+	height: 180px
+	background: #F5F5F5
+	padding: 20px
+	+vertical
+	margin-top: 20px
+	&:first-child
+		margin-top: 0
+	.person
+		display: inline-block
+		vertical-align: middle
+		text-align: left	
 .person
 	position: relative
 	margin-top: 25px
@@ -400,7 +425,83 @@
 	.person__name
 		display: block
 		margin-bottom: 5px
-					
+		font-size: 14px
+.author
+	font-size: 15px					
+.media-news
+	margin-bottom: 20px
+.video
+	position: relative
+	height: 380px
+	margin-bottom: 20px
+	background: #0063a7
+	color: #fff  
+	.video__canvas
+		position: relative
+		height: 260px
+	.video__info
+		padding: 9px 9px 9px 18px
+		.author
+			color: #fff  
+	.video__more
+		color: #fff
+		font-weight: 500
+		font-size: 21px  
+.story
+	height: 780px
+	margin-bottom: 20px
+	background: #0063a7 	
+	.story__in
+		padding: 25px 20px
+		margin-left: -3%  
+		font-size: 0
+		.news-link
+			display: inline-block
+			vertical-align: top
+			width: 30%
+			margin-left: 3%
+			margin-top: 0
+			margin-bottom: 20px
+			color: #fff
+			.news-link__link
+				color: #fff
+			.author
+				color: #fff 	
+		+r(1619)
+			.news-link
+				width: 47% 		 
+.link
+	+clr
+	margin-bottom: 20px
+	.link__img
+		float: left
+		width: 140px
+		height: 140px
+		margin-right: 20px
+		font-size: 0
+		overflow: hidden 
+		img
+			width: 100%
+	.link__info
+		overflow: hidden
+		.link__link
+			font-weight: 500
+			color: #333
+			font-size: 21px
+		.date
+			display: block
+			color: #999
+			 	  		 
+			 
+
+
+
+
+
+
+
+
+
 
 
 

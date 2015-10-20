@@ -49,42 +49,36 @@
 			display: inline-block
 			vertical-align: middle
 			margin-bottom: 0
-		.form-group
-			display: inline-block
-			vertical-align: middle
-			margin-bottom: 0
-			.form-control
-				width: 380px
-				height: 40px
-				margin: 0 20px
-			.btn
-				height: 40px
-			.btn-sm
-				margin-left: 20px
-	+r(1219)
-		.follow__wrap
-			.form-group
-				.form-control
-					width: 100% 
-	+r(991)
-		.follow__wrap
-			.form-group
-				.btn
-					margin-top: 10px
 	+r(767)
 		.follow__wrap
 			h4
 				display: block
-			.form-group
-				display: block
-				margin: 10px
-				.form-control
-					margin: 0
-				.btn
-					width: 100% 
-				.btn-sm
-					margin: 0 
-					
+.form-group
+	display: inline-block
+	vertical-align: middle
+	margin-bottom: 0
+	.form-control
+		width: 380px
+		height: 40px
+		margin: 0 20px
+	.btn
+		height: 40px
+		margin-bottom: 5px
+	+r(1219)
+		.form-control
+			width: 100% 
+	+r(991)
+		.btn
+			margin-top: 10px
+	+r(767)
+		display: block
+		margin: 10px
+		.form-control
+			margin: 0
+		.btn
+			width: 100% 
+		.btn-sm
+			margin: 0 						
 .poll
 	margin-bottom: 50px
 	p
@@ -94,13 +88,13 @@
 			font-weight: 700
 	.poll__item
 		input[type="radio"]
-			margin-top: 0
-			
+			margin-top: 0	
 
 .box
+	position: relative
 	height: 380px
 	background: #F5F5F5
-	padding: 20px 
+	padding: 20px
 	
 
 .img-link_short
@@ -109,6 +103,7 @@
 		font-size: 21px
 		
 .cat-link
+	display: inline-block
 	h2
 		color: #0063A7
 		
