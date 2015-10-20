@@ -12,7 +12,6 @@
 	<!-- <meta name="viewport" content="initial-scale=1, user-scalable=no"> -->
 	<link href='https://fonts.googleapis.com/css?family=Fira+Sans:400,300,500,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" media="all" href="css/bootstrap.min.css" >
-	<link rel="stylesheet" media="all" href="css/styles.css" >
 	<link rel="stylesheet" media="all" href="css/screen.css" >
 	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
 	<script src="js/app.js"></script>
@@ -1592,6 +1591,13 @@
 				</div>
 			</div>
 		</section>
+		<section class="media-news">
+			<div class="row">
+				<div class="col-lg-3">
+					<div class="box box_small"></div>
+				</div>
+			</div>
+		</section>
 		<section class="poll hidden-xs">
 			<div class="row">
 				<div class="col-md-12">
@@ -1760,7 +1766,32 @@
 					</div>
 				</div>
 				<div class="col-lg-3 col-md-4 visible-lg visible-md">
-					<img src="img/fb-banner.png" alt="">
+					<!-- BEGIN tabs list -->
+					<div class="tabs js-tabs-simple">
+					    <span class="tabs__item">
+					    	<p class="tabs__link">Facebook</p>
+					    </span>
+					    <span class="tabs__item">
+					    	<p class="tabs__link">Вконтакте</p>
+					    </span>
+					    <span class="tabs__item">
+					    	<p class="tabs__link">ТВИТТЕР</p>
+					    </span>
+					</div>
+					<!-- END tabs list -->
+					<div>
+						<!-- BEGIN tabs content -->
+						<div class="tabs-content js-tabs-simple-content">
+						    <img src="img/soc-img.png" alt="">
+						</div>
+					    <div class="tabs-content js-tabs-simple-content">
+					      	<img src="img/soc-img.png" alt="">
+					    </div>
+					    <div class="tabs-content js-tabs-simple-content">
+					     	<img src="img/soc-img.png" alt="">
+					    </div>
+						<!-- END tabs content -->
+					</div>
 				</div>
 			</div>
 		</section>
