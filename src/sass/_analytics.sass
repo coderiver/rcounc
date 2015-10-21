@@ -39,6 +39,9 @@
 		
 .banners
 	margin: 50px 0
+.banner
+	img
+		max-width: 100%	
 	
 .follow
 	.follow__wrap
@@ -57,6 +60,7 @@
 	display: inline-block
 	vertical-align: middle
 	margin-bottom: 0
+	max-width: 100%
 	.form-control
 		width: 380px
 		height: 40px
@@ -87,21 +91,38 @@
 		p
 			font-weight: 700
 	.poll__item
+		padding-left: 20px
 		input[type="radio"]
-			margin-top: 0	
+			margin-top: 0
+	.poll__btns
+		.form-group
+			width: 100% 
+		.btn
+			width: 100%
+			max-width: 230px
+			padding: 8px 0
+			text-align: center  			
 
 .box
 	position: relative
 	height: 380px
 	background: #F5F5F5
 	padding: 20px
+	margin-bottom: 20px
+	+r(992)
+		height: auto
 	
 
 .img-link_short
 	height: 180px
 	.img-link__link
 		font-size: 21px
-		
+	+r(992)		
+		.img-link__link
+			font-size: 18px
+	+r(768)		
+		.img-link__link
+			font-size: 15px			
 .cat-link
 	display: inline-block
 	h2

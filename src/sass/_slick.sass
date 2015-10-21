@@ -119,7 +119,6 @@
 				box-shadow: none
 		&:before
 			display: none
-
 	button
 		display: block
 		width: 14px
@@ -132,3 +131,18 @@
 		transition: opacity 200ms
 		&:hover
 			box-shadow: none
+	+r(768)
+		bottom: -40px
+		right: 0
+		left: 0
+		text-align: center
+		li
+			&.slick-active
+				button
+					background: #0e75bd 
+		button
+			background: #080808
+			opacity: 1  		
+
+
+

@@ -1,7 +1,10 @@
 // header
 .header
-	position: relative
-	margin-bottom: 20px
+	position: fixed
+	top: 0
+	left: 0
+	right: 0
+	z-index: 99
 	.header__content
 		position: relative
 		background: #0063a7
@@ -178,7 +181,7 @@
 		overflow: visible
 		float: right
 	.socials
-		+r(1199)
+		+r(1219)
 			display: none
 .lang, .search, .socials
 	display: inline-block
@@ -234,7 +237,7 @@
 			text-decoration: none
 		&.is-active, &:hover
 			border-color: #fff
-	+r(1199)
+	+r(1219)
 		.menu__item
 			font-size: 18px
 			border-bottom-width: 3px
@@ -243,7 +246,8 @@
 			display: block
 			text-align: center
 			margin-bottom: 15px
-			color: #333 			
+			color: #333
+			border-bottom: none  			
 .sub-menu
 	background: #e8eced 
 	padding: 35px 0 	
@@ -258,6 +262,8 @@
 			text-decoration: none
 			&:hover
 				text-decoration: underline
+		+r(991)
+			text-align: center		
 .top-news
 	margin-bottom: 20px
 .tag
@@ -276,7 +282,6 @@
 	height: 380px 
 	+cover
 	margin-bottom: 20px
-	padding: 10px
 	&:before
 		content: ""
 		position: absolute
@@ -295,6 +300,9 @@
 		right: 0
 		padding: 18px
 		+g(rgba(#000, 0), rgba(#000, 1))
+		+r(992)
+			background: rgba(#000, 0.8)
+			padding: 7px 12px
 	.img-link__link
 		display: inline-block
 		margin: 5px 0 
@@ -302,25 +310,47 @@
 		font-size: 25px
 		font-weight: 500
 		&:hover
-			text-decoration: none	
+			text-decoration: none
+		+r(1220)
+			font-size: 22px
+		+r(992)
+			font-size: 20px
+		+r(768)
+			font-size: 15px 	
 	.img-link__author
 		color: #fff 
+		+r(768)
+			font-size: 12px
 	.img-link__top	
 		position: relative
 		color: #fff
+		padding: 5px 
 		z-index: 9
 		opacity: 0
-		transition: opacity 300ms  	
+		padding: 10px 
+		transition: opacity 300ms
+		+r(992)
+			opacity: 1
+			background: rgba(#000, 0.8)    	
 	&:first-child
 		margin-top: 0	
 	&:hover
-		&:before, .img-link__top
+		&:before, 
+			opacity: 1
+			+r(992)	
+				opacity: 0 
+		.img-link__top
 			opacity: 1 	
+	+r(768)
+		height: 300px 	 	
 	&.slick-slide
 		margin-bottom: 0		 			
 	&.img-link_small
 		width: 192px
 		height: 192px
+		+r(1619)
+			width: 180px
+			height: 180px
 		.img-link__link
 			font-size: 15px
 		&:hover
@@ -329,12 +359,20 @@
 	&.img-link_wide
 		.img-link__link
 			font-size: 35px
+			+r(1220)
+				font-size: 22px
+			+r(992)
+				font-size: 20px
+			+r(768)
+				font-size: 15px 
 	&.img-link_high
 		height: 380px 
 		+r-min(1620)
 			height: 520px 				
 .stats
 	margin-bottom: 20px
+	+r(992)
+		margin-bottom: 0
 	.stats__comments
 		float: left
 		margin-right: 14px
@@ -367,7 +405,9 @@
 		font-size: 15px
 		color: #0063a7
 		&:hover
-			text-decoration: none   			 			 	 	
+			text-decoration: none
+	+r(992)
+		display: none		  			 			 	 	
 .news-link
 	margin-top: 25px
 	color: #333 
@@ -389,19 +429,23 @@
 	position: relative
 	display: inline-block
 	vertical-align: middle
-	font-size: 15px 
+	font-size: 15px
+	+r(768)
+		font-size: 12px 
 .person-wrap
 	height: 180px
 	background: #F5F5F5
 	padding: 20px
 	+vertical
-	margin-top: 20px
-	&:first-child
-		margin-top: 0
+	margin-bottom: 20px
 	.person
 		display: inline-block
 		vertical-align: middle
-		text-align: left	
+		text-align: left
+	+r(1220)
+		padding: 10px	
+	+r(768)
+		height: 140px 	 		
 .person
 	position: relative
 	margin-top: 25px
@@ -427,7 +471,11 @@
 		margin-bottom: 5px
 		font-size: 14px
 .author
-	font-size: 15px					
+	display: inline-block
+	vertical-align: middle
+	font-size: 15px
+	+r(768)
+		font-size: 12px					
 .media-news
 	margin-bottom: 20px
 .video
@@ -467,9 +515,27 @@
 				color: #fff
 			.author
 				color: #fff 	
-		+r(1619)
+	+r(1619)
+		.story__in
 			.news-link
-				width: 47% 		 
+				width: 47%
+	+r(768)
+		background: none
+		height: auto
+		.story__in
+			padding: 0 
+			margin-left: 0
+			.news-link
+				width: 100%
+				margin-left: 0 
+				color: #333
+				.news-link__link
+					color: #333
+				.author
+					color: #0063a7 			 
+.slider
+	+r(768)
+		margin-bottom: 50px						 
 .link
 	+clr
 	margin-bottom: 20px
@@ -528,8 +594,33 @@
 		border-bottom: 1px dotted
 		cursor: pointer
 .important
-	padding: 0 9px 15px 		 
+	padding: 0 9px 15px
+	@media (min-width: 1620px)
+		display: block!important
+	.important__new
+		border-top: 1px solid #fff 
+		padding: 15px 10px 0
+		font-size: 0
+		h4, a
+			display: inline-block
+			vertical-align: middle
+		h4
+			font-size: 22px
+			margin-right: 10px
+			color: #333 
+			text-transform: uppercase
+		a
+			display: inline-block
+			margin: 0 5px
+			text-align: center
+			font-size: 13px
+			font-weight: bold
+			&:hover
+				text-decoration: none
+			p
+				font-size: 26px 		 		 
 .charts
+	margin-bottom: 15px
 	.charts__item
 		+clr
 		margin-bottom: 5px
@@ -583,9 +674,37 @@
 		.i-view
 			margin-right: 3px 
 			transform: scale(0.7)
-			 
+.calendar
+	position: absolute
+	top: 0
+	left: 410px
+	width: 380px
+	height: 380px
+	padding: 13px 19px 19px 
+	z-index: 2
+	@media (min-width: 1620px)
+		display: block!important
+	h4
+		margin-bottom: 35px 
+		font-size: 22px
+		text-transform: uppercase
+		color: #333
+	.hasDatepicker
+		width: 100% 
+	+r(1619)
+		position: relative
+		top: auto
+		left: auto
+		display: none
+		h4
+			display: none		 			 
 
-
+.side
+	position: fixed
+	top: 385px
+	left: -253px
+	z-index: 98
+	transform: rotate(-90deg)
 
 
 
