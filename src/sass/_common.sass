@@ -17,9 +17,14 @@ body
 .out
 	min-height: 100%
 	height: auto
-	padding-top: 132px
+	padding-top: 112px
+	&.out_index
+		padding-top: 132px 
 	+r(991)
-		padding-top: 99px
+		padding-top: 79px
+		&.out_index
+			padding-top: 99px
+		
 		
 .main
 	position: relative
@@ -27,7 +32,9 @@ body
 	.main__right
 		position: absolute
 		top: 0
-		right: 0		 
+		right: 0
+		+r(991)
+			display: none		 
 
 // common blocks
 
@@ -212,7 +219,11 @@ select.form-control
 	&.btn_gray
 		background: #acacac
 		&:hover
-			background: #BFBEBE 			
+			background: #BFBEBE 
+	&.btn_blue
+		background: #0c91ed
+		&:hover
+			background: #40ABF5				
 .btn-lg, .btn-group-lg>.btn
 	width: 100% 
 	padding: 10px 
@@ -220,14 +231,15 @@ select.form-control
 .btn-red
 	background: #c84410
 	&:hover
-		background: #e84f13
+		background: #e84f13	
 .btn-sm, .btn-group-sm>.btn
 	padding: 2px 20px
 	font-size: 15px
-	background: transparent
+	background: #fff
 	color: #0063a7
 	&:hover
 		background: #1a83cd
+		text-decoration: none
 		color: #fff  			
 // tables
 .table>tbody>tr:first-child> td

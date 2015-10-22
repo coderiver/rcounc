@@ -111,8 +111,25 @@ $(document).ready(function() {
 		var size = (width - container)/2;	
 		$('.js-banner-right').css('width', size);
 	};
-	bannerArea();
+	if ($('.js-banner-right').length) {
+		bannerArea();
+	};
 
+	// side menu toggle
+
+	$(document).on('click', function() {
+		$('.js-side-wrap').removeClass('is-visible');
+	});
+
+	$('.js-side').on('click', function(event) {
+		if ($(this).hasClass('is-visible')) {
+			$(this).closest('.js-side-wrap').removeClass('is-visible');
+		}
+		else {
+			$(this).closest('.js-side-wrap').addClass('is-visible');
+		}
+		event.stopPropagation();
+	});
 
 
 	$(window).resize(function() {

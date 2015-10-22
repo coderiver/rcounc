@@ -8,6 +8,8 @@
 	.header__content
 		position: relative
 		background: #0063a7
+		+r(991)
+			padding-right: 10px
 	.header__logo
 		float: left
 		width: 180px
@@ -534,6 +536,7 @@
 				.author
 					color: #0063a7 			 
 .slider
+	margin-bottom: 20px
 	+r(768)
 		margin-bottom: 50px						 
 .link
@@ -701,11 +704,56 @@
 
 .side
 	position: fixed
-	top: 385px
-	left: -253px
+	top: 345px
+	left: -216px
 	z-index: 98
 	transform: rotate(-90deg)
-
+	transition: transform 200ms
+	.side__item
+		display: inline-block
+		vertical-align: middle
+		margin: 0 3px 
+	.side__btn
+		position: absolute
+		top: 0
+		bottom: 0
+		left: 0
+		width: 10px
+		z-index: 2
+		display: none
+	.btn
+		padding: 8px 22px
+		text-transform: uppercase 		
+	+r(1219)
+		top: 351px
+		left: -222px
+		.btn
+			padding: 3px 22px 2px
+	+r(991)
+		right: 0
+		top: 0
+		left: auto
+		width: 150px
+		z-index: 100
+		transform: translateX(140px) rotate(0)
+		&.is-visible
+			transform: translateX(0) rotate(0) 
+		.side__btn
+			display: block	
+		.side__item
+			display: block
+			margin: 0
+			.btn
+				width: 100% 
+				padding: 3px 25px 2px
+				font-size: 15px
+				text-align: left
+				&.btn_red
+					padding: 3px 25px 3px 
+	+r(767)
+		.side__item
+			.btn
+				padding: 5px 25px			 
 
 
 
