@@ -108,7 +108,7 @@ button { border: none; background: none; }
 
 .title { margin: 20px 0 10px; font-size: 24px; color: #000; }
 
-ul { margin: 0; padding: 0 0 0 18px; color: #428bca; }
+ul { margin: 0; padding: 0 0 0 18px; }
 ul li { margin-bottom: 7px; }
 ul a { color: #428bca; }
 ul ul { list-style-type: none; padding: 5px 0 0 25px; }
@@ -474,12 +474,12 @@ select.form-control { -webkit-appearance: inherit; -moz-appearance: inherit; app
 @media only screen and (max-width: 1619px) { .calendar { position: relative; top: auto; left: auto; display: none; }
   .calendar h4 { display: none; } }
 
-.side { position: fixed; top: 345px; left: -216px; z-index: 98; -webkit-transform: rotate(-90deg); -ms-transform: rotate(-90deg); transform: rotate(-90deg); transition: -webkit-transform 200ms; transition: transform 200ms; }
+.side { position: fixed; top: 420px; left: -216px; z-index: 98; -webkit-transform: rotate(-90deg); -ms-transform: rotate(-90deg); transform: rotate(-90deg); transition: -webkit-transform 200ms; transition: transform 200ms; }
 .side .side__item { display: inline-block; vertical-align: middle; margin: 0 3px; }
 .side .side__btn { position: absolute; top: 0; bottom: 0; left: 0; width: 10px; z-index: 2; display: none; }
 .side .btn { padding: 8px 22px; text-transform: uppercase; }
-@media only screen and (max-width: 1219px) { .side { top: 351px; left: -222px; }
-  .side .btn { padding: 3px 22px 2px; } }
+@media only screen and (max-width: 1619px) { .side { top: 380px; left: -197px; }
+  .side .btn { padding: 3px 22px 2px; font-size: 15px; } }
 @media only screen and (max-width: 991px) { .side { right: 0; top: 0; left: auto; width: 150px; z-index: 100; -webkit-transform: translateX(140px) rotate(0); -ms-transform: translateX(140px) rotate(0); transform: translateX(140px) rotate(0); }
   .side.is-visible { -webkit-transform: translateX(0) rotate(0); -ms-transform: translateX(0) rotate(0); transform: translateX(0) rotate(0); }
   .side .side__btn { display: block; }
@@ -612,7 +612,7 @@ select.form-control { -webkit-appearance: inherit; -moz-appearance: inherit; app
 .more { position: relative; display: inline-block; background: none; font-size: 15px; font-weight: 500; color: #0063a7; margin-bottom: 20px; }
 .more:before { content: ""; position: absolute; bottom: 2px; left: 5px; right: 5px; border-bottom: 2px dotted #0063a7; }
 
-@media only screen and (max-width: 767px) { .hide { display: none; } }
+@media only screen and (max-width: 767px) { .viewmore { display: none; } }
 
 .ui-datepicker { width: 100%; padding: 0.2em 0.2em 0; display: none; border-radius: 2px; }
 .ui-datepicker .ui-datepicker-header { position: relative; height: 44px; background: #0063a7; border-radius: 2px 2px 0 0; }

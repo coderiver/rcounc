@@ -155,6 +155,23 @@ $(document).ready(function() {
 		event.stopPropagation();
 	});
 
+	// toggle hidden elements
+
+	$('.js-hide').on('click', function() {
+		var link = $(this).data('link');
+
+		if ($(this).hasClass('is-open')) {
+			$('[data-rel = '+link+']').slideUp();
+			$(this).text('Показать еще').removeClass('is-open');
+		}
+		else {
+			$('[data-rel = '+link+']').slideDown();
+			$(this).text('Скрыть').addClass('is-open');
+		}
+		
+
+	});
+
 
 	$(window).resize(function() {
 		stickyFooter();
