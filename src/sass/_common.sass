@@ -29,6 +29,7 @@ body
 .main
 	position: relative
 	overflow: hidden
+	padding-top: 30px
 	.main__right
 		position: absolute
 		top: 0
@@ -226,7 +227,9 @@ select.form-control
 	&.btn_blue
 		background: #0c91ed
 		&:hover
-			background: #40ABF5				
+			background: #40ABF5
+	+r(767)
+		white-space: normal 						
 .btn-lg, .btn-group-lg>.btn
 	width: 100% 
 	padding: 10px 

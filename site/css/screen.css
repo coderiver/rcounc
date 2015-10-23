@@ -47,7 +47,7 @@ body { font-family: "Fira Sans", sans-serif; -webkit-font-smoothing: antialiased
 @media only screen and (max-width: 991px) { .out { padding-top: 79px; }
   .out.out_index { padding-top: 99px; } }
 
-.main { position: relative; overflow: hidden; }
+.main { position: relative; overflow: hidden; padding-top: 30px; }
 .main .main__right { position: absolute; top: 0; right: 0; }
 @media only screen and (max-width: 991px) { .main .main__right { display: none; } }
 
@@ -150,6 +150,7 @@ select.form-control { -webkit-appearance: inherit; -moz-appearance: inherit; app
 .btn.btn_gray:hover { background: #BFBEBE; }
 .btn.btn_blue { background: #0c91ed; }
 .btn.btn_blue:hover { background: #40ABF5; }
+@media only screen and (max-width: 767px) { .btn { white-space: normal; } }
 
 .btn-lg, .btn-group-lg > .btn { width: 100%; padding: 10px; text-transform: uppercase; }
 
@@ -404,6 +405,7 @@ select.form-control { -webkit-appearance: inherit; -moz-appearance: inherit; app
 .video .video__info { padding: 9px 9px 9px 18px; }
 .video .video__info .author { color: #fff; }
 .video .video__more { color: #fff; font-weight: 500; font-size: 21px; }
+@media only screen and (max-width: 767px) { .video { height: auto; } }
 
 .story { height: 780px; margin-bottom: 20px; background: #0063a7; }
 @media only screen and (max-width: 1219px) { .story { height: auto; } }
@@ -488,7 +490,7 @@ select.form-control { -webkit-appearance: inherit; -moz-appearance: inherit; app
   .side .side__item .btn.btn_red { padding: 3px 25px 3px; } }
 @media only screen and (max-width: 767px) { .side .side__item .btn { padding: 5px 25px; } }
 
-.topper { background: #EAEAEA; padding: 20px 0; margin-bottom: 30px; }
+.topper { background: #EAEAEA; padding: 20px 0; }
 .topper .topper__title { display: inline-block; vertical-align: middle; font-weight: 500; font-size: 20px; }
 @media only screen and (max-width: 991px) { .topper { background: none; margin-bottom: 0; }
   .topper .topper__title { font-size: 30px; font-weight: bold; text-transform: uppercase; } }
@@ -661,6 +663,20 @@ select.form-control { -webkit-appearance: inherit; -moz-appearance: inherit; app
 .ui-datepicker-rtl .ui-datepicker-buttonpane button.ui-datepicker-current { float: right; }
 .ui-datepicker-rtl .ui-datepicker-group { float: right; }
 .ui-datepicker-rtl .ui-datepicker-group-last .ui-datepicker-header, .ui-datepicker-rtl .ui-datepicker-group-middle .ui-datepicker-header { border-right-width: 0; border-left-width: 1px; }
+
+.out_orange .header .header__content { background: #c84410; }
+.out_orange .topper__title { color: #c84410; }
+.out_orange .cat-link h2 { color: #c84410; }
+
+.breadcrumbs { margin: -15px 0 15px; }
+.breadcrumbs a { position: relative; display: inline-block; vertical-align: middle; margin-right: 5px; font-size: 12px; color: #c84410; }
+.breadcrumbs a:after { content: "→"; display: inline-block; vertical-align: middle; margin-left: 5px; color: #333; }
+
+.courses { padding: 20px; background: #f7f7f7; margin-bottom: 20px; }
+.courses .course__img { width: 160px; float: left; height: auto; margin-right: 18px; font-size: 0; }
+.courses .course__img img { width: 100%; margin-bottom: 15px; }
+.courses .course__text { overflow: hidden; font-size: 15px; font-weight: 300; margin-bottom: 5px; }
+.courses .course__more { color: #c84410; font-size: 15px; font-weight: bold; }
 
 
 
