@@ -7,7 +7,17 @@
 		display: inline-block
 		vertical-align: middle
 		font-weight: 500
-		font-size: 20px 
+		font-size: 20px
+	+r(991)
+		background: none
+		margin-bottom: 0
+		.topper__title
+			font-size: 30px
+			font-weight: bold
+			text-transform: uppercase
+	+r(767)
+		.topper__title
+			font-size: 20px		 
 .page-nav
 	display: inline-block
 	vertical-align: middle
@@ -16,7 +26,9 @@
 		vertical-align: middle
 		margin-left: 28px 
 		font-size: 15px
-		color: #333 
+		color: #333
+	+r(991)
+		display: none	 
 
 .analytics
 	.analytics__title
@@ -72,10 +84,27 @@
 			display: inline-block
 			vertical-align: middle
 			margin-bottom: 0
-	+r(767)
+			padding-top: 10px
+			margin-right: 5px
+		.form-group
+			.btn
+				margin: 0 		
+	+r(991)
 		.follow__wrap
 			h4
 				display: block
+				margin-bottom: 10px
+				margin-right: 0
+				padding-top: 0
+			.form-group
+				.form-control
+					width: 260px
+	+r(767)
+		.follow__wrap
+			.form-group
+				.form-control
+					width: 100%				
+
 .form-group
 	display: inline-block
 	vertical-align: middle
@@ -90,7 +119,8 @@
 		margin-bottom: 5px
 	+r(1219)
 		.form-control
-			width: 100% 
+			width: 100%
+			margin: 0  
 	+r(991)
 		.btn
 			margin-top: 10px
@@ -124,11 +154,19 @@
 	.poll__btns
 		.form-group
 			width: 100% 
+			& > p
+				display: inline-block
+				vertical-align: middle
 		.btn
 			width: 100%
 			max-width: 230px
 			padding: 8px 0
 			text-align: center
+		+r(1219)
+			.form-group
+				& > p
+					display: block
+					margin-bottom: 5px				
 	.poll__box
 		padding: 0 25px 		
 	&.poll_small
@@ -141,6 +179,8 @@
 			text-align: center
 			.btn
 				margin-bottom: 10px
+		+r(991)
+			.poll__btns		
 					 		  			
 
 .box
@@ -149,6 +189,9 @@
 	background: #F5F5F5
 	padding: 20px
 	margin-bottom: 20px
+	&.box_long
+		height: auto
+		padding-bottom: 70px
 	.box__bottom
 		position: absolute
 		bottom: 20px
@@ -158,6 +201,8 @@
 			float: right
 			width: 45%
 			height: 42px
+			padding: 2px 0
+			text-align: center 
 			line-height: 41px
 			&:first-child
 				float: left
@@ -218,6 +263,8 @@
 	min-height: 320px
 	background: #f5f5f5 
 	margin-bottom: 20px
+	+r(767)
+		min-height: 1px
 	.interview__person
 		+clr
 		margin-bottom: 15px
@@ -232,6 +279,9 @@
 		img
 			width: 100%
 			height: 100%
+		+r(767)
+			width: 64px
+			height: 64px 	
 	.interview__name	
 		padding-top: 20px
 		overflow: hidden
@@ -244,6 +294,10 @@
 		font-weight: bold
 		font-size: 21px
 		color: #333
+		+r(767)
+			display: block
+			padding-left: 89px
+			font-size: 16px 
 	.interview__tags
 		padding-top: 30px
 		font-size: 0
@@ -257,6 +311,8 @@
 			color: #333
 			font-size: 9px
 			text-transform: uppercase
+		+r(767)
+			display: none	
 .tags
 	margin-bottom: 20px			    
 	a
@@ -279,6 +335,7 @@
 		a
 			text-transform: none
 .edition
+	margin-bottom: 20px
 	.edition__img
 		font-size: 0
 		margin-bottom: 12px
@@ -291,7 +348,26 @@
 		font-size: 14px
 		color: #999 												
 			
-		
+// show more module
+.more
+	position: relative
+	display: inline-block 
+	background: none
+	font-size: 15px
+	font-weight: 500 
+	color: #0063a7
+	margin-bottom: 20px
+	&:before
+		content: ""
+		position: absolute
+		bottom: 2px
+		left: 5px
+		right: 5px
+		border-bottom: 2px dotted #0063a7
+.hide
+	+r(767)
+		display: none
+	 		
 
 
 
