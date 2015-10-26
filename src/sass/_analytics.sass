@@ -1,33 +1,65 @@
 // analytics
 .topper
 	background: #EAEAEA
-	padding: 20px 0
+	padding: 11px 0
 	.topper__title
+		position: relative
 		display: inline-block
 		vertical-align: middle
-		font-weight: 500
+		font-weight: bold
 		font-size: 20px
+		&:after
+			content: "\EA06"
+			position: absolute
+			top: 10px
+			right: -30px
+			@extend %icon
+			margin-left: 10px
+			font-size: 12px
+			display: none 
+			transition: transform 200ms
 	+r(991)
 		background: none
+		padding: 30px 0 11px 
 		margin-bottom: 0
 		.topper__title
 			font-size: 30px
 			font-weight: bold
 			text-transform: uppercase
+			cursor: pointer
+			&:after
+				display: inline-block
+				top: 6px
+				right: -25px
+				font-size: 10px
+			&.is-open
+				&:after
+					+rotate(180)
 	+r(767)
 		.topper__title
 			font-size: 20px		 
 .page-nav
 	display: inline-block
 	vertical-align: middle
-	a
+	div
 		display: inline-block
 		vertical-align: middle
-		margin-left: 28px 
+		margin-left: 10px 
+	a
+		display: inline-block
+		padding: 10px 15px 
 		font-size: 15px
 		color: #333
+		font-weight: 500
+		&:hover, &.is-active
+			background: #fff
+			color: #333!important 
+			text-decoration: none!important  
 	+r(991)
-		display: none	 
+		display: none
+		div
+			display: block
+			margin-bottom: 10px 
 
 .analytics
 	.analytics__title

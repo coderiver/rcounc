@@ -171,11 +171,26 @@ $(document).ready(function() {
 	});
 
 
+	
+
+	function topperNav() {
+		if ($(window).width() <= 991 && $('.js-topper-nav').length) {
+			$('.js-topper-nav').on('click', function() {
+				$(this).toggleClass('is-open');
+				$(this).closest('.topper').find('.page-nav').slideToggle();
+			});
+		};
+	}
+
+	topperNav();
+
 	$(window).resize(function() {
 		stickyFooter();
 		bannerArea();
+		topperNav();
 	});
 
 
+	
 
 });
