@@ -21,4 +21,9 @@ $(document).ready(function() {
 			tabsCont.hide();
 			tabsCont.eq(index).show();
     });
+
+  $('.js-btn-more').click(function() {
+    $(this).closest('.page-preview').toggleClass('is-full');
+  });
+
 });
