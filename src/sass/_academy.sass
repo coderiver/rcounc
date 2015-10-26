@@ -23,7 +23,12 @@ $orange: #c84410
 		.news-link__link
 			font-size: 21px
 	.tag
-		background: $orange 
+		background: $orange
+	.img-link
+		.img-link__link
+			&:hover
+				color: #fff
+				text-decoration: underline 	 
 .img-link_big
 	height: 460px			
 .breadcrumbs
@@ -145,6 +150,8 @@ $orange: #c84410
 		font-weight: 500
 		color: #fff
 		margin-bottom: 20px
+		&:hover
+			color: #fff 
 	.webinar__date
 		font-size: 25px
 		text-transform: uppercase
@@ -155,9 +162,30 @@ $orange: #c84410
 		text-align: center
 .page-preview_inner
 	height: 380px
+	&:before
+		background-image: linear-gradient(transparent, transparent 50%, #F7F7F7 85%, #F7F7F7 100%)
+	.btn-more
+		top: auto
+		bottom: 15px
+		left: 20px
+		span
+			display: inline-block
+			vertical-align: middle
+			margin-right: 110px
+			color: $orange
+		.icon-arrow
+			color: $orange 
 	.page-preview__wrap
+		font-size: 16px
 		h4
 			display: inline-block
+	&.is-full
+		.btn-more
+			bottom: 10px
+			.icon-arrow
+				+rotate(180)
+			
+					
 
 
 
