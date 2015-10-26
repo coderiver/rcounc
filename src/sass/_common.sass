@@ -29,14 +29,17 @@ body
 .main
 	position: relative
 	overflow: hidden
+	padding-top: 30px
 	.main__right
 		position: absolute
 		top: 0
 		right: 0
 		+r(991)
-			display: none		 
-
+			display: none
+					
 // common blocks
+.center
+	text-align: center
 
 // additional grid-class for 1600+ screen width
 .col-w-1, .col-w-2, .col-w-3, .col-w-4, .col-w-5, .col-w-6,
@@ -106,7 +109,7 @@ h1
 h2
 	font-size: 30px
 	text-transform: uppercase
-	+r(768)
+	+r(767)
 		font-size: 20px
 h3
 	font-size: 28px
@@ -130,7 +133,7 @@ button
 ul
 	margin: 0
 	padding: 0 0 0 18px
-	color: #428bca
+	//color: #428bca
 	li
 		margin-bottom: 7px
 	a
@@ -200,6 +203,7 @@ select.form-control
 	
 // btns
 .btn
+	display: inline-block
 	padding: 8px 42px
 	max-width: 100% 
 	border-radius: 0
@@ -223,7 +227,9 @@ select.form-control
 	&.btn_blue
 		background: #0c91ed
 		&:hover
-			background: #40ABF5				
+			background: #40ABF5
+	+r(767)
+		white-space: normal 						
 .btn-lg, .btn-group-lg>.btn
 	width: 100% 
 	padding: 10px 
@@ -233,6 +239,7 @@ select.form-control
 	&:hover
 		background: #e84f13	
 .btn-sm, .btn-group-sm>.btn
+	display: inline-block
 	padding: 2px 20px
 	font-size: 15px
 	background: #fff

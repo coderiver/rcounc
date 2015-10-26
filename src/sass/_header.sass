@@ -427,6 +427,8 @@
 			display: inline-block
 			vertical-align: middle
 			margin: 0 2px 
+	.tag
+		margin-top: 10px		
 .date
 	position: relative
 	display: inline-block
@@ -496,11 +498,15 @@
 	.video__more
 		color: #fff
 		font-weight: 500
-		font-size: 21px  
+		font-size: 21px
+	+r(767)
+		height: auto	  
 .story
 	height: 780px
 	margin-bottom: 20px
-	background: #0063a7 	
+	background: #0063a7 
+	+r(1219)
+		height: auto	
 	.story__in
 		padding: 25px 20px
 		margin-left: -3%  
@@ -704,7 +710,7 @@
 
 .side
 	position: fixed
-	top: 345px
+	top: 420px
 	left: -216px
 	z-index: 98
 	transform: rotate(-90deg)
@@ -724,11 +730,12 @@
 	.btn
 		padding: 8px 22px
 		text-transform: uppercase 		
-	+r(1219)
-		top: 351px
-		left: -222px
+	+r(1619)
+		top: 380px
+		left: -197px
 		.btn
 			padding: 3px 22px 2px
+			font-size: 15px
 	+r(991)
 		right: 0
 		top: 0

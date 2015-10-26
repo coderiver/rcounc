@@ -1,0 +1,160 @@
+// academy
+$orange: #c84410
+.out_schools
+	.container
+		@media (min-width: 1620px)
+			width: 1200px
+	.header
+		.header__content
+			background: $orange
+	.topper__title
+		color: $orange
+	.box
+		height: auto	
+	.cat-link
+		h2
+			color: $orange
+	.news-link
+		margin: 15px 0 30px
+		.news-link__link
+			font-size: 21px
+	.tag
+		background: $orange 
+.img-link_big
+	height: 460px			
+.breadcrumbs
+	margin: -15px 0 15px 
+	a
+		position: relative
+		display: inline-block
+		vertical-align: middle		
+		margin-right: 5px
+		font-size: 12px
+		color: $orange 
+		&:after
+			content: "→"
+			display: inline-block
+			vertical-align: middle
+			margin-left: 5px 
+			color: #333
+		&:last-child
+			&:after
+				content: "\EA05"
+				@extend %icon
+				font-size: 9px	 
+.courses
+	padding: 20px
+	background: #f7f7f7
+	margin-bottom: 20px
+	.course__img
+		width: 160px
+		float: left
+		height: auto
+		margin-right: 18px
+		font-size: 0
+		img
+			width: 100%
+			margin-bottom: 15px
+	.course__text
+		overflow: hidden
+		font-size: 15px 
+		font-weight: 300
+		margin-bottom: 5px
+	.course__more
+		color: $orange
+		font-size: 15px
+		font-weight: bold
+		
+// register
+.register
+	background: $orange
+	color: #fff
+	padding: 20px
+	font-size: 20px
+	height: 460px  
+	p
+		margin-bottom: 25px
+	.register__field
+		display: block
+		margin-bottom: 15px
+		p
+			margin-bottom: 0
+		input
+			width: 100%
+			padding: 0 5px
+			line-height: 1.2  
+			border: 2px solid #fff
+			background: transparent
+	.register__submit
+		padding-top: 15px
+		button
+			width: 100%
+			height: 43px
+			padding: 0 
+			background: #fff
+			color: $orange
+			font-size: 25px
+			font-weight: 500
+			line-height: 46px
+			text-transform: uppercase
+			text-align: center     		  	
+.person_expert
+	p
+		font-size: 12px
+		color: #999  
+.exp-order
+	+clr
+	margin: 50px 0
+	.exp-order__left
+		float: left
+		width: 320px
+		margin-right: 35px
+		.btn
+			background: $orange 
+	.exp-order__content
+		overflow: hidden
+		p
+			font-size: 15px
+			font-weight: 300  
+.webinar
+	position: relative
+	+cover
+	height: 380px
+	.webinar__type
+		position: absolute
+		top: 20px
+		right: 20px
+		text-align: right
+		font-size: 25px
+		color: #fff
+		font-weight: bold
+		z-index: 1
+	.webinar__bottom
+		position: absolute
+		bottom: 20px
+		left: 20px
+		width: 250px	
+		z-index: 1
+	.webinar__title
+		display: inline-block
+		font-size: 28px
+		font-weight: 500
+		color: #fff
+		margin-bottom: 20px
+	.webinar__date
+		font-size: 25px
+		text-transform: uppercase
+		color: #fff
+		padding: 6px 5px 5px
+		font-weight: 500 
+		background: $orange   	
+		text-align: center
+			 
+
+
+
+
+
+
+
+
