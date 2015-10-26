@@ -668,6 +668,39 @@ select.form-control { -webkit-appearance: inherit; -moz-appearance: inherit; app
 .ui-datepicker-rtl .ui-datepicker-group { float: right; }
 .ui-datepicker-rtl .ui-datepicker-group-last .ui-datepicker-header, .ui-datepicker-rtl .ui-datepicker-group-middle .ui-datepicker-header { border-right-width: 0; border-left-width: 1px; }
 
+.page-preview { position: relative; height: 140px; margin: 0 0 50px; padding: 15px 20px; background-color: #F7F7F7; text-align: center; overflow: hidden; }
+.page-preview:before { content: ""; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-image: linear-gradient(transparent, #F7F7F7 85%, #F7F7F7 100%); z-index: 2; }
+.page-preview.is-full { height: auto; }
+.page-preview.is-full .page-preview__wrap { padding-bottom: 20px; }
+.page-preview.is-full:before { display: none; }
+.page-preview.is-full .btn-more { top: auto; bottom: 0; }
+.page-preview.is-full .btn-more:before { -ms-transform: rotate(180deg); -webkit-transform: rotate(180deg); transform: rotate(180deg); }
+.page-preview.page-preview_press { text-align: left; height: 100%; }
+.page-preview.page-preview_press:before { display: none; }
+.page-preview__wrap { position: relative; display: inline-block; vertical-align: top; text-align: left; color: #333; font-size: 18px; line-height: 1.4; }
+
+.btn-more { position: absolute; top: 100px; left: 0px; z-index: 3; }
+.btn-more:before { content: ""; display: block; background-image: url("../img/icons.png"); width: 21px; height: 12px; background-position: -106px -194px; transition: rotate 300ms; -ms-transform: rotate(0deg); -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+
+.project-link { float: right; padding-top: 3px; color: #0063A7; font-size: 15px; font-weight: 700; }
+
+.project { min-height: 320px; margin-bottom: 20px; background: #F5F5F5; }
+.project.project_single .img-link { height: 380px; }
+.project.project_wide { padding-bottom: 30px; }
+.project .img-link { height: 180px; }
+.project .project__title { position: absolute; bottom: 20px; left: 20px; right: 20px; color: #FFF; font-size: 21px; font-weight: bold; }
+.project .project__text { padding: 20px; }
+.project .project__text p { padding-bottom: 20px; font-size: 14px; color: #333; }
+.project .project__text p span { display: inline-block; vertical-align: baseline; margin-right: 10px; text-transform: uppercase; font-size: 18px; }
+.project .project__text p b { font-size: 21px; font-weight: bold; }
+.project .project__tags { padding-top: 10px; font-size: 0; }
+.project .project__tags a { display: inline-block; vertical-align: middle; margin-right: 2px; margin-bottom: 2px; padding: 5px 7px; background: #EAEDF3; color: #333; font-size: 9px; text-transform: uppercase; }
+.project .project__link { text-align: center; }
+.project .project__link .btn { display: inline-block; vertical-align: middle; font-size: 15px; }
+.project .project__link .btn-sm { padding: 5px 20px; font-weight: 700; }
+
+.geografy__map { width: 100%; height: 600px; }
+
 .btn-border { width: 100%; padding: 10px 20px; border: 2px solid #0063A7; font-size: 15px; background: #fff; color: #0063a7; }
 .btn-border:hover { background: #0063A7; text-decoration: none; color: #fff; }
 
@@ -684,7 +717,7 @@ select.form-control { -webkit-appearance: inherit; -moz-appearance: inherit; app
 .profile .profile__title { font-size: 24px; }
 .profile .profile__text { font-size: 15px; }
 
-.press-btns { padding: 0 0 50px; }
+.press-btns { padding: 40px 0; margin: 0; }
 
 @media (min-width: 1620px) { .out_schools .container { width: 1200px; } }
 .out_schools .header .header__content { background: #c84410; }
