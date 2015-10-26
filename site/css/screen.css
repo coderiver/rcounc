@@ -26,7 +26,7 @@
 .i-vk { display: inline-block; width: 21px; height: 21px; background-image: url("../img/icons.png"); background-position: -107px -23px; background-size: 128px 113px; }
 
 @font-face { font-family: "svgfont"; src: url("fonts/svgfont.eot"); src: url("fonts/svgfont.eot?#iefix") format("eot"), url("fonts/svgfont.woff") format("woff"), url("fonts/svgfont.woff2") format("woff2"), url("fonts/svgfont.ttf") format("truetype"); font-weight: normal; font-style: normal; }
-.icon, [class^="icon-"], [class*=" icon-"], .ui-datepicker .ui-datepicker-prev:before, .ui-datepicker .ui-datepicker-next:before, .breadcrumbs a:last-child:after { font-family: "svgfont"; font-style: normal; font-weight: normal; text-rendering: auto; speak: none; line-height: 1; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+.icon, [class^="icon-"], [class*=" icon-"], .topper .topper__title:after, .ui-datepicker .ui-datepicker-prev:before, .ui-datepicker .ui-datepicker-next:before, .breadcrumbs a:last-child:after { font-family: "svgfont"; font-style: normal; font-weight: normal; text-rendering: auto; speak: none; line-height: 1; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 
 .icon, [class^="icon-"], [class*=" icon-"] { display: inline-block; }
 
@@ -501,15 +501,21 @@ select.form-control { -webkit-appearance: inherit; -moz-appearance: inherit; app
   .side .side__item .btn.btn_red { padding: 3px 25px 3px; } }
 @media only screen and (max-width: 767px) { .side .side__item .btn { padding: 5px 25px; } }
 
-.topper { background: #EAEAEA; padding: 20px 0; }
-.topper .topper__title { display: inline-block; vertical-align: middle; font-weight: 500; font-size: 20px; }
-@media only screen and (max-width: 991px) { .topper { background: none; margin-bottom: 0; }
-  .topper .topper__title { font-size: 30px; font-weight: bold; text-transform: uppercase; } }
+.topper { background: #EAEAEA; padding: 11px 0; }
+.topper .topper__title { position: relative; display: inline-block; vertical-align: middle; font-weight: bold; font-size: 20px; }
+.topper .topper__title:after { content: ""; position: absolute; top: 10px; right: -30px; margin-left: 10px; font-size: 12px; display: none; transition: -webkit-transform 200ms; transition: transform 200ms; }
+@media only screen and (max-width: 991px) { .topper { background: none; padding: 30px 0 11px; margin-bottom: 0; }
+  .topper .topper__title { font-size: 30px; font-weight: bold; text-transform: uppercase; cursor: pointer; }
+  .topper .topper__title:after { display: inline-block; top: 6px; right: -25px; font-size: 10px; }
+  .topper .topper__title.is-open:after { -ms-transform: rotate(180deg); -webkit-transform: rotate(180deg); transform: rotate(180deg); } }
 @media only screen and (max-width: 767px) { .topper .topper__title { font-size: 20px; } }
 
 .page-nav { display: inline-block; vertical-align: middle; }
-.page-nav a { display: inline-block; vertical-align: middle; margin-left: 28px; font-size: 15px; color: #333; }
-@media only screen and (max-width: 991px) { .page-nav { display: none; } }
+.page-nav div { display: inline-block; vertical-align: middle; margin-left: 10px; }
+.page-nav a { display: inline-block; padding: 10px 15px; font-size: 15px; color: #333; font-weight: 500; }
+.page-nav a:hover, .page-nav a.is-active { background: #fff; color: #333 !important; text-decoration: none !important; }
+@media only screen and (max-width: 991px) { .page-nav { display: none; }
+  .page-nav div { display: block; margin-bottom: 10px; } }
 
 .analytics .analytics__title h2 { color: #0063A7; }
 
