@@ -170,9 +170,6 @@ $(document).ready(function() {
 
 	});
 
-
-	
-
 	function topperNav() {
 		if ($(window).width() <= 991 && $('.js-topper-nav').length) {
 			$('.js-topper-nav').on('click', function() {
@@ -183,6 +180,21 @@ $(document).ready(function() {
 	}
 
 	topperNav();
+
+	// video gallery
+
+	 $('.js-slick-view').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		arrows: false,
+		asNavFor: '.js-slick-nav'
+	});
+	$('.js-slick-nav').slick({
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		asNavFor: '.js-slick-view',
+		focusOnSelect: true
+	});
 
 	$(window).resize(function() {
 		stickyFooter();
