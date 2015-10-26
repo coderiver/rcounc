@@ -861,14 +861,11 @@ select.form-control { -webkit-appearance: inherit; -moz-appearance: inherit; app
   .practice .practice__in p { font-size: 13px; }
   .practice .practice__in .btn { width: 100%; font-size: 15px; } }
 
-.gallery .gallery__view { margin-bottom: 5px; }
-.gallery .gallety__item .video { height: auto; margin-bottom: 0; background: none; }
-.gallery .gallety__item .video .video__canvas { height: 285px; }
-.gallery .gallery__link { border: 3px solid #fff; border-radius: 5px; }
-.gallery .gallery__link.slick-current { border-color: #c84410; }
-.gallery .gallery__link img { border-radius: 3px; }
+.main_courses { background: url("..img/bg-courses.png"); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
 
-.catalog .catalog__item { height: 320px; margin-bottom: 20px; }
+.courses .courses__title p { color: #333; font-size: 25px; }
+.courses .courses__top { width: 90%; padding: 30px 100px; }
+.courses .courses__top p { color: #333; font-size: 16px; line-height: 26px; }
 
 
 
