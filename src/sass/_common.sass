@@ -34,8 +34,10 @@ body
 		position: absolute
 		top: 0
 		right: 0
-		+r(991)
+	+r(991)
+		.main__right
 			display: none
+		padding-top: 0 	
 					
 // common blocks
 .center
@@ -228,6 +230,10 @@ select.form-control
 		background: #0c91ed
 		&:hover
 			background: #40ABF5
+	&.btn_orange
+		background: #c84410
+		&:hover
+			background: darken(#c84410, 5%) 		
 	+r(767)
 		white-space: normal 						
 .btn-lg, .btn-group-lg>.btn
@@ -244,6 +250,7 @@ select.form-control
 	font-size: 15px
 	background: #fff
 	color: #0063a7
+	transition: background 200ms, color 200ms
 	&:hover
 		background: #1a83cd
 		text-decoration: none

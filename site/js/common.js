@@ -98,6 +98,28 @@ $(document).ready(function() {
 		dots: true
 	});	
 
+	$('.js-courses').slick({
+		arrows: false,
+		dots: false,
+		slidesToShow: 3, 
+		responsive: [
+			{
+				breakpoint: 1220,
+				settings: {
+					slidesToShow: 2,
+					dots: true
+				}
+			},
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 1,
+					dots: true
+				}
+			}
+		]
+	});	
+
 	// datepicker
 
 	$('#datepicker').datepicker();
