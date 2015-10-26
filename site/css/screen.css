@@ -861,6 +861,12 @@ select.form-control { -webkit-appearance: inherit; -moz-appearance: inherit; app
   .practice .practice__in p { font-size: 13px; }
   .practice .practice__in .btn { width: 100%; font-size: 15px; } }
 
+.main_courses { background: url("..img/bg-courses.png"); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
+
+.courses .courses__title p { color: #333; font-size: 25px; }
+.courses .courses__top { width: 90%; padding: 30px 100px; }
+.courses .courses__top p { color: #333; font-size: 16px; line-height: 26px; }
+
 
 
 /*# sourceMappingURL=screen.css.map */
