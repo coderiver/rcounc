@@ -24,6 +24,7 @@ $(document).ready(function() {
 
   $('.js-btn-more').click(function() {
     $(this).closest('.page-preview').toggleClass('is-full');
+    return false;
   });
 
 });
