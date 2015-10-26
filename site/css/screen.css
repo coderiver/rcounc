@@ -719,7 +719,9 @@ select.form-control { -webkit-appearance: inherit; -moz-appearance: inherit; app
 .profile .profile__title { font-size: 24px; }
 .profile .profile__text { font-size: 15px; }
 
-.press-btns { padding: 40px 0; margin: 0; }
+.press-btns { padding: 10px 0 40px; margin: 0; }
+
+.press-center .calendar { position: static; margin-top: 20px; padding: 0; width: auto; height: auto; }
 
 @media (min-width: 1620px) { .out_schools .container { width: 1200px; } }
 .out_schools a:hover { color: #c84410; text-decoration: underline; }
