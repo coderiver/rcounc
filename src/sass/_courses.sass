@@ -1,21 +1,111 @@
 // courses
 .main_courses
-	background: url("..img/bg-courses.png")
-	+cover
+	background: url("../img/bg-courses.jpg") top center no-repeat
 
 .courses
 	.courses__title
+		text-align: center
 		p
+			display: block
+			margin-bottom: 10px
 			color: #333
 			font-size: 25px 
 	.courses__top
-		width: 90%
+		margin-bottom: 20px
 		padding: 30px 100px
+		background: rgba(#FFF, 0.7) 
+		text-align: center
 		p
 			color: #333
 			font-size: 16px
 			line-height: 26px
-		   
+	.courses__list
+		margin: 30px 0 20px
+		.box
+			height: 380px
+			background: #777
+			color: #FFF 
+			h4
+				color: #FFF 
+			&_white
+				background: #FFF 
+				color: #333
+				h4
+					color: #333
+		ul
+			li
+				margin-bottom: 20px
+		span
+			display: block
+			margin-bottom: 20px
+			a
+				margin-left: 5px
+				color: #2B2F4E 
+	.courses__video
+		.video
+			height: auto
+			background: none
+			iframe
+				height: 490px
+			.video__caption
+				padding-top: 10px
+				color: #999
+				font-size: 14px
+	.courses__sidebar
+		.box
+			padding: 0
+		.title
+			margin-top: 0
+			font-weight: bold 
+	.courses__documents
+		margin-top: 20px
+		&:first-child
+			margin-top: 0
+		span, a
+			display: block
+			padding-bottom: 5px
+			font-size: 14px
+		span
+			color: #999
+		a
+			color: #2B2F4E 
+	.courses__links
+		margin-top: 20px
+		&:first-child
+			margin-top: 0
+		a
+			color: #C84410 
+	.courses__books
+		.box
+			padding: 20px
+			
+.literature
+	.literature__wrap
+		margin-top: 30px
+		h4
+			text-transform: uppercase
+	.tabs
+		text-align: left	
+		.tabs__item
+			float: none
+			display: inline-block
+			vertical-align: top
+			width: auto
+			background: none
+			border: none
+			&.is-active
+				background: #747C89 
+				.tabs__link
+					color: #FFF 
+		.tabs__link
+			padding: 5px 10px
+			text-transform: none
+			color: #C84410
+			line-height: 1
+	.tabs-content
+		border: none
+		padding: 0
+
 
 
 
