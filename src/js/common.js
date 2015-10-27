@@ -206,6 +206,35 @@ $(document).ready(function() {
 		}
 	});
 
+	$('.js-library').slick({
+		slidesToShow: 1, 
+		slidesToScroll: 1
+
+	});
+
+	// toggle video lections
+
+	$('.js-videolections-btn').on('click', function() {
+		$(this).toggleClass('is-open');
+		$('.js-videolections').slideToggle();
+		return false;
+	});
+
+	// accordeon
+
+	$('.js-accordeon-link').on('click', function() {
+		if($(this).hasClass('is-open')){
+			$(this).closest('.js-accordeon-item').find('.js-accordeon-post').slideUp();
+			$(this).removeClass('is-open');
+		}
+		else {
+			$('.js-accordeon-link').removeClass('is-open');
+			$('.js-accordeon-post').slideUp();
+			$(this).closest('.js-accordeon-item').find('.js-accordeon-post').slideDown();
+			$(this).addClass('is-open');
+		};
+		return false;
+	});
 
 	$(window).resize(function() {
 		stickyFooter();

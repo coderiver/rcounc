@@ -26,7 +26,7 @@
 .i-vk { display: inline-block; width: 21px; height: 21px; background-image: url("../img/icons.png"); background-position: -107px -23px; background-size: 128px 113px; }
 
 @font-face { font-family: "svgfont"; src: url("fonts/svgfont.eot"); src: url("fonts/svgfont.eot?#iefix") format("eot"), url("fonts/svgfont.woff") format("woff"), url("fonts/svgfont.woff2") format("woff2"), url("fonts/svgfont.ttf") format("truetype"); font-weight: normal; font-style: normal; }
-.icon, [class^="icon-"], [class*=" icon-"], .topper .topper__title:after, .ui-datepicker .ui-datepicker-prev:before, .ui-datepicker .ui-datepicker-next:before, .breadcrumbs a:last-child:after { font-family: "svgfont"; font-style: normal; font-weight: normal; text-rendering: auto; speak: none; line-height: 1; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+.icon, [class^="icon-"], [class*=" icon-"], .slick-prev:before, .slick-next:before, .topper .topper__title:after, .ui-datepicker .ui-datepicker-prev:before, .ui-datepicker .ui-datepicker-next:before, .breadcrumbs a:last-child:after, .accordeon .accordeon__title:before { font-family: "svgfont"; font-style: normal; font-weight: normal; text-rendering: auto; speak: none; line-height: 1; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 
 .icon, [class^="icon-"], [class*=" icon-"] { display: inline-block; }
 
@@ -201,16 +201,16 @@ select.form-control { -webkit-appearance: inherit; -moz-appearance: inherit; app
 .slick-loading .slick-slide { visibility: hidden; }
 .slick-vertical .slick-slide { display: block; height: auto; border: 1px solid transparent; }
 
-.slick-prev, .slick-next { position: absolute; top: 50%; margin-top: -14px; font: 0/0 a; text-shadow: none; color: transparent; height: 50px; background: none; }
+.slick-prev, .slick-next { position: absolute; top: 100px; font: 0/0 a; text-shadow: none; color: transparent; height: 30px; width: 30px; border-radius: 50%; border: 2px solid #747c89; background: none; z-index: 9; }
 .slick-prev:focus, .slick-next:focus { outline: none; }
 .slick-prev.slick-disabled, .slick-next.slick-disabled { opacity: 0.2; }
-.slick-prev:before, .slick-next:before { height: 50px; line-height: 50px; }
+.slick-prev:before, .slick-next:before { font-size: 16px; color: #747c89; }
 
 .slick-prev { left: 0; }
-.slick-prev:before { content: "←"; display: inline-block; vertical-align: middle; font-size: 61px; color: #fff; }
+.slick-prev:before { content: ""; }
 
 .slick-next { right: 0; }
-.slick-next:before { content: "→"; display: inline-block; vertical-align: middle; font-size: 61px; color: #fff; }
+.slick-next:before { content: ""; }
 
 .slick-dots { text-align: center; position: absolute; margin: 0; bottom: 19px; right: 19px; }
 @media only screen and (max-width: 1991px) { .slick-dots { bottom: 5px; } }
@@ -772,6 +772,7 @@ select.form-control { -webkit-appearance: inherit; -moz-appearance: inherit; app
 .out_orange .topper__title { color: #c84410; }
 .out_orange .box { height: auto; }
 .out_orange .cat-link h2 { color: #c84410; }
+.out_orange .cat-link:focus { color: #c84410; }
 .out_orange .news-link { margin: 15px 0 30px; }
 .out_orange .news-link .news-link__link { font-size: 21px; }
 .out_orange .tag { background: #c84410; }
@@ -905,6 +906,43 @@ select.form-control { -webkit-appearance: inherit; -moz-appearance: inherit; app
 .literature .tabs .tabs__item.is-active .tabs__link { color: #FFF; }
 .literature .tabs .tabs__link { padding: 5px 10px; text-transform: none; color: #C84410; line-height: 1; }
 .literature .tabs-content { border: none; padding: 0; }
+
+.book .book__img { text-align: center; font-size: 0; margin-bottom: 25px; }
+.book .book__img img { display: inline-block; max-width: 100%; }
+.book .book__title { display: inline-block; margin-bottom: 10px; font-size: 14px; color: #2b2f4e; }
+.book .book__details { font-size: 14px; color: #999; }
+.book .book__details span { position: relative; display: inline-block; margin-left: 12px; }
+.book .book__details span:before { content: "|"; display: inline-block; vertical-align: middle; margin-right: 12px; }
+.book .book__details span:first-child { margin-left: 0; }
+.book .book__details span:first-child:before { display: none; }
+
+.drop { display: inline-block; vertical-align: middle; width: 29px; height: 29px; border-radius: 50%; border: 2px solid #c84410; color: #c84410; font-size: 12px; text-align: center; transition: -webkit-transform 200ms; transition: transform 200ms; }
+.drop .icon-arrow { line-height: 29px; }
+
+.videolections .videolections__item { display: block; height: 180px; margin-bottom: 20px; }
+.videolections .videolections__item:hover { text-decoration: none; }
+.videolections .videolections__item p { color: #333; }
+.videolections .videolections__video { height: 120px; font-size: 0; margin-bottom: 5px; }
+.videolections .videolections__video img { width: 100%; height: 100%; }
+
+.cat-link_drop.is-open .drop { -ms-transform: rotate(180deg); -webkit-transform: rotate(180deg); transform: rotate(180deg); }
+
+.accordeon { padding-top: 20px; }
+.accordeon .accordeon__item { margin-bottom: 10px; }
+.accordeon .accordeon__title { position: relative; font-size: 16px; color: #0367a5; text-transform: uppercase; }
+.accordeon .accordeon__title:before { content: ""; position: absolute; top: 8px; right: -23px; font-size: 8px; color: #747c89; opacity: 0; visibility: hidden; transition: opacity 200ms; -ms-transform: rotate(180deg); -webkit-transform: rotate(180deg); transform: rotate(180deg); }
+.accordeon .accordeon__title:after { content: ""; position: absolute; top: 1px; right: -27px; width: 21px; height: 21px; border-radius: 50%; border: 2px solid #747c89; opacity: 0; visibility: hidden; transition: opacity 200ms; }
+.accordeon .accordeon__title span { display: inline-block; border-bottom: 2px dotted; }
+.accordeon .accordeon__title:hover { color: #2b2f4e; }
+.accordeon .accordeon__title:hover span { border-color: #2b2f4e; }
+.accordeon .accordeon__title.is-open { color: #2b2f4e; }
+.accordeon .accordeon__title.is-open:before, .accordeon .accordeon__title.is-open:after { visibility: visible; opacity: 1; }
+.accordeon .accordeon__title.is-open span { border-color: #2b2f4e; }
+.accordeon .accordeon__content { padding: 20px 0 40px; font-size: 14px; line-height: 1.4; }
+
+.soc { margin-bottom: 20px; }
+.soc span, .soc img { display: inline-block; vertical-align: middle; }
+.soc span { margin-right: 35px; font-size: 14px; color: #999; }
 
 .gallery .gallery__view { margin-bottom: 5px; }
 .gallery .gallety__item .video { height: auto; margin-bottom: 0; background: none; }

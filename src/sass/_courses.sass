@@ -1,7 +1,6 @@
 // courses
 .main_courses
 	background: url("../img/bg-courses.jpg") top center no-repeat
-
 .courses
 	.courses__title
 		text-align: center
@@ -105,7 +104,129 @@
 	.tabs-content
 		border: none
 		padding: 0
-
+.book
+	.book__img
+		text-align: center
+		font-size: 0
+		margin-bottom: 25px 
+		img
+			display: inline-block
+			max-width: 100%
+	.book__title
+		display: inline-block
+		margin-bottom: 10px 
+		font-size: 14px
+		color: #2b2f4e 
+	.book__details
+		font-size: 14px
+		color: #999
+		span
+			position: relative
+			display: inline-block
+			margin-left: 12px
+			&:before
+				content: "|"
+				display: inline-block
+				vertical-align: middle
+				margin-right: 12px
+			&:first-child
+				margin-left: 0 
+				&:before
+					display: none
+.drop
+	display: inline-block
+	vertical-align: middle
+	width: 29px
+	height: 29px
+	border-radius: 50%
+	border: 2px solid $orange
+	color: $orange
+	font-size: 12px
+	text-align: center
+	transition: transform 200ms
+	.icon-arrow
+		line-height: 29px
+.videolections
+	.videolections__item
+		display: block
+		height: 180px
+		margin-bottom: 20px
+		&:hover
+			text-decoration: none
+		p
+			color: #333 
+	.videolections__video
+		height: 120px
+		font-size: 0
+		margin-bottom: 5px
+		img
+			width: 100%
+			height: 100%
+.cat-link_drop
+	&.is-open
+		.drop
+			+rotate(180)
+// accordeon
+.accordeon
+	padding-top: 20px
+	.accordeon__item
+		margin-bottom: 10px
+	.accordeon__title
+		position: relative
+		font-size: 16px
+		color: #0367a5
+		text-transform: uppercase
+		&:before
+			content: "\EA06"
+			position: absolute
+			top: 8px
+			right: -23px	
+			@extend %icon
+			font-size: 8px
+			color: #747c89
+			opacity: 0
+			visibility: hidden
+			transition: opacity 200ms
+			+rotate(180)
+		&:after
+			content: ""
+			position: absolute 
+			top: 1px
+			right: -27px
+			width: 21px
+			height: 21px
+			border-radius: 50%
+			border: 2px solid #747c89
+			opacity: 0
+			visibility: hidden
+			transition: opacity 200ms
+		span
+			display: inline-block
+			border-bottom: 2px dotted
+		&:hover
+			color: #2b2f4e
+			span
+				border-color: #2b2f4e	
+		&.is-open
+			color: #2b2f4e 
+			&:before, &:after
+				visibility: visible
+				opacity: 1 
+			span
+				border-color: #2b2f4e
+	.accordeon__content
+		padding: 20px 0 40px
+		font-size: 14px
+		line-height: 1.4
+.soc
+	margin-bottom: 20px
+	span, img
+		display: inline-block
+		vertical-align: middle
+	span
+		margin-right: 35px
+		font-size: 14px
+		color: #999  						 		   
 
 
 

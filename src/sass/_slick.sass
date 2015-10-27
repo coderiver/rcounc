@@ -75,34 +75,30 @@
 .slick-prev,
 .slick-next
 	position: absolute
-	top: 50%
-	margin-top: -14px
+	top: 100px
 	+hide-text
-	height: 50px
+	height: 30px
+	width: 30px
+	border-radius: 50%
+	border: 2px solid #747c89 
 	background: none
+	z-index: 9
 	&:focus
 		outline: none
 	&.slick-disabled
 		opacity: 0.2
 	&:before
-		height: 50px
-		line-height: 50px
+		@extend %icon
+		font-size: 16px
+		color: #747c89
 .slick-prev
 	left: 0
 	&:before
-		content: "←"
-		display: inline-block
-		vertical-align: middle
-		font-size: 61px
-		color: #fff
+		content: "\EA01"
 .slick-next
 	right: 0
 	&:before
-		content: "→"
-		display: inline-block
-		vertical-align: middle
-		font-size: 61px
-		color: #fff
+		content: "\EA04"
 .slick-dots
 	text-align: center
 	position: absolute
