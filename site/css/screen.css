@@ -415,6 +415,8 @@ select.form-control { -webkit-appearance: inherit; -moz-appearance: inherit; app
 
 .video { position: relative; height: 380px; margin-bottom: 20px; background: #0063a7; color: #fff; }
 .video .video__canvas { position: relative; height: 260px; }
+.video .video__canvas a { display: block; height: 100%; font-size: 0; }
+.video .video__canvas a img { width: 100%; height: 100%; }
 .video .video__info { padding: 9px 9px 9px 18px; }
 .video .video__info .author { color: #fff; }
 .video .video__more { color: #fff; font-weight: 500; font-size: 21px; }
@@ -950,8 +952,8 @@ select.form-control { -webkit-appearance: inherit; -moz-appearance: inherit; app
 .soc span { margin-right: 35px; font-size: 14px; color: #999; }
 
 .gallery .gallery__view { margin-bottom: 5px; }
-.gallery .gallety__item .video { height: auto; margin-bottom: 0; background: none; }
-.gallery .gallety__item .video .video__canvas { height: 285px; }
+.gallery .gallery__item .video { height: auto; margin-bottom: 0; background: none; }
+.gallery .gallery__item .video .video__canvas { height: 285px; }
 .gallery .gallery__link { border: 3px solid #fff; border-radius: 5px; cursor: pointer; }
 .gallery .gallery__link.slick-current { border-color: #c84410; }
 .gallery .gallery__link img { border-radius: 3px; }
