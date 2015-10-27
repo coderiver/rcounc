@@ -226,6 +226,17 @@ $(document).ready(function() {
 		focusOnSelect: true
 	});
 
+	// fancybox init
+
+	$('.js-fancybox').fancybox({
+		helpers: {
+			overlay: {
+				locked: false
+			}
+		}
+	});
+
+
 	$(window).resize(function() {
 		stickyFooter();
 		bannerArea();

@@ -7,7 +7,11 @@ $orange: #c84410
 	a
 		&:hover
 			color: $orange
-			text-decoration: underline 		
+			text-decoration: underline
+	.menu
+		.menu__item
+			&:hover
+				color: #fff 		 		
 	.header
 		.header__content
 			background: $orange
@@ -128,12 +132,19 @@ $orange: #c84410
 		margin-bottom: 15px
 		p
 			margin-bottom: 0
-		input
+		input, textarea
 			width: 100%
 			padding: 0 5px
-			line-height: 1.2  
+			line-height: 1
+			height: 34px 
+			font-size: 15px
 			border: 2px solid #fff
 			background: transparent
+		textarea
+			padding: 5px 
+			background: none
+			height: 110px
+			resize: none	
 	.register__submit
 		padding-top: 15px
 		button

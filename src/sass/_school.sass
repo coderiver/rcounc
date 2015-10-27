@@ -12,6 +12,7 @@
     .gallery__link
         border: 3px solid #fff
         border-radius: 5px
+        cursor: pointer
         &.slick-current
             border-color: #c84410
         img
@@ -19,5 +20,168 @@
                      
 .catalog
     .catalog__item
+        position: relative
         height: 320px
+        padding: 15px 
         margin-bottom: 20px
+        font-size: 14px
+        font-weight: 300
+        +r(1219)
+            padding-bottom: 80px
+        +r(767)
+            height: auto
+            padding-bottom: 15px     
+    .catalog__title
+        margin-bottom: 15px
+        display: inline-block
+        color: #333
+        font-size: 21px
+        font-weight: 500 
+    .catalog__bottom
+        position: absolute
+        bottom: 15px
+        left: 15px
+        right: 20px
+        .date
+            font-size: 12px
+            color: #737373
+        +r(767)
+            position: relative
+            bottom: auto
+            left: auto
+            right: auto
+            padding-top: 15px    
+    .catalog__tag
+        display: inline-block
+        margin-right: 4px
+        margin-bottom: 4px
+        padding: 5px
+        background: #fff
+        text-transform: uppercase
+        font-size: 9px
+        color: #2b2f4e
+.register_big
+    height: auto 
+    h2
+        color: #fff
+    p
+        font-size: 14px
+    .register__field
+        p
+            font-size: 20px
+
+// comments
+.comments
+    padding: 20px 0 35px 
+    background: #f7f7f7
+    .comments__add
+        padding: 0 20px
+    .coments__user
+        font-size: 14px
+        color: #c84410
+        margin-bottom: 10px
+        p
+            margin-bottom: 5px
+        strong
+            font-weight: normal
+            color: #3b3b3b
+    .comments__form
+        p
+            font-size: 20px
+            color: #000
+        textarea
+            width: 100%
+            height: 180px
+            margin-bottom: 25px
+            resize: none
+            background: none
+            padding: 5px
+            border: 2px solid #231313
+        .btn
+            width: 100%
+            text-transform: uppercase
+            font-size: 25px
+            +r(1219)
+                font-size: 20px
+            +r(767)
+                font-size: 18px                       
+.comment
+    margin-bottom: 20px
+    padding: 0 20px 30px 
+    border-bottom: 1px solid #eaeaea
+    line-height: 1.4
+    .comment__topper
+        +clr
+        margin-bottom: 15px   
+    .comment__img
+        float: left
+        width: 100px
+        height: 100px
+        margin-right: 25px 
+        border-radius: 50%
+        overflow: hidden
+        font-size: 0
+        img
+            width: 100%
+            height: 100%  
+    .comment__user
+        padding-top: 15px
+        overflow: hidden
+        font-size: 15px
+        color: #333
+        small
+            font-size: 14px
+            color: #999
+    .comment__content
+        margin-bottom: 25px
+        font-size: 14px
+        color: #333
+        a
+            color: #2b2f4e
+    .comment__bottom
+        font-size: 12px
+        color: #2b2f4e                                        
+.results
+    background: #f7f7f7 
+    margin-bottom: 20px
+    .results__img
+        font-size: 0
+        margin-bottom: 20px
+        img
+            width: 100%
+    .results__in
+        padding: 30px 15px
+        font-size: 14px
+        line-height: 1.4
+        color: #333
+        margin-bottom: 20px
+        h1, h2, h3, h4, h5, h6
+            color: #333
+        p
+            margin-bottom: 25px
+        a
+            color: #333      
+        h5
+            text-transform: uppercase
+            margin-top: 30px
+        +r(767)
+            padding: 10px 0     
+// images gallery
+.images
+    font-size: 0
+    a
+        display: inline-block
+        width: 16.666%
+        img
+            width: 100%                                        
+            
+
+
+
+
+
+
+
+
+
+    
