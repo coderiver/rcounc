@@ -945,8 +945,8 @@ select.form-control { -webkit-appearance: inherit; -moz-appearance: inherit; app
 .soc span { margin-right: 35px; font-size: 14px; color: #999; }
 
 .gallery .gallery__view { margin-bottom: 5px; }
-.gallery .gallety__item .video { height: auto; margin-bottom: 0; background: none; }
-.gallery .gallety__item .video .video__canvas { height: 285px; }
+.gallery .gallery__item .video { height: auto; margin-bottom: 0; background: none; }
+.gallery .gallery__item .video .video__canvas { height: 285px; }
 .gallery .gallery__link { border: 3px solid #fff; border-radius: 5px; cursor: pointer; }
 .gallery .gallery__link.slick-current { border-color: #c84410; }
 .gallery .gallery__link img { border-radius: 3px; }
