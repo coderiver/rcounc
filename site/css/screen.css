@@ -900,8 +900,8 @@ select.form-control { -webkit-appearance: inherit; -moz-appearance: inherit; app
 .courses .courses__links a { color: #C84410; }
 .courses .courses__books .box { padding: 20px; }
 .courses .courses__mobile { margin-top: 20px; padding: 20px; background: #FFF; }
-.courses .courses__mobile a { display: block; margin-bottom: 20px; }
-.courses .courses__mobile a h2 { display: inline-block; vertical-align: top; border-bottom: 3px dotted #c84410; }
+.courses .courses__mobile a { display: block; margin-bottom: 20px; text-decoration: none; line-height: 2; }
+.courses .courses__mobile a h2 { display: inline; vertical-align: top; border-bottom: 3px dotted #c84410; line-height: 1; }
 @media only screen and (max-width: 767px) { .courses .courses__top { padding: 20px; }
   .courses .courses__title h1 { font-size: 35px; } }
 
