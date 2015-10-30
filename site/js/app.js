@@ -284,6 +284,17 @@ $(document).ready(function() {
 		return false;
 	});
 
+	// inner navigation
+
+	 $('.js-innner-nav').on('click', function (){
+        var page = $(this).attr("href");
+    
+        $('html, body').animate({
+            scrollTop: $(page).offset().top - 110
+        }, 500);
+        return false;
+    });
+
 	$(window).resize(function() {
 		stickyFooter();
 		bannerArea();
