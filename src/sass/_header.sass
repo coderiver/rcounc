@@ -268,8 +268,8 @@
 				text-decoration: underline
 		+r(991)
 			text-align: center		
-.top-news
-	margin-bottom: 20px
+.top-news, .main-news, .main-blog
+	margin-bottom: 20px	
 .tag
 	display: inline-block
 	padding: 5px 8px 4px
@@ -387,11 +387,11 @@
 		padding-right: 20px	
 .i-view
 	position: relative
-	top: -2px
+	top: -1px
 	display: inline-block
 	vertical-align: middle
 	margin-right: 6px 
-	+sr(view)
+	+sr(view-small)
 .i-comment
 	display: inline-block
 	vertical-align: middle
@@ -611,6 +611,7 @@
 		font-weight: 300
 		color: #0063a7
 		font-size: 22px
+		line-height: 1
 		text-transform: uppercase 
 		border-bottom: 1px dotted
 		cursor: pointer
@@ -693,8 +694,7 @@
 		font-size: 13px
 		font-weight: bold
 		.i-view
-			margin-right: 3px 
-			transform: scale(0.7)
+			margin-right: 3px
 .calendar
 	position: absolute
 	top: 0

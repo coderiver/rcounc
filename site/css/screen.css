@@ -5,7 +5,7 @@
 
 .i-exit { display: inline-block; width: 15px; height: 15px; background-image: url("../img/icons.png"); background-position: -36px -97px; background-size: 128px 113px; }
 
-.i-fb { display: inline-block; width: 21px; height: 21px; background-image: url("../img/icons.png"); background-position: -72px -67px; background-size: 128px 113px; }
+.i-fb { display: inline-block; width: 21px; height: 21px; background-image: url("../img/icons.png"); background-position: -107px 0px; background-size: 128px 113px; }
 
 .i-file { display: inline-block; width: 10px; height: 11px; background-image: url("../img/icons.png"); background-position: -107px -84px; background-size: 128px 113px; }
 
@@ -13,17 +13,19 @@
 
 .i-logo { display: inline-block; width: 105px; height: 65px; background-image: url("../img/icons.png"); background-position: 0px 0px; background-size: 128px 113px; }
 
-.i-more { display: inline-block; width: 11px; height: 6px; background-image: url("../img/icons.png"); background-position: -53px -97px; background-size: 128px 113px; }
+.i-more { display: inline-block; width: 11px; height: 6px; background-image: url("../img/icons.png"); background-position: -69px -97px; background-size: 128px 113px; }
 
 .i-search { display: inline-block; width: 16px; height: 16px; background-image: url("../img/icons.png"); background-position: 0px -97px; background-size: 128px 113px; }
 
-.i-tw { display: inline-block; width: 21px; height: 21px; background-image: url("../img/icons.png"); background-position: -107px 0px; background-size: 128px 113px; }
+.i-tw { display: inline-block; width: 21px; height: 21px; background-image: url("../img/icons.png"); background-position: -107px -23px; background-size: 128px 113px; }
 
 .i-user { display: inline-block; width: 16px; height: 16px; background-image: url("../img/icons.png"); background-position: -18px -97px; background-size: 128px 113px; }
 
+.i-view-small { display: inline-block; width: 14px; height: 14px; background-image: url("../img/icons.png"); background-position: -53px -97px; background-size: 128px 113px; }
+
 .i-view { display: inline-block; width: 22px; height: 22px; background-image: url("../img/icons.png"); background-position: -48px -67px; background-size: 128px 113px; }
 
-.i-vk { display: inline-block; width: 21px; height: 21px; background-image: url("../img/icons.png"); background-position: -107px -23px; background-size: 128px 113px; }
+.i-vk { display: inline-block; width: 21px; height: 21px; background-image: url("../img/icons.png"); background-position: -72px -67px; background-size: 128px 113px; }
 
 @font-face { font-family: "svgfont"; src: url("fonts/svgfont.eot"); src: url("fonts/svgfont.eot?#iefix") format("eot"), url("fonts/svgfont.woff") format("woff"), url("fonts/svgfont.woff2") format("woff2"), url("fonts/svgfont.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 .icon, [class^="icon-"], [class*=" icon-"], .slick-prev:before, .slick-next:before, .topper .topper__title:after, .ui-datepicker .ui-datepicker-prev:before, .ui-datepicker .ui-datepicker-next:before, .breadcrumbs a:last-child:after, .accordeon .accordeon__title:before { font-family: "svgfont"; font-style: normal; font-weight: normal; text-rendering: auto; speak: none; line-height: 1; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
@@ -339,7 +341,7 @@ select.form-control { -webkit-appearance: inherit; -moz-appearance: inherit; app
 .sub-menu .submenu__nav a:hover { text-decoration: underline; }
 @media only screen and (max-width: 991px) { .sub-menu .submenu__nav { text-align: center; } }
 
-.top-news { margin-bottom: 20px; }
+.top-news, .main-news, .main-blog { margin-bottom: 20px; }
 
 .tag { display: inline-block; padding: 5px 8px 4px; background: #0063a7; font-size: 13px; color: #fff; text-transform: uppercase; }
 .tag:hover { color: #fff; text-decoration: none; }
@@ -380,7 +382,7 @@ select.form-control { -webkit-appearance: inherit; -moz-appearance: inherit; app
 .stats .stats__views { float: left; }
 .stats .date { float: right; padding-right: 20px; }
 
-.i-view { position: relative; top: -2px; display: inline-block; vertical-align: middle; margin-right: 6px; background-image: url("../img/icons.png"); width: 22px; height: 22px; background-position: -48px -67px; background-size: 128px 113px; }
+.i-view { position: relative; top: -1px; display: inline-block; vertical-align: middle; margin-right: 6px; background-image: url("../img/icons.png"); width: 14px; height: 14px; background-position: -53px -97px; background-size: 128px 113px; }
 
 .i-comment { display: inline-block; vertical-align: middle; margin-right: 6px; background-image: url("../img/icons.png"); width: 16px; height: 16px; background-position: -107px -66px; background-size: 128px 113px; }
 
@@ -459,7 +461,7 @@ select.form-control { -webkit-appearance: inherit; -moz-appearance: inherit; app
 .tabs-main .tabs-main__item:first-child { margin-left: 0; }
 .tabs-main .tabs-main__item:first-child:before { content: ""; }
 .tabs-main .tabs-main__item.is-active .tabs-main__link { font-weight: 600; color: #333; border-bottom: none; }
-.tabs-main .tabs-main__link { display: inline-block; font-weight: 300; color: #0063a7; font-size: 22px; text-transform: uppercase; border-bottom: 1px dotted; cursor: pointer; }
+.tabs-main .tabs-main__link { display: inline-block; font-weight: 300; color: #0063a7; font-size: 22px; line-height: 1; text-transform: uppercase; border-bottom: 1px dotted; cursor: pointer; }
 
 .important { padding: 0 9px 15px; }
 @media (min-width: 1620px) { .important { display: block !important; } }
@@ -486,7 +488,7 @@ select.form-control { -webkit-appearance: inherit; -moz-appearance: inherit; app
 .charts .charts__title { float: left; width: 50%; padding-right: 20px; text-align: right; font-size: 15px; color: #333; }
 .charts .charts__graph { float: left; width: 50%; }
 .charts .charts__progress { height: 18px; line-height: 18px; color: #fff; padding-left: 6px; font-size: 13px; font-weight: bold; }
-.charts .charts__progress .i-view { margin-right: 3px; -webkit-transform: scale(0.7); -ms-transform: scale(0.7); transform: scale(0.7); }
+.charts .charts__progress .i-view { margin-right: 3px; }
 
 .calendar { position: absolute; top: 0; left: 410px; width: 380px; height: 380px; padding: 13px 19px 19px; z-index: 2; }
 @media (min-width: 1620px) { .calendar { display: block !important; } }
