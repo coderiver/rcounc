@@ -1,10 +1,12 @@
 // header
 .header
-	position: fixed
-	top: 0
-	left: 0
-	right: 0
+	position: relative
 	z-index: 99
+	&.is-fixed
+		position: fixed
+		top: 0
+		left: 0
+		right: 0
 	.header__content
 		position: relative
 		background: #0063a7

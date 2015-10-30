@@ -115,6 +115,24 @@ $(document).ready(function() {
 	}
 	stickyFooter();
 
+	// sticky header
+
+	function stickyHeader() {
+		scroll = $(window).scrollTop();
+
+		if (scroll >= 1) {
+			$('.js-header').addClass('is-fixed');
+		}
+		else {
+			$('.js-header').removeClass('is-fixed');
+		}
+	};
+	stickyHeader();
+
+	$(window).scroll(function() {
+		stickyHeader();
+	});
+
 	// mobile menu toggle
 
 	$('.js-hamb').on('click', function() {

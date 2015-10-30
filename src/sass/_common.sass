@@ -19,13 +19,16 @@ body
 .out
 	min-height: 100%
 	height: auto
-	padding-top: 112px
-	&.out_index
-		padding-top: 132px 
-	+r(991)
-		padding-top: 79px
+	padding-top: 0
+	&.fixed-top
+		padding-top: 112px
 		&.out_index
-			padding-top: 99px
+			padding-top: 132px 
+	+r(991)
+		&.fixed-top
+			padding-top: 79px
+			&.out_index
+				padding-top: 99px
 		
 		
 .main
@@ -34,12 +37,12 @@ body
 	padding-top: 30px
 	.main__right
 		position: absolute
-		top: 0
+		top: 30px
 		right: 0
 	+r(991)
 		.main__right
 			display: none
-		padding-top: 0 	
+			padding-top: 0 	
 					
 // common blocks
 .center

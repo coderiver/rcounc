@@ -48,15 +48,15 @@ body { font-family: "Fira Sans", sans-serif; -webkit-font-smoothing: antialiased
 
 * { outline: none; }
 
-.out { min-height: 100%; height: auto; padding-top: 112px; }
-.out.out_index { padding-top: 132px; }
-@media only screen and (max-width: 991px) { .out { padding-top: 79px; }
-  .out.out_index { padding-top: 99px; } }
+.out { min-height: 100%; height: auto; padding-top: 0; }
+.out.fixed-top { padding-top: 112px; }
+.out.fixed-top.out_index { padding-top: 132px; }
+@media only screen and (max-width: 991px) { .out.fixed-top { padding-top: 79px; }
+  .out.fixed-top.out_index { padding-top: 99px; } }
 
 .main { position: relative; overflow: hidden; padding-top: 30px; }
-.main .main__right { position: absolute; top: 0; right: 0; }
-@media only screen and (max-width: 991px) { .main { padding-top: 0; }
-  .main .main__right { display: none; } }
+.main .main__right { position: absolute; top: 30px; right: 0; }
+@media only screen and (max-width: 991px) { .main .main__right { display: none; padding-top: 0; } }
 
 .center { text-align: center; }
 
@@ -253,7 +253,8 @@ select.form-control { -webkit-appearance: inherit; -moz-appearance: inherit; app
 .hamb span:before { top: -7px; }
 .hamb span:after { top: 7px; }
 
-.header { position: fixed; top: 0; left: 0; right: 0; z-index: 99; }
+.header { position: relative; z-index: 99; }
+.header.is-fixed { position: fixed; top: 0; left: 0; right: 0; }
 .header .header__content { position: relative; background: #0063a7; }
 @media only screen and (max-width: 991px) { .header .header__content { padding-right: 10px; } }
 .header .header__logo { float: left; width: 180px; margin-right: 18px; }
