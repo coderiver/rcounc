@@ -499,6 +499,7 @@
 	.video__canvas
 		position: relative
 		height: 260px
+		font-size: 0
 		a
 			display: block
 			height: 100%
@@ -521,7 +522,17 @@
 		height: auto
 	+r(991)
 		.video__canvas
-			height: auto		  
+			height: auto
+			padding-bottom: 62.5%
+			iframe
+				position: absolute
+				top: 0
+				bottom: 0
+				right: 0
+				left: 0
+		// &.video_wide
+		// 	.video__canvas
+		// 		height: auto			  
 .story
 	height: 780px
 	margin-bottom: 20px

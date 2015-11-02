@@ -421,7 +421,7 @@ select.form-control { -webkit-appearance: inherit; -moz-appearance: inherit; app
 .media-news { margin-bottom: 20px; }
 
 .video { position: relative; height: 380px; margin-bottom: 20px; background: #0063a7; color: #fff; }
-.video .video__canvas { position: relative; height: 260px; }
+.video .video__canvas { position: relative; height: 260px; font-size: 0; }
 .video .video__canvas a { display: block; height: 100%; font-size: 0; }
 .video .video__canvas a img { width: 100%; height: 100%; }
 .video .video__info { padding: 9px 9px 9px 18px; }
@@ -429,7 +429,8 @@ select.form-control { -webkit-appearance: inherit; -moz-appearance: inherit; app
 .video .video__more { color: #fff; font-weight: 500; font-size: 21px; }
 .video.video_wide .video__canvas { height: 380px; }
 @media only screen and (max-width: 1219px) { .video { height: auto; } }
-@media only screen and (max-width: 991px) { .video .video__canvas { height: auto; } }
+@media only screen and (max-width: 991px) { .video .video__canvas { height: auto; padding-bottom: 62.5%; }
+  .video .video__canvas iframe { position: absolute; top: 0; bottom: 0; right: 0; left: 0; } }
 
 .story { height: 780px; margin-bottom: 20px; background: #0063a7; }
 .story .story__in .news-link { padding: 0 20px; margin-top: 0; margin-bottom: 20px; color: #fff; }
@@ -724,6 +725,7 @@ select.form-control { -webkit-appearance: inherit; -moz-appearance: inherit; app
 .project.project_single .img-link { height: 380px; }
 .project.project_wide { padding-bottom: 30px; }
 .project .img-link { height: 180px; }
+.project .img-link .img-link__link { font-size: 21px; }
 .project .project__title { position: absolute; bottom: 20px; left: 20px; right: 20px; color: #FFF; font-size: 21px; font-weight: bold; }
 .project .project__text { padding: 20px; }
 .project .project__text p { padding-bottom: 20px; font-size: 14px; color: #333; }
@@ -736,6 +738,8 @@ select.form-control { -webkit-appearance: inherit; -moz-appearance: inherit; app
 .project .project__link .btn-sm { padding: 5px 20px; font-weight: 700; }
 
 .geografy__map { width: 100%; height: 600px; }
+@media only screen and (max-width: 991px) { .geografy { padding: 0 20px; }
+  .geografy .geografy__map { height: 400px; } }
 
 .btn-border { width: 100%; padding: 10px 20px; border: 2px solid #0063A7; margin-bottom: 20px; font-size: 15px; background: #fff; color: #0063a7; }
 .btn-border:hover { background: #0063A7; text-decoration: none; color: #fff; }
