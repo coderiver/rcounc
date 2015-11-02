@@ -229,23 +229,37 @@
 	margin-bottom: 20px
 	&.box_long
 		height: auto
-		padding-bottom: 70px
+		min-height: 400px
+		padding-bottom: 80px
 	.box__bottom
 		position: absolute
 		bottom: 20px
 		left: 20px
 		right: 20px
+		text-align: center
 		.btn
-			float: right
+			position: relative
 			width: 45%
 			height: 42px
 			padding: 2px 0
 			text-align: center 
 			line-height: 41px
-			&:first-child
-				float: left
+			&:nth-child(2)
+				margin-left: 25px
+	+r(1219)
+		.box__bottom
+			.btn
+				&:nth-child(2)
+					margin-left: 15px
 	+r(991)
 		height: auto
+		.box__bottom
+			.btn
+				height: 33px
+				line-height: 33px
+	+r(767)
+		&.box_long
+			min-height: 1px			
 	
 
 .img-link_short
