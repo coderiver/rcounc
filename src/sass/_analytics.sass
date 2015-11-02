@@ -170,6 +170,11 @@
 	margin-bottom: 50px
 	p
 		color: #333
+	.form-group
+		.col-lg-6
+			&:last-child
+				+r(1619)
+					clear: both	
 	.poll__topper
 		padding: 18px
 		background: #0063a7
@@ -189,7 +194,7 @@
 			width: 100% 
 			& > p
 				display: inline-block
-				vertical-align: middle
+				vertical-align: middle	
 		.btn
 			width: 100%
 			max-width: 230px
@@ -247,8 +252,7 @@
 	height: 180px
 	.img-link__link
 		font-size: 21px
-	+r(991)		
-		height: 300px
+	+r(991)
 		.img-link__link
 			font-size: 18px
 	+r(767)		

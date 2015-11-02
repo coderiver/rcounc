@@ -384,7 +384,8 @@
 		float: left
 	.date
 		float: right
-		padding-right: 20px	
+		padding-right: 20px
+		color: #fff 
 .i-view
 	position: relative
 	top: -1px
@@ -524,18 +525,10 @@
 .story
 	height: 780px
 	margin-bottom: 20px
-	background: #0063a7 
-	+r(1219)
-		height: auto	
+	background: #0063a7
 	.story__in
-		padding: 25px 20px
-		margin-left: -3%  
-		font-size: 0
 		.news-link
-			display: inline-block
-			vertical-align: top
-			width: 30%
-			margin-left: 3%
+			padding: 0 20px 
 			margin-top: 0
 			margin-bottom: 20px
 			color: #fff
@@ -544,25 +537,27 @@
 			.author
 				color: #fff
 			.date
-				color: #fff 		
-	+r(1619)
-		.story__in
-			.news-link
-				width: 47%
-	+r(768)
-		background: none
+				color: #fff
+	.img-link.img-link_wide .img-link__link
+		font-size: 28px					
+	+r(1219)
+		height: auto			
+	+r(767)
+		background: #F5F5F5
 		height: auto
 		.story__in
 			padding: 0 
 			margin-left: 0
 			.news-link
-				width: 100%
 				margin-left: 0 
 				color: #333
+				padding: 0 
 				.news-link__link
 					color: #333
 				.author
-					color: #0063a7 			 
+					color: #0063a7
+				.date
+					color: #999 	 			 
 .slider
 	margin-bottom: 20px
 	+r(768)
@@ -794,9 +789,15 @@
 			bottom: 20px
 			left: 50%
 			transform: translateX(-50%) 
+	+r(1219)
+		.box
+			height: auto
+	+r(991)
+		.box
+			height: 400px
 	+r(767)
 		.box
-			height: auto		 
+			height: auto						 
 
 
 

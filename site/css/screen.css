@@ -380,7 +380,7 @@ select.form-control { -webkit-appearance: inherit; -moz-appearance: inherit; app
 @media only screen and (max-width: 992px) { .stats { margin-bottom: 0; } }
 .stats .stats__comments { float: left; margin-right: 14px; }
 .stats .stats__views { float: left; }
-.stats .date { float: right; padding-right: 20px; }
+.stats .date { float: right; padding-right: 20px; color: #fff; }
 
 .i-view { position: relative; top: -1px; display: inline-block; vertical-align: middle; margin-right: 6px; background-image: url("../img/icons.png"); width: 14px; height: 14px; background-position: -53px -97px; background-size: 128px 113px; }
 
@@ -432,18 +432,18 @@ select.form-control { -webkit-appearance: inherit; -moz-appearance: inherit; app
 @media only screen and (max-width: 991px) { .video .video__canvas { height: auto; } }
 
 .story { height: 780px; margin-bottom: 20px; background: #0063a7; }
-@media only screen and (max-width: 1219px) { .story { height: auto; } }
-.story .story__in { padding: 25px 20px; margin-left: -3%; font-size: 0; }
-.story .story__in .news-link { display: inline-block; vertical-align: top; width: 30%; margin-left: 3%; margin-top: 0; margin-bottom: 20px; color: #fff; }
+.story .story__in .news-link { padding: 0 20px; margin-top: 0; margin-bottom: 20px; color: #fff; }
 .story .story__in .news-link .news-link__link { color: #fff; }
 .story .story__in .news-link .author { color: #fff; }
 .story .story__in .news-link .date { color: #fff; }
-@media only screen and (max-width: 1619px) { .story .story__in .news-link { width: 47%; } }
-@media only screen and (max-width: 768px) { .story { background: none; height: auto; }
+.story .img-link.img-link_wide .img-link__link { font-size: 28px; }
+@media only screen and (max-width: 1219px) { .story { height: auto; } }
+@media only screen and (max-width: 767px) { .story { background: #F5F5F5; height: auto; }
   .story .story__in { padding: 0; margin-left: 0; }
-  .story .story__in .news-link { width: 100%; margin-left: 0; color: #333; }
+  .story .story__in .news-link { margin-left: 0; color: #333; padding: 0; }
   .story .story__in .news-link .news-link__link { color: #333; }
-  .story .story__in .news-link .author { color: #0063a7; } }
+  .story .story__in .news-link .author { color: #0063a7; }
+  .story .story__in .news-link .date { color: #999; } }
 
 .slider { margin-bottom: 20px; }
 @media only screen and (max-width: 768px) { .slider { margin-bottom: 50px; } }
@@ -518,6 +518,8 @@ select.form-control { -webkit-appearance: inherit; -moz-appearance: inherit; app
 .experts .img-link { margin-bottom: 0; }
 .experts .box { height: 400px; padding-bottom: 60px; }
 .experts .box .btn { position: absolute; bottom: 20px; left: 50%; -webkit-transform: translateX(-50%); -ms-transform: translateX(-50%); transform: translateX(-50%); }
+@media only screen and (max-width: 1219px) { .experts .box { height: auto; } }
+@media only screen and (max-width: 991px) { .experts .box { height: 400px; } }
 @media only screen and (max-width: 767px) { .experts .box { height: auto; } }
 
 .topper { background: #EAEAEA; padding: 11px 0; }
@@ -574,6 +576,7 @@ select.form-control { -webkit-appearance: inherit; -moz-appearance: inherit; app
 
 .poll { margin-bottom: 50px; }
 .poll p { color: #333; }
+@media only screen and (max-width: 1619px) { .poll .form-group .col-lg-6:last-child { clear: both; } }
 .poll .poll__topper { padding: 18px; background: #0063a7; }
 .poll .poll__topper p { color: #fff; font-size: 18px; font-weight: 500; }
 .poll .poll__text p { font-weight: 700; }
@@ -598,8 +601,7 @@ select.form-control { -webkit-appearance: inherit; -moz-appearance: inherit; app
 
 .img-link_short { height: 180px; }
 .img-link_short .img-link__link { font-size: 21px; }
-@media only screen and (max-width: 991px) { .img-link_short { height: 300px; }
-  .img-link_short .img-link__link { font-size: 18px; } }
+@media only screen and (max-width: 991px) { .img-link_short .img-link__link { font-size: 18px; } }
 @media only screen and (max-width: 767px) { .img-link_short .img-link__link { font-size: 15px; } }
 
 .cat-link { display: inline-block; }
