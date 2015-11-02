@@ -16,6 +16,15 @@
 			background: $orange
 	.topper__title
 		color: $orange
+		font-size: 25px
+		padding-top: 5px
+		+r(991)
+			padding-top: 2px
+	.page-nav
+		a
+			font-size: 18px
+			+r(1219)
+				font-size: 15px	
 	.box
 		height: auto	
 	.cat-link
@@ -29,6 +38,9 @@
 			font-size: 21px
 	.tag
 		background: $orange
+		&:hover
+			color: #fff
+			text-decoration: none 
 	.img-link
 		.img-link__link
 			&:hover
@@ -41,11 +53,7 @@
 			color: $orange
 			&:hover
 				color: #fff
-				background: $orange
-	// .more
-	// 	color: $orange
-	// 	&:before
-	// 		border-color: $orange 			 			 					 
+				background: $orange			 			 					 
 .img-link_big
 	height: 460px
 	+r(991)
@@ -95,6 +103,7 @@
 		font-size: 15px 
 		font-weight: 300
 		margin-bottom: 5px
+		line-height: 1.4 
 	.course__more
 		color: $orange
 		font-size: 15px
@@ -199,11 +208,13 @@
 		.exp-order__left
 			width: 100%
 			margin-right: 0
+			float: none
 			.btn
 				width: 100%
 				font-size: 15px 
 		.exp-order__content
-			display: none
+			overflow: visible
+			padding-top: 20px
 .webinar
 	position: relative
 	margin-bottom: 30px
@@ -271,6 +282,9 @@
 			bottom: 10px
 			.icon-arrow
 				+rotate(180)
+.literature
+	h4
+		margin-bottom: 25px				
 .infograph
 	position: relative
 	height: 380px
@@ -300,6 +314,7 @@
 		z-index: 1
 	.practice__in
 		position: relative
+		width: 50% 
 		z-index: 2	
 		p
 			font-weight: 300
@@ -319,6 +334,7 @@
 			height: 160px
 			margin-bottom: 10px
 		.practice__in	
+			width: 100% 
 			.practice__title
 				font-size: 20px 		
 				color: $orange

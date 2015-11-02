@@ -433,7 +433,18 @@
 			content: "|"
 			display: inline-block
 			vertical-align: middle
-			margin: 0 2px 
+			margin: 0 2px
+	.news-link__details
+		a
+			position: relative
+			&:before
+				content: "|"
+				display: inline-block
+				vertical-align: middle
+				margin: 0 2px
+			&:first-child
+				&:before
+					display: none			
 	.tag
 		margin-top: 10px		
 .date
@@ -460,7 +471,7 @@
 		height: 140px 	 		
 .person
 	position: relative
-	margin-top: 25px
+	margin-top: 55px
 	&:first-child
 		margin-top: 0
 	.person__img
@@ -478,6 +489,12 @@
 		display: table-cell
 		padding: 0 10px 
 		vertical-align: middle
+		p
+			line-height: 1.8 
+		a
+			color: #000
+			&:hover
+				color: #000 
 	.person__name
 		display: block
 		margin-bottom: 5px

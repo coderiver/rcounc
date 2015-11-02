@@ -1,13 +1,15 @@
 // analytics
 .topper
+	+clr
 	background: #EAEAEA
 	padding: 11px 0
 	.topper__title
 		position: relative
-		display: inline-block
-		vertical-align: middle
+		float: left
+		padding-top: 7px
 		font-weight: bold
 		font-size: 20px
+		pointer-events: none
 		&:after
 			content: "\EA06"
 			position: absolute
@@ -23,10 +25,14 @@
 		padding: 30px 0 11px 
 		margin-bottom: 0
 		.topper__title
+			float: none
+			display: inline-block
 			font-size: 30px
 			font-weight: bold
 			text-transform: uppercase
+			padding-top: 0
 			cursor: pointer
+			pointer-events: auto
 			&:after
 				display: inline-block
 				top: 10px
@@ -41,12 +47,13 @@
 			&:after
 				top: 6px
 .page-nav
-	display: inline-block
-	vertical-align: middle
+	overflow: hidden
+	+clr
 	div
-		display: inline-block
-		vertical-align: middle
-		margin-left: 10px 
+		float: left
+		margin-left: 10px
+		&.is-right
+			float: right 
 	a
 		display: inline-block
 		padding: 10px 15px 
@@ -56,12 +63,18 @@
 		&:hover, &.is-active
 			background: #fff
 			color: #333!important 
-			text-decoration: none!important  
+			text-decoration: none!important 
+	+r-min(992)
+		display: block!important 		 
 	+r(991)
 		display: none
 		div
 			display: block
-			margin-bottom: 10px 
+			float: none
+			margin-left: 0 
+			margin-bottom: 10px
+			&.is-right
+				float: none 
 
 .analytics
 	.analytics__title
@@ -108,7 +121,7 @@
 		max-width: 100%	
 	
 .follow
-	margin-bottom: 20px
+	margin-bottom: 50px
 	.follow__wrap
 		padding: 20px 0
 		background: #F7F7F7
@@ -421,7 +434,10 @@
 		display: none
 .viewmore-md
 	+r(1219)
-		display: none		
+		display: none
+.viewmore-sm
+	+r(991)
+		display: none				
 	 		
 
 

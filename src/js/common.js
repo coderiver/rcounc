@@ -188,16 +188,18 @@ $(document).ready(function() {
 
 	});
 
-	function topperNav() {
-		if ($(window).width() <= 991 && $('.js-topper-nav').length) {
-			$('.js-topper-nav').on('click', function() {
-				$(this).toggleClass('is-open');
-				$(this).closest('.topper').find('.page-nav').slideToggle();
-			});
-		};
-	}
 
-	topperNav();
+	$('.js-topper-nav').on('click', function() {
+		if ($(this).hasClass('is-open')) {
+			$(this).removeClass('is-open');
+			$(this).closest('.topper').find('.page-nav').slideUp();
+		}
+		else {
+			$(this).addClass('is-open');
+			$(this).closest('.topper').find('.page-nav').slideDown();
+		}
+	});
+
 
 	// video gallery
 
@@ -268,7 +270,6 @@ $(document).ready(function() {
 	$(window).resize(function() {
 		stickyFooter();
 		bannerArea();
-		topperNav();
 	});
 
 
