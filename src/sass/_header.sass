@@ -311,12 +311,12 @@
 		display: inline-block
 		margin: 5px 0 
 		color: #fff
-		font-size: 25px
+		font-size: 28px
 		font-weight: 500
 		&:hover
 			text-decoration: none
-		+r(1220)
-			font-size: 22px
+		+r(1219)
+			font-size: 21px
 		+r(992)
 			font-size: 20px
 		+r(768)
@@ -420,9 +420,13 @@
 	.news-link__link
 		display: block
 		margin-bottom: 5px 
-		font-size: 17px
+		font-size: 21px
 		color: #333
 		font-weight: 700
+		+r(1219)
+			font-size: 18px
+		+r(767)
+			font-size: 15px
 	.date
 		&:after
 			content: "|"
@@ -436,6 +440,7 @@
 	display: inline-block
 	vertical-align: middle
 	font-size: 15px
+	color: #999 
 	+r(768)
 		font-size: 12px 
 .person-wrap
@@ -502,7 +507,7 @@
 				height: 100%  
 	.video__info
 		padding: 9px 9px 9px 18px
-		.author
+		.author, .date
 			color: #fff  
 	.video__more
 		color: #fff
@@ -511,8 +516,11 @@
 	&.video_wide
 		.video__canvas
 			height: 380px	
-	+r(767)
-		height: auto	  
+	+r(1219)
+		height: auto
+	+r(991)
+		.video__canvas
+			height: auto		  
 .story
 	height: 780px
 	margin-bottom: 20px
@@ -534,7 +542,9 @@
 			.news-link__link
 				color: #fff
 			.author
-				color: #fff 	
+				color: #fff
+			.date
+				color: #fff 		
 	+r(1619)
 		.story__in
 			.news-link
@@ -773,7 +783,20 @@
 		.side__item
 			.btn
 				padding: 5px 25px			 
-
+.experts
+	.img-link
+		margin-bottom: 0
+	.box
+		height: 400px
+		padding-bottom: 60px
+		.btn
+			position: absolute
+			bottom: 20px
+			left: 50%
+			transform: translateX(-50%) 
+	+r(767)
+		.box
+			height: auto		 
 
 
 
