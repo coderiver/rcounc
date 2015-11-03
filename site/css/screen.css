@@ -3014,13 +3014,18 @@ select.form-control {
 
 .mapcontent {
   font-size: 15px;
-  padding: 5px;
+  padding: 3px;
+  color: #0d65a5;
 }
 .mapcontent h3 {
   font-size: 16px;
   text-transform: uppercase;
   font-weight: bold;
   margin-bottom: 4px;
+  color: #000000;
+}
+.mapcontent h3 a {
+  color: #000;
 }
 
 .btn-more {
