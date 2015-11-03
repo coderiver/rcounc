@@ -1569,6 +1569,22 @@
 	    scrollwheel: false,
 	    center: myLatLng
 	  });
+
+	  
+	  var iconBase = 'img/';
+	  var marker = new google.maps.Marker({
+	  	position: {lat:50.5175895,lng: 30.498414300000036},
+	  	map: map,
+	  	icon: iconBase + 'map.png'
+	  });
+	  	var infowindow = new google.maps.InfoWindow({
+	  	    content: '<div class="mapcontent"><h3><a href="#">Сирия</a></h3><span>4 проекта</span></div>'
+	  	});
+	  	marker.addListener('click', function() {
+	  	    infowindow.open(map, marker);
+	  	});
+
+
 	}
 </script>
 <script async defer src="https://maps.googleapis.com/maps/api/js?v=3.exp&callback=initMap"></script>
