@@ -214,6 +214,9 @@ body {
   overflow: hidden;
   padding-top: 30px;
 }
+.main.main_school {
+  padding-top: 50px;
+}
 .main .main__right {
   position: absolute;
   top: 30px;
@@ -1193,11 +1196,14 @@ select.form-control {
 .header__tools {
   overflow: hidden;
   text-align: center;
+  position: relative;
+  top: -4px;
 }
 @media only screen and (max-width: 767px) {
   .header__tools {
     overflow: visible;
     float: right;
+    top: 0;
   }
 }
 @media only screen and (max-width: 1219px) {
@@ -1289,6 +1295,7 @@ select.form-control {
   vertical-align: top;
   line-height: 1;
   font-size: 23px;
+  font-size: 19px;
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
@@ -1382,7 +1389,7 @@ select.form-control {
   bottom: 0;
   left: 0;
   right: 0;
-  padding: 18px;
+  padding: 18px 18px 10px 18px;
   background-image: linear-gradient(transparent, black);
 }
 @media only screen and (max-width: 991px) {
@@ -1479,6 +1486,7 @@ select.form-control {
 }
 .img-link.img-link_wide .img-link__link {
   font-size: 35px;
+  line-height: 1.05;
 }
 @media only screen and (max-width: 1219px) {
   .img-link.img-link_wide .img-link__link {
@@ -1721,6 +1729,9 @@ select.form-control {
   margin-bottom: 20px;
   background: #0063a7;
   color: #fff;
+}
+.gallery .video {
+  min-height: 0;
 }
 .video .video__canvas {
   position: relative;
@@ -2204,6 +2215,8 @@ select.form-control {
 
 .page-nav {
   overflow: hidden;
+  position: relative;
+  top: 3px;
   *zoom: 1;
 }
 .page-nav:after {
@@ -2224,6 +2237,7 @@ select.form-control {
   font-size: 15px;
   color: #333;
   font-weight: 500;
+  margin-right: 9px;
 }
 .page-nav a:hover, .page-nav a.is-active {
   background: #fff;
@@ -4136,14 +4150,22 @@ select.form-control {
   border-radius: 3px;
 }
 
+.school-content {
+  padding-top: 20px;
+}
+
 .catalog .catalog__item {
   position: relative;
   min-height: 320px;
-  padding: 15px;
+  padding: 17px;
   margin-bottom: 20px;
   font-size: 14px;
   font-weight: 300;
   padding-bottom: 80px;
+  padding-top: 25px;
+}
+.catalog .catalog__item p {
+  line-height: 24px;
 }
 @media only screen and (max-width: 1219px) {
   .catalog .catalog__item {
@@ -4158,7 +4180,7 @@ select.form-control {
   }
 }
 .catalog .catalog__title {
-  margin-bottom: 15px;
+  margin-bottom: 14px;
   display: inline-block;
   color: #333;
   font-size: 21px;
@@ -4296,6 +4318,7 @@ select.form-control {
 .comment .comment__content {
   margin-bottom: 25px;
   font-size: 14px;
+  line-height: 24px;
   color: #333;
 }
 .comment .comment__content a {

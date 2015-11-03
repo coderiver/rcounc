@@ -181,9 +181,12 @@
 .header__tools
 	overflow: hidden
 	text-align: center
+	position: relative
+	top: -4px 
 	+r(767)
 		overflow: visible
 		float: right
+		top: 0
 	.socials
 		+r(1219)
 			display: none
@@ -232,6 +235,7 @@
 		vertical-align: top
 		line-height: 1
 		font-size: 23px
+		font-size: 19px 
 		color: #fff
 		text-decoration: none
 		text-transform: uppercase
@@ -302,7 +306,7 @@
 		bottom: 0
 		left: 0
 		right: 0
-		padding: 18px
+		padding: 18px 18px 10px 18px
 		+g(rgba(#000, 0), rgba(#000, 1))
 		+r(991)
 			background: rgba(#000, 0.8)
@@ -363,6 +367,7 @@
 	&.img-link_wide
 		.img-link__link
 			font-size: 35px
+			line-height: 1.05
 			+r(1219)
 				font-size: 22px
 			+r(991)
@@ -513,6 +518,8 @@
 	margin-bottom: 20px
 	background: #0063a7
 	color: #fff  
+	.gallery &
+		min-height: 0 
 	.video__canvas
 		position: relative
 		height: 260px
