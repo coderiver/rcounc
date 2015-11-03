@@ -1097,7 +1097,7 @@ select.form-control {
 .m-user {
   position: relative;
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: top;
   width: 140px;
   height: 25px;
   padding-left: 29px;
@@ -1111,7 +1111,7 @@ select.form-control {
   position: absolute;
   top: 50%;
   left: 0;
-  margin-top: -12px;
+  margin-top: -16px;
   width: 25px;
   height: 25px;
   border-radius: 50%;
@@ -1152,7 +1152,7 @@ select.form-control {
 .m-reader {
   position: relative;
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: top;
   margin-right: 14px;
   font-size: 15px;
   font-weight: 300;
@@ -3220,7 +3220,7 @@ select.form-control {
 }
 
 .documents .box {
-  height: 500px;
+  min-height: 500px;
   padding: 0;
 }
 .documents .documents__item {
@@ -3278,6 +3278,12 @@ select.form-control {
   color: #2B2F4E;
 }
 
+.out_orange .top-nav a:hover, .out_orange .lang a:hover, .out_orange .header__profile a:hover {
+  color: #fff;
+}
+.out_orange .header__profile a:hover {
+  text-decoration: none;
+}
 @media (min-width: 1620px) {
   .out_orange .container {
     width: 1200px;
