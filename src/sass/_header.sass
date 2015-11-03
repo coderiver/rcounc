@@ -304,7 +304,7 @@
 		right: 0
 		padding: 18px
 		+g(rgba(#000, 0), rgba(#000, 1))
-		+r(992)
+		+r(991)
 			background: rgba(#000, 0.8)
 			padding: 7px 12px
 	.img-link__link
@@ -317,7 +317,7 @@
 			text-decoration: none
 		+r(1219)
 			font-size: 21px
-		+r(992)
+		+r(991)
 			font-size: 20px
 		+r(768)
 			font-size: 15px 	
@@ -333,7 +333,7 @@
 		opacity: 0
 		padding: 10px 
 		transition: opacity 300ms
-		+r(992)
+		+r(991)
 			opacity: 1
 			background: rgba(#000, 0.8)    	
 	&:first-child
@@ -341,7 +341,7 @@
 	&:hover
 		&:before, 
 			opacity: 1
-			+r(992)	
+			+r(991)	
 				opacity: 0 
 		.img-link__top
 			opacity: 1 	
@@ -363,9 +363,9 @@
 	&.img-link_wide
 		.img-link__link
 			font-size: 35px
-			+r(1220)
+			+r(1219)
 				font-size: 22px
-			+r(992)
+			+r(991)
 				font-size: 20px
 			+r(768)
 				font-size: 15px 
@@ -375,7 +375,7 @@
 			height: 520px 				
 .stats
 	margin-bottom: 20px
-	+r(992)
+	+r(991)
 		margin-bottom: 0
 	.stats__comments
 		float: left
@@ -411,7 +411,7 @@
 		color: #0063a7
 		&:hover
 			text-decoration: none
-	+r(992)
+	+r(991)
 		display: none		  			 			 	 	
 .news-link
 	margin-top: 25px
@@ -465,7 +465,7 @@
 		display: inline-block
 		vertical-align: middle
 		text-align: left
-	+r(1220)
+	+r(1219)
 		padding: 10px	
 	+r(768)
 		height: 140px 	 		
@@ -509,7 +509,7 @@
 	margin-bottom: 20px
 .video
 	position: relative
-	height: 380px
+	min-height: 380px
 	margin-bottom: 20px
 	background: #0063a7
 	color: #fff  
@@ -537,6 +537,7 @@
 			height: 380px	
 	+r(1219)
 		height: auto
+		min-height: 0 
 	+r(991)
 		.video__canvas
 			height: auto
