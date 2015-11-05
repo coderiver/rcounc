@@ -898,6 +898,9 @@ select.form-control {
   display: block;
   padding: 8px 0;
 }
+.footer .hamb {
+  display: none;
+}
 .hamb span {
   position: relative;
   display: block;
@@ -2300,11 +2303,6 @@ select.form-control {
 .block-link .block-link__text p {
   color: #555;
   line-height: 1.1;
-}
-@media only screen and (max-width: 767px) {
-  .block-link {
-    display: none;
-  }
 }
 
 .links {
