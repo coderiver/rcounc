@@ -140,7 +140,16 @@ $(document).ready(function() {
 
 	// datepicker
 
-	$('#datepicker').datepicker();
+	$('#datepicker').datepicker({
+		beforeShowDay: function(date) {
+		   var today = new Date(), maxDate;
+		   today.setHours(0,0,0,0);
+		   maxDate = new Date().setDate(today.getDate() + 17);
+		   if (date <= maxDate && date >= today ) {
+		      return [true, 'has-news'];
+		   }
+		   return [true, ''];
+		}});
 
 	// banner area
 
