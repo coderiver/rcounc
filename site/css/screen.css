@@ -1394,7 +1394,6 @@ select.form-control {
 }
 @media only screen and (max-width: 991px) {
   .img-link .img-link__bottom {
-    background: rgba(0, 0, 0, 0.8);
     padding: 7px 12px;
   }
 }
@@ -2468,6 +2467,19 @@ select.form-control {
 }
 .poll.poll_small .poll__btns .btn {
   margin-bottom: 10px;
+}
+.poll .poll__result {
+  height: 1em;
+  display: block;
+  background: #0063a7;
+  position: relative;
+  margin-top: 5px;
+}
+.poll .poll__result span {
+  position: absolute;
+  right: -2.2em;
+  color: #000;
+  top: 0;
 }
 
 .box {
