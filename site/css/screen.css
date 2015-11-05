@@ -1353,6 +1353,10 @@ select.form-control {
   margin-bottom: 20px;
 }
 
+.main-news .box {
+  min-height: auto;
+}
+
 .tag {
   display: inline-block;
   padding: 5px 8px 4px;
@@ -2221,7 +2225,7 @@ select.form-control {
 .page-nav {
   overflow: hidden;
   position: relative;
-  top: 3px;
+  top: 1px;
   *zoom: 1;
 }
 .page-nav:after {
@@ -3047,7 +3051,7 @@ select.form-control {
 
 .btn-more {
   position: absolute;
-  top: 95px;
+  top: 69px;
   left: 0px;
   z-index: 3;
 }
@@ -3821,6 +3825,9 @@ select.form-control {
   background: url("../img/bg-courses.jpg") top center no-repeat;
 }
 
+.courses .box {
+  min-height: 0;
+}
 .courses .courses__title {
   text-align: center;
 }
