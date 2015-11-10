@@ -3,7 +3,7 @@
   display: inline-block;
   width: 15px;
   height: 18px;
-  background-image: url("../img/icons.png");
+  background-image: url("img/icons.png");
   background-position: -107px -46px;
   background-size: 128px 113px;
 }
@@ -12,7 +12,7 @@
   display: inline-block;
   width: 16px;
   height: 16px;
-  background-image: url("../img/icons.png");
+  background-image: url("img/icons.png");
   background-position: -107px -66px;
   background-size: 128px 113px;
 }
@@ -21,7 +21,7 @@
   display: inline-block;
   width: 15px;
   height: 15px;
-  background-image: url("../img/icons.png");
+  background-image: url("img/icons.png");
   background-position: -36px -97px;
   background-size: 128px 113px;
 }
@@ -30,7 +30,7 @@
   display: inline-block;
   width: 21px;
   height: 21px;
-  background-image: url("../img/icons.png");
+  background-image: url("img/icons.png");
   background-position: -107px 0px;
   background-size: 128px 113px;
 }
@@ -39,7 +39,7 @@
   display: inline-block;
   width: 10px;
   height: 11px;
-  background-image: url("../img/icons.png");
+  background-image: url("img/icons.png");
   background-position: -107px -84px;
   background-size: 128px 113px;
 }
@@ -48,7 +48,7 @@
   display: inline-block;
   width: 46px;
   height: 28px;
-  background-image: url("../img/icons.png");
+  background-image: url("img/icons.png");
   background-position: 0px -67px;
   background-size: 128px 113px;
 }
@@ -57,7 +57,7 @@
   display: inline-block;
   width: 105px;
   height: 65px;
-  background-image: url("../img/icons.png");
+  background-image: url("img/icons.png");
   background-position: 0px 0px;
   background-size: 128px 113px;
 }
@@ -66,7 +66,7 @@
   display: inline-block;
   width: 11px;
   height: 6px;
-  background-image: url("../img/icons.png");
+  background-image: url("img/icons.png");
   background-position: -69px -97px;
   background-size: 128px 113px;
 }
@@ -75,7 +75,7 @@
   display: inline-block;
   width: 16px;
   height: 16px;
-  background-image: url("../img/icons.png");
+  background-image: url("img/icons.png");
   background-position: 0px -97px;
   background-size: 128px 113px;
 }
@@ -84,7 +84,7 @@
   display: inline-block;
   width: 21px;
   height: 21px;
-  background-image: url("../img/icons.png");
+  background-image: url("img/icons.png");
   background-position: -107px -23px;
   background-size: 128px 113px;
 }
@@ -93,7 +93,7 @@
   display: inline-block;
   width: 16px;
   height: 16px;
-  background-image: url("../img/icons.png");
+  background-image: url("img/icons.png");
   background-position: -18px -97px;
   background-size: 128px 113px;
 }
@@ -102,7 +102,7 @@
   display: inline-block;
   width: 14px;
   height: 14px;
-  background-image: url("../img/icons.png");
+  background-image: url("img/icons.png");
   background-position: -53px -97px;
   background-size: 128px 113px;
 }
@@ -111,7 +111,7 @@
   display: inline-block;
   width: 22px;
   height: 22px;
-  background-image: url("../img/icons.png");
+  background-image: url("img/icons.png");
   background-position: -48px -67px;
   background-size: 128px 113px;
 }
@@ -120,15 +120,15 @@
   display: inline-block;
   width: 21px;
   height: 21px;
-  background-image: url("../img/icons.png");
+  background-image: url("img/icons.png");
   background-position: -72px -67px;
   background-size: 128px 113px;
 }
 
 @font-face {
   font-family: "svgfont";
-  src: url("fonts/svgfont.eot");
-  src: url("fonts/svgfont.eot?#iefix") format("eot"), url("fonts/svgfont.woff") format("woff"), url("fonts/svgfont.woff2") format("woff2"), url("fonts/svgfont.ttf") format("truetype");
+  src: url("css/fonts/svgfont.eot");
+  src: url("css/fonts/svgfont.eot?#iefix") format("eot"), url("css/fonts/svgfont.woff") format("woff"), url("css/fonts/svgfont.woff2") format("woff2"), url("css/fonts/svgfont.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -474,7 +474,7 @@ label.required span {
   position: absolute;
   top: 5px;
   right: 5px;
-  background-image: url("../img/icons.png");
+  background-image: url("img/icons.png");
   width: 20px;
   height: 22px;
   background-position: -214px -168px;
@@ -1023,7 +1023,7 @@ select.form-control {
 .logo > i {
   position: relative;
   display: inline-block;
-  background-image: url("../img/icons.png");
+  background-image: url("img/icons.png");
   width: 105px;
   height: 65px;
   background-position: 0px 0px;
@@ -1053,7 +1053,7 @@ select.form-control {
     z-index: 0;
   }
   .logo > i {
-    background-image: url("../img/icons.png");
+    background-image: url("img/icons.png");
     width: 46px;
     height: 28px;
     background-position: 0px -67px;
@@ -1144,7 +1144,7 @@ select.form-control {
   .m-user {
     padding-left: 0;
     margin-left: 45px;
-    background-image: url("../img/icons.png");
+    background-image: url("img/icons.png");
     width: 16px;
     height: 16px;
     background-position: -18px -97px;
@@ -1259,7 +1259,7 @@ select.form-control {
 }
 .search a {
   display: inline-block;
-  background-image: url("../img/icons.png");
+  background-image: url("img/icons.png");
   width: 16px;
   height: 16px;
   background-position: 0px -97px;
@@ -1545,7 +1545,7 @@ select.form-control {
   display: inline-block;
   vertical-align: middle;
   margin-right: 6px;
-  background-image: url("../img/icons.png");
+  background-image: url("img/icons.png");
   width: 14px;
   height: 14px;
   background-position: -53px -97px;
@@ -1556,7 +1556,7 @@ select.form-control {
   display: inline-block;
   vertical-align: middle;
   margin-right: 6px;
-  background-image: url("../img/icons.png");
+  background-image: url("img/icons.png");
   width: 16px;
   height: 16px;
   background-position: -107px -66px;
@@ -3844,7 +3844,7 @@ select.form-control {
 }
 
 .main_courses {
-  background: url("../img/bg-courses.jpg") top center no-repeat;
+  background: url("img/bg-courses.jpg") top center no-repeat;
 }
 
 .courses .box {
