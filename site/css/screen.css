@@ -4008,7 +4008,7 @@ select.form-control {
 }
 @media only screen and (max-width: 767px) {
   .courses .acco-title {
-    margin-bottom: -5px;
+    margin-bottom: 0px;
   }
   .courses .acco-wrap {
     padding: 20px 0 0 0;
@@ -4025,9 +4025,7 @@ select.form-control {
   }
   .courses .courses__list {
     margin: 0;
-  }
-  .courses .courses__list .acco-title {
-    margin-bottom: 24px;
+    margin-bottom: 28px;
   }
   .courses .courses__list .box {
     background: #fff;
@@ -4073,6 +4071,8 @@ select.form-control {
   .courses .box__wrap {
     background: #fff;
     border: none;
+    padding-bottom: 0;
+    padding-bottom: 10px;
   }
   .courses .box__wrap .title, .courses .box__wrap h4 {
     display: inline-block;
