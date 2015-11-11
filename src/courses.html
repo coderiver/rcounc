@@ -54,11 +54,12 @@
 						<button class="btn btn-lg btn-red" type="button">Пройти вводный тест</button>
 					</div>
 				</div>
-				<div class="row hidden-xs">
+				<div class="row row_first">
 					<div class="col-md-4 col-sm-6">
 						<div class="courses__list">
 							<div class="box">
-								<h4>Оглавление</h4>
+								<h4 class="acco-title">Оглавление</h4>
+								<div class="acco-wrap">
 								<ul>
 									<li><a class="js-innner-nav" href="#course-theme">Темы</a></li>
 									<li><a class="js-innner-nav" href="#course-lector">Лекторы</a></li>
@@ -67,14 +68,15 @@
 									<li><a class="js-innner-nav" href="#course-glossary">Глоссарий</a></li>
 									<li><a class="js-innner-nav" href="#course-material">Учебно-методические материалы</a></li>
 								</ul>
+								</div>
 							</div>
 						</div>
 					</div>
 					<div class="col-md-4 col-sm-6">
 						<div id="course-theme" class="courses__list">
 							<div class="box box_white">
-								<h4>Темы</h4>
-								<div>
+								<h4 class="acco-title">Темы</h4>
+								<div class="acco-wrap">
 									<span>Лекция 1. <a href="#">Кто и зачем сегодня интересуется Арктикой</a></span>
 									<span>Лекция 2. <a href="#">Структура «арктических игроков» в регионе</a></span>
 									<span>Лекция 3. <a href="#">Стратегии «Арктической пятерки» в отношении региона</a></span>
@@ -88,12 +90,12 @@
 					<div class="col-md-4 col-sm-12">
 						<div id="course-lector" class="courses__list persons">
 							<div class="box box_white">
-								<div class="row">
+								<div class="row acco-title">
 									<div class="col-xs-12">
 										<h4>Лекторы</h4>
 									</div>
 								</div>
-								<div class="row">
+								<div class="row acco-wrap">
 									<div class="col-md-12 col-sm-6">
 										<div class="person person_expert">
 											<div class="person__img">
@@ -120,9 +122,9 @@
 						</div>
 					</div>
 				</div>
-				<div class="row hidden-xs">
-					<div class="col-md-8">
-						<div class="row">
+				<div class="row ">
+					<div class="col-md-8 ">
+						<div class="row hidden-xs">
 							<div class="col-xs-12">
 								<div id="course-video" class="courses__video">
 									<div class="video">
@@ -140,7 +142,7 @@
 									<a href="#" class="cat-link cat-link_drop js-videolections-btn">
 										<h2>Все видеолекции<span class="drop"> <i class="icon-arrow"></i></span></h2>
 									</a>
-									<div class="videolections js-videolections" style="display: none;">
+									<div class="acco-wrap videolections js-videolections" style="display: none;">
 										<div class="row">
 											<div class="col-sm-3">
 												<a href="http://www.youtube.com/embed/L9szn1QQfas?autoplay=1" class="videolections__item js-fancybox fancybox.iframe">
@@ -198,12 +200,12 @@
 								<div class="col-xs-12">
 									<div id="course-material" class="courses__books documents">
 										<div class="box">
-											<div class="row">
+											<div class="row acco-title">
 												<div class="col-xs-12">
 													<h4>Учебно-методические материалы</h4>
 												</div>
 											</div>
-											<div class="row">
+											<div class="row acco-wrap">
 												<div class="col-sm-6">
 													<div class="documents__item">
 														<div class="row">
@@ -214,7 +216,7 @@
 															</div>
 															<div class="col-xs-9">
 																<div class="documents__text">
-																	<a href="#">Финляндия. Новые вызовы и возможности для экономического сотрудничества с Россией</a>
+																	<a href="#">Финляндия. Новые вызовы и воз123можности для экономического сотрудничества с Россией</a>
 																	<span>PDF, 208 Kb</span>
 																</div>
 															</div>
@@ -279,12 +281,12 @@
 							<div class="col-xs-12">
 								<div id="course-literature" class="literature">
 									<div class="box">
-										<div class="row">
+										<div class="row acco-title">
 											<div class="col-xs-12">
 												<h4>Список рекомендуемой литературы</h4>
 											</div>
 										</div>
-										<div class="row">
+										<div class="row acco-wrap">
 											<div class="col-xs-12">
 												<div class="tabs js-tabs-simple">
 												    <span class="tabs__item">
@@ -568,12 +570,12 @@
 							<div class="col-xs-12">
 								<div id="course-glossary" class="literature">
 									<div class="box">
-										<div class="row">
+										<div class="row acco-title">
 											<div class="col-xs-12">
 												<h4>ГЛОССАРИЙ</h4>
 											</div>
 										</div>
-										<div class="row">
+										<div class="row acco-wrap">
 											<div class="col-xs-12">
 												<div class="tabs js-tabs-simple">
 												    <span class="tabs__item">
@@ -851,54 +853,60 @@
 								<div class="col-xs-12">
 									<div class="box">
 										<div class="box__wrap">
-											<div class="title">Официальные документы</div>
-											<div class="courses__documents">
-												<a href="#">Постановление от 14 марта 2015 года №228</a>
-												<span>PDF, 168 Kb</span>
-											</div>
-											<div class="courses__documents">
-												<a href="#">Распоряжение от 14 марта 2015 года №431-р</a>
-												<span>PDF, 208 Kb</span>
-											</div>
-										</div>
-										<div class="box__wrap">
-											<h4>Полезные ссылки</h4>
-											<div class="courses__links">
-												<a href="#">www.arctic-council.org</a>
-												<p>На сайте Арктического совета можно найти отдельные статьи по народам Арктики и окружающей среде</p>
-											</div>
-											<div class="courses__links">
-												<a href="#">www.arctic-council.org</a>
-												<p>На сайте Арктического совета можно найти отдельные статьи по народам Арктики и окружающей среде</p>
-											</div>
-											<div class="courses__links">
-												<a href="#">www.arctic-council.org</a>
-												<p>На сайте Арктического совета можно найти отдельные статьи по народам Арктики и окружающей среде</p>
-											</div>
-											<div class="courses__links">
-												<a href="#">www.arctic-council.org</a>
-												<p>На сайте Арктического совета можно найти отдельные статьи по народам Арктики и окружающей среде</p>
+											<div class="title acco-title">Официальные документы</div>
+											<div class="acco-wrap">
+												<div class="courses__documents">
+													<a href="#">Постановление от 14 марта 2015 года №228</a>
+													<span>PDF, 168 Kb</span>
+												</div>
+												<div class="courses__documents">
+													<a href="#">Распоряжение от 14 марта 2015 года №431-р</a>
+													<span>PDF, 208 Kb</span>
+												</div>
 											</div>
 										</div>
 										<div class="box__wrap">
-											<div class="title">Ридеры</div>
-											<div class="courses__documents">
-												<a href="#">Коренные народы российской Арктики: история, современный статус, перспективы</a>
-												<span>23 декабря 2014</span>
-											</div>
-											<div class="courses__documents">
-												<a href="#">Коренные народы российской Арктики: история, современный статус, перспективы</a>
-												<span>23 декабря 2014</span>
-											</div>
-											<div class="courses__documents">
-												<a href="#">Коренные народы российской Арктики: история, современный статус, перспективы</a>
-												<span>23 декабря 2014</span>
+											<h4 class="acco-title">Полезные ссылки</h4>
+											<div class="acco-wrap">
+												<div class="courses__links">
+													<a href="#">www.arctic-council.org</a>
+													<p>На сайте Арктического совета можно найти отдельные статьи по народам Арктики и окружающей среде</p>
+												</div>
+												<div class="courses__links">
+													<a href="#">www.arctic-council.org</a>
+													<p>На сайте Арктического совета можно найти отдельные статьи по народам Арктики и окружающей среде</p>
+												</div>
+												<div class="courses__links">
+													<a href="#">www.arctic-council.org</a>
+													<p>На сайте Арктического совета можно найти отдельные статьи по народам Арктики и окружающей среде</p>
+												</div>
+												<div class="courses__links">
+													<a href="#">www.arctic-council.org</a>
+													<p>На сайте Арктического совета можно найти отдельные статьи по народам Арктики и окружающей среде</p>
+												</div>
 											</div>
 										</div>
 										<div class="box__wrap">
-											<h4>Электронные книги</h4>
+											<div class="title acco-title">Ридеры</div>
+											<div class="acco-wrap">
+												<div class="courses__documents">
+													<a href="#">Коренные народы российской Арктики: история, современный статус, перспективы</a>
+													<span>23 декабря 2014</span>
+												</div>
+												<div class="courses__documents">
+													<a href="#">Коренные народы российской Арктики: история, современный статус, перспективы</a>
+													<span>23 декабря 2014</span>
+												</div>
+												<div class="courses__documents">
+													<a href="#">Коренные народы российской Арктики: история, современный статус, перспективы</a>
+													<span>23 декабря 2014</span>
+												</div>
+											</div>
+										</div>
+										<div class="box__wrap" hidden>
+											<h4 class="acco-title">Электронные книги</h4>
 											<!-- books slider -->
-											<div class="js-library">
+											<div class="js-library acco-wrap">
 												<div class="book">
 													<div class="book__img">
 														<img src="img/book.jpg" alt="">
@@ -928,7 +936,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="row">
+							<div class="row hidden-xs">
 								<div class="col-md-12 col-md-offset-0 col-sm-6 col-sm-offset-3 col-xs-12">
 									<div href="#" class="webinar" style="background-image: url(img/webinar.jpg);">
 										<div class="webinar__type">Открытый<br>вебинар</div>
@@ -951,7 +959,7 @@
 					</div>
 				</div>
 				<!-- socials -->
-				<div class="row hidden-xs">
+				<div class="row">
 					<div class="col-xs-12">
 						<div class="soc">
 							<span>Рассказать друзьям:</span>
@@ -961,7 +969,7 @@
 				</div>
 				<!-- mobile-links -->
 				<div class="row">
-					<div class="col-xs-12 visible-xs">
+					<div class="col-xs-12 hidden-xs" hidden>
 						<div class="courses__mobile">
 							<a href="#" class="cat-link">
 								<h2><span>ЛЕКТОРЫ</span></h2>

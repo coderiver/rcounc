@@ -5,6 +5,13 @@ $(document).ready(function() {
 		return false;
 	});
 
+	$('.acco-title').click(function(event) {
+		if($(window).width()<767){
+			$(this).next().slideToggle();
+			$('.js-library').resize();
+		}
+	});
+
 	/* Для разукраски input[type="file"]*/
 	$('input[type="file"].uploadpicker').each(function() {
 		var field = $(this);

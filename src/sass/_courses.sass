@@ -1,6 +1,8 @@
 // courses
 .main_courses
 	background: url("../img/bg-courses.jpg") top center no-repeat
+	+r(767)
+		background: #fff 
 .courses
 	.box
 		min-height: 0 
@@ -110,6 +112,101 @@
 		.courses__title
 			h1
 				font-size: 35px		
+	+r(767)
+		.acco-title
+			margin-bottom: -5px 
+		.acco-wrap
+			padding: 20px 0 0 0 
+		.box
+			padding-bottom: 0 
+			margin-bottom: 0 
+		.row_first
+			padding-top: 30px 
+		.soc
+			padding-top: 20px 
+		.courses__list
+			margin: 0 
+			.acco-title
+				margin-bottom: 24px 
+			.box
+				background: #fff 
+				color: #000 
+				height: auto
+				padding-top: 0 
+				ul li:before
+					color: #000 
+				a
+					color: #000 
+				h4
+					display: inline-block
+					line-height: 1
+					color: #c84410 
+					border-bottom: 3px dotted #c84410
+					cursor: pointer
+					font-size: 21px
+		.courses__books,#course-literature,#course-glossary
+			h4
+				display: inline-block
+				line-height: 1
+				color: #c84410 
+				border-bottom: 3px dotted #c84410
+				cursor: pointer
+				font-size: 21px
+				margin-bottom: 0 
+		#course-material
+			.box
+				background: none 
+		#course-glossary
+			margin-bottom: 17px
+		#course-literature
+			margin-bottom: 18px  
+		#course-material
+			margin-bottom: 0 
+		.box__wrap
+			background: #fff 
+			border: none 
+			.title,h4
+				display: inline-block
+				line-height: 1
+				color: #c84410 
+				border-bottom: 3px dotted #c84410
+				cursor: pointer
+				font-size: 21px 
+		.acco-wrap
+			display: none
+		.literature
+			.box
+				background: #fff 
+				h4
+					text-transform: none
+					display: inline-block
+					line-height: 1
+					color: #c84410 
+					border-bottom: 3px dotted #c84410
+					cursor: pointer
+					font-size: 21px 
+					text-transform: none
+		.courses__videolections
+			.cat-link
+				
+				h2
+					text-transform: none
+					display: inline-block
+					line-height: 1
+					color: #c84410 
+					border-bottom: 3px dotted #c84410
+					cursor: pointer
+					font-size: 21px 
+					text-transform: none
+					margin-left: 20px 
+				i,span
+					display: none
+			.videolections 
+				padding-left: 20px 
+				.videolections__video img
+					width: auto
+
+
 .literature
 	.literature__wrap
 		margin-top: 30px
