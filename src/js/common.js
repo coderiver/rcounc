@@ -1,5 +1,10 @@
 $(document).ready(function() {
 	
+	$('.js-poll').click(function(event) {
+		$('.js-togglepoll').toggle();
+		return false;
+	});
+
 	/* Для разукраски input[type="file"]*/
 	$('input[type="file"].uploadpicker').each(function() {
 		var field = $(this);

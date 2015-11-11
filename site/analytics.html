@@ -13,7 +13,7 @@
 	<link href='https://fonts.googleapis.com/css?family=Fira+Sans:400,300,500,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" media="all" href="css/bootstrap.min.css" >
 	<link rel="stylesheet" media="all" href="css/jquery.fancybox.css" >
-	<link rel="stylesheet" media="all" href="screen.css" >
+	<link rel="stylesheet" media="all" href="css/screen.css" >
 	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
 </head>
 <body>
@@ -1248,7 +1248,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="row">
+						<div class="row row_hide">
 							<div class="col-w-4 col-md-6 col-xs-12">
 								<div class="box">
 									<div class="news-link">
@@ -1595,7 +1595,7 @@
 					<!-- poll -->
 					<div class="row poll poll_small">
 						<div class="col-xs-12">
-							<div class="poll__in">
+							<div class="poll__in js-togglepoll">
 								<div class="poll__topper">
 									<p>О чем свидетельствует отказ большинства мировых лидеров посетить Парад Победы в Москве?</p>
 								</div>
@@ -1616,9 +1616,9 @@
 											</label>
 											<div class="poll__btns">
 												<div class="form-group">
-													<button class="btn" type="button">Ответить на опрос</button>
+													<button class="btn js-poll" type="button">Ответить на опрос</button>
 													<p>
-														<a href="#" class="btn-sm">Результаты опроса</a>
+														<a href="#" class="btn-sm js-poll">Результаты опроса</a>
 													</p>
 													<p>	
 														<a href="#" class="btn-sm">Архив опросов</a>
@@ -1629,7 +1629,7 @@
 									</div>
 								</form>
 							</div>
-							<div class="poll__in">
+							<div class="poll__in js-togglepoll" style="display:none">
 								<div class="poll__topper">
 									<p>О чем свидетельствует отказ большинства мировых лидеров посетить Парад Победы в Москве?</p>
 								</div>
