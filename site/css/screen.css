@@ -4047,6 +4047,9 @@ select.form-control {
     cursor: pointer;
     font-size: 21px;
   }
+  .courses .literature .tabs .tabs__item:first-child {
+    margin-left: 10px;
+  }
   .courses .courses__books h4, .courses #course-literature h4, .courses #course-glossary h4 {
     display: inline-block;
     line-height: 1;
@@ -4055,6 +4058,18 @@ select.form-control {
     cursor: pointer;
     font-size: 21px;
     margin-bottom: 0;
+    border-bottom: none;
+    padding: 0;
+    line-height: 0.8;
+  }
+  .courses .courses__books h4 span, .courses #course-literature h4 span, .courses #course-glossary h4 span {
+    border-bottom: 3px dotted #c84410;
+    line-height: 1.24;
+  }
+  .courses .courses__books h4 span span, .courses #course-literature h4 span span, .courses #course-glossary h4 span span {
+    position: relative;
+    top: 6px;
+    border-bottom: none;
   }
   .courses #course-material .box {
     background: none;
